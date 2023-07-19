@@ -1,0 +1,61 @@
+{
+    "menu":{
+        "skills": "Habilidades",
+        "aboutMe": "Acerca de Mí",
+        "portfolio": "Portafolio",
+        "contact": "Contacto"
+    },
+    "hero":{
+        "heroTitulo": "Hola 👋🏻 Yo soy Sofi<span>Dev</span>",
+        "heroSubtitulo": "Frontend Developer en México "
+    },
+    "skills":{
+        "skillsTitulo":"Habilidades",
+        "skillsParrafo": "Actualmente estudiando en el Proyecto",
+        "skillsSpan1": "y",
+        "skillsParrafo2": "También tengo una base sólida en HTML5, CSS3 y JavaScript, actualmente estoy trabajando en mejorar mis habilidades en Vanilla JavaScript y React.",
+        "skillsParrafo3":"Con más de cinco años de experiencia en plataformas de gestión de contenido (CMS) como WordPress, Elementor, WooCommerce y LMS como Learndash. También destaco en escritura SEO, diseño gráfico y la paquetería Adobe.",
+        "skillsBtn":"Descargar CV"
+    },
+    "tools":{
+        "toolsTitulo":"Herramientas"
+    },
+    "acercade":{
+        "acercadeTitulo": "¿Quién es Sofi <span>Dev </span> ?",
+        "acercadeParrafo":"Soy una dedicada desarrolladora front-end junior que radica en México, apasionada por la tecnología y siempre ampliando mis habilidades.",
+        "acercadeH3": "¿Qué <span>me distingue?</span> ",
+        "acercadeParrafo2": "Genuinamente <span>¡Amo lo que hago! 💙</span> Creo que combinar creatividad y código puede crear experiencias de usuario mágicas. Colaboremos y construyamos algo increíble juntos. Ponte en contacto y ¡que comiencen las aventuras en el frontend!",
+        "acercadeBtn":"Contáctame"
+        
+    },
+    "portafolio":{
+        "portafolioTitulo": "Portafolio",
+        "encriptadorTitulo":"Encriptador de mensajes",
+        "ecriptadorParrafo":"Encriptador para el primer Desafío Alura Latam: Lógica de Programación.",
+        "encriptadorDemo":"Ver Demo",
+        "encriptadorrepo": "Ver repositorio"
+    },
+    "portafolio2":{
+        "vscTitulo":"Tema para Vs Code",
+        "vscParrafo":"Cree mi propio tema de Visual Stuido Code.",
+        "vscDwnl":"Descargar Tema",
+        "vscRepo":"Ver repositorio"
+    },
+    "portafolio3":{
+        "miPortafolioTitulo":"Portafolio",
+        "portafolioParrafo":"Solo el repositorio de mi portafolio en GitHub.",
+        "portafolioRepo":"Ver repositorio"
+    },
+    "contact":{
+        "contactTitulo":"Contacto",
+        "contactName":"Nombre.",
+        "contactEmail":"E-mail",  
+        "contactMensaje":"Mensaje"    
+    },
+    "footer":{
+        "cursosPlatzi":"Mis cursos en Platzi",
+        "cursosYoutube":"Mi canal de Youtube",
+        "cursosAlura":"Mis cursos en Alura"
+    }
+
+}

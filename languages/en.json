@@ -1,0 +1,59 @@
+{
+    "menu": {
+        "skills": "Skills",
+        "aboutMe": "About Me",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "hero": {
+        "heroTitulo": "Hi 👋🏻 I'm Sofi<span>Dev</span>",
+        "heroSubtitulo": "Frontend Developer in Mexico"
+    },
+    "skills": {
+        "skillsTitulo": "Skills",
+        "skillsParrafo": "Currently studying at the Project",
+        "skillsSpan1": "and",
+        "skillsParrafo2": "I also have a strong foundation in HTML5, CSS3, and JavaScript, currently working on improving my skills in Vanilla JavaScript and React.",
+        "skillsParrafo3": "With over five years of experience in content management platforms (CMS) such as WordPress, Elementor, WooCommerce, and LMS like Learndash. I also excel in SEO writing, graphic design, and the Adobe Suite.",
+        "skillsBtn": "Download CV"
+    },
+    "tools": {
+        "toolsTitulo": "Tools"
+    },
+    "acercade": {
+        "acercadeTitulo": "Who is Sofi <span>Dev</span>?",
+        "acercadeParrafo": "I'm a dedicated junior front-end developer based in Mexico, passionate about technology and constantly expanding my skills.",
+        "acercadeH3": "What <span>sets me apart?</span>",
+        "acercadeParrafo2": "I Genuinely <span>love what I do! 💙</span> I believe that blending creativity and code can create magical user experiences. Let's collaborate and build something amazing together. Get in touch and let the frontend adventures begin!",
+        "acercadeBtn": "Contact Me"
+    },
+    "portafolio": {
+        "portafolioTitulo": "Portfolio",
+        "encriptadorTitulo": "Message Encryptor",
+        "ecriptadorParrafo": "Encryptor for the first Alura Latam Challenge: Programming Logic.",
+        "encriptadorDemo": "View Demo",
+        "encriptadorrepo": "View Repository"
+    },
+    "portafolio2": {
+        "vscTitulo": "Vs Code Theme",
+        "vscParrafo": "Created my own Visual Studio Code theme.",
+        "vscDwnl": "Download Theme",
+        "vscRepo": "View Repository"
+    },
+    "portafolio3": {
+        "miPortafolioTitulo": "Portfolio",
+        "portafolioParrafo": "Just the repository of my portfolio on GitHub.",
+        "portafolioRepo": "View Repository"
+    },
+    "contact": {
+        "contactTitulo": "Contact",
+        "contactName": "Name",
+        "contactEmail": "Email",
+        "contactMensaje": "Message"
+    },
+    "footer": {
+        "cursosPlatzi": "My courses on Platzi",
+        "cursosYoutube": "My Youtube channel",
+        "cursosAlura": "My courses on Alura"
+    }
+}

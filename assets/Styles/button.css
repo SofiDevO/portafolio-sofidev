@@ -1,0 +1,131 @@
+.boton{
+    display: flex;
+    font-size: 1rem;
+    width: 82%;
+    margin-top: 20px;
+    padding: 22px 11px;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 40px;
+    border: 3px solid rgba(18, 18, 18, 0.743);
+    justify-content: space-evenly;
+    font-weight: 700;
+}
+
+.boton:hover{
+    transform: scale(1.2);
+    border: 3px solid var(--blue);
+}
+.link__boton{
+    text-decoration: none;
+    display: flex;
+    width: 67%;
+    justify-content: center;
+}
+/* Botones terminal */
+.terminal_toolbar {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: linear-gradient(#504b45 0%, #3c3b37 100%);
+  }
+  
+  .butt {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 8px;
+    height: 12px;
+    width: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(#7d7871 0%, #595953 100%);
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+  }
+  
+.btn-color {
+    background: #ee411a;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.butt--exit {
+    background: linear-gradient(#f37458 0%, #de4c12 100%);
+}
+
+.user {
+    color: #d5d0ce;
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+
+
+@media (min-width:768px){
+    .boton{
+        display: flex;
+        font-size: 1rem;
+        width: 56%;
+        padding: 28px 8px;
+        align-items: center;
+        border-radius: 40px;
+        justify-content: space-evenly;
+        font-weight: 800;
+    }
+    
+    .boton:hover{
+        transform: scale(1.1);
+    }
+    .link__boton{
+        text-decoration: none;
+        display: flex;
+    }
+
+
+}
+@media (min-width:1200px){
+    .boton{
+        display: flex;
+        font-size: 1rem;
+        width: 143%;
+        padding: 28px 8px;
+        align-items: center;
+        border-radius: 40px;
+        justify-content: space-evenly;
+        font-weight: 800;
+    }
+    
+    .boton:hover{
+        transform: scale(1.1);
+    }
+    .link__boton{
+        display: flex;
+        width: 12%;
+        min-width: 203px;
+    }
+
+}

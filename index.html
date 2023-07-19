@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- canonical url -->
+    <link rel="canonical" href="https://itssofi.dev/">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SofiDev</title>
+    <link rel="shortcut icon" href="./assets/img/profile-pic-pink.webp" type="ima2ge/x-icon">
+
+
+    <!-- HTML Meta Tags -->
+    <title>SofiDev (Angela Sofía Osorio)</title>
+    <meta name="description" content="Frontend Developer form  Mexico">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://itssofi.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SofiDev (Angela Sofía Osorio)">
+    <meta property="og:description" content="Frontend Developer form  Mexico">
+    <meta property="og:image" content="https://blog.itssofi.dev/wp-content/uploads/2023/06/OpenGraphV2.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="itssofi.dev">
+    <meta property="twitter:url" content="https://itssofi.dev">
+    <meta name="twitter:title" content="SofiDev (Angela Sofía Osorio)">
+    <meta name="twitter:description" content="Frontend Developer form  Mexico">
+    <meta name="twitter:image" content="https://blog.itssofi.dev/wp-content/uploads/2023/06/OpenGraphV2.png">
+
+    
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERDGRLBQQL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ERDGRLBQQL');
+    </script>
+
+
+    <!-- css librerias -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+
+    <!-- CSS ESTYLES -->
+    <link rel="stylesheet" href="./assets/Styles/settings.css">
+    <link rel="stylesheet" href="./assets/Styles/header.css">
+    <link rel="stylesheet" href="./assets/Styles/hero/hero.css">
+    <link rel="stylesheet" href="./assets/Styles/hero/social-icon.css">
+    <link rel="stylesheet" href="./assets/Styles/divider.css">
+    <link rel="stylesheet" href="./assets/Styles/button.css">
+    <link rel="stylesheet" href="./assets/Styles/skills.css">
+    <link rel="stylesheet" href="./assets/Styles/tools.css">
+    <link rel="stylesheet" href="./assets/Styles/acerca.css">
+    <link rel="stylesheet" href="./assets/Styles/portfolio.css">
+    <link rel="stylesheet" href="./assets/Styles/formulario.css">
+    <link rel="stylesheet" href="./assets/Styles/frase.css">
+    <link rel="stylesheet" href="./assets/Styles/footer.css">
+    <!-- dark mode -->
+    <link rel="stylesheet" href="./assets/Styles/dark-mode/darkmode.css">
+    <link rel="stylesheet" href="./assets/Styles/dark-mode/darkmode-bg.css">
+</head>
+<body>
+    <section class="header" id="header">
+        <div class="header__container">
+            <a class="header__link " href="/index.html">
+                <p class="header__logo logo__dark" id="logo">Sofi<span class="span__dark" id="span">Dev</span></p>
+            </a>
+        </div>
+        <!-- Menu Desktop -->
+        <nav class="menu-desktop">
+            <ul class="menu__contenido">
+                <li class="menu__list"><a class="menu__link" href="#skills" data-section="menu" data-value="skills">Skills</a></li>
+                <li class="menu__list"><a class="menu__link" href="#aboutMe" data-section="menu" data-value="aboutMe">About me</a></li>
+                <li class="menu__list"><a class="menu__link" href="#portafolio"data-section="menu" data-value="portfolio">Portfolio</a></li>
+                <li class="menu__list"><a class="menu__link" href="#formulario" data-section="menu" data-value="contact">Contact</a></li>
+                <li class="menu__list"><a class="menu__link" href="#hobbies">Hobbies</a></li>
+                <li class="menu__list"><a class="menu__link" href="https://blog.itssofi.dev/" target="_blank">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="idoma_icons" class="iconos__cabecera">
+            <div class="idioma-desktop english"  data-language="en">
+                <img class="idioma__icon-desktop" src="./assets/svg/esri.svg" alt="change language" data-type="toogleLanguage">
+                <span class="tooltip__box">Cambiar idioma</span>
+            </div>
+            <div class="idioma-desktop espanol" data-language="es">
+                <img class="idioma__icon-desktop" src="./assets/svg/esri.svg" alt="change language" data-type="toogleLanguage">
+                <span class="tooltip__box">Change language</span>
+            </div>
+            <div class="dark-mode__toogle" id="dark-mode_container">
+                <img class="dark-mode__icon rayo-vacio" src="./assets/svg/lightning-charge.svg" alt="lightning icon"
+                    id="toggle-darkmode">
+                <img class="dark-mode__icon rayo-lleno" src="./assets/svg/lightning-charge-fill.svg"
+                    alt="lightning icon" id="toggle-ligthmode">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- menu movil (hamburguesa) -->
+    <button class="panel-btn hamburger hamburger--emphatic" type="button" aria-label="menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner" id="hamburguesa"></span>
+        </span>
+    </button>
+    <!-- panel que se depliega lateralmente -->
+    <aside id="panel" class="panel">
+        <nav class="menu-hamburger">
+            <a class="menu-hamburger__link" id="skills-menuA" href="#skills"data-section="menu" data-value="skills">Skills</a>
+            <a class="menu-hamburger__link" id="acercaDe-menuA" href="#aboutMe" data-section="menu" data-value="aboutMe">About me</a>
+            <a class="menu-hamburger__link" id="portafolio-menuA" href="#portafolio" data-section="menu" data-value="portfolio">Portfolio</a>
+            <a class="menu-hamburger__link" id="contacto-menuA" href="#formulario" data-section="menu" data-value="contact">Contact</a>
+            <a class="menu-hamburger__link" id="contacto-menuA" href="#hobbies">Hobbies</a>
+            <a class="menu-hamburger__link" id="blog-menuA" href="https://blog.itssofi.dev" target="_blank"> Blog </a>
+            <div class="menu__icons">
+                <div id="dark-mode_container" class="dark-mode_container">
+                    <img class="dark-mode__icon rayo-vacio" src="./assets/svg/lightning-charge.svg" alt="lightning icon"
+                        id="toggle-darkmodeHamburger">
+                    <img class="dark-mode__icon rayo-lleno" src="./assets/svg/lightning-charge-fill.svg"
+                        alt="lightning icon" id="toggle-ligthmodeHamburger">
+                </div>
+                <div id="idoma_iconsMobile">
+                    <div class="idioma-caja espanolMobile"  data-language="es">
+                        <img class="idioma__icon" src="./assets/svg/esri.svg" alt="idioma icon" data-type="toogleLanguageMobile">
+                        <span class="idioma__span" >change language</span>
+                    </div>
+                    <div class="idioma-caja englishMobile" data-language="en">
+                        <img class="idioma__icon" src="./assets/svg/esri.svg" alt="idioma icon" data-type="toogleLanguageMobile">
+                        <span class="idioma__span" >cambiar idioma</span>
+                    </div>
+
+                </div>
+
+                
+            </nav>
+                
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+        <!-- seccion hero  -->
+        <section class="hero" id="hero">
+            <div class="hero__contenedor">
+                <div class="hero__saludo">
+                    <h1 class="hero__titulo" id="titulo-saludo"  data-section="hero" data-value="heroTitulo">Hi! 👋🏻 I'm Sofi<span class="span__dark"
+                            id="span-titulo">Dev</span> </h1>
+                    <h2 class="hero__subtitulo" id="subtitulo"  data-section="hero" data-value="heroSubtitulo">Frontend Developer in Mexico </h2>
+                </div>
+                <div class="side__container">
+                    <div class="side__profile" id="profile-pic">
+                        <img class="side__img img__ligth" src="./assets/img/progile-pic-gray.webp"
+                            alt="Sofidev profile photo">
+                        <img class="side__img img__dark" src="./assets/img/profile-pic-pink.webp"
+                            alt="Sofidev profile photo">
+                    </div>
+                    <div class="social">
+                        <a class="social__link github icono__dark" href="https://github.com/SofiDevO" target="_blank"
+                            rel="nofollow noreferrer noopener">
+                            <img class="social__icon" src="./assets/svg/github-light.svg" alt="GitHub icon">
+                        </a>
+                        <a class="social__link alura icono__dark" href="https://app.aluracursos.com/user/sofidev"
+                            target="_blank" rel="nofollow noreferrer noopener">
+                            <img class="social__icon" src="./assets/svg/alura.svg" alt="Aluura icon">
+                        </a>
+
+                        <a class="social__link linkedin icono__dark" href="https://www.linkedin.com/in/sofidev/"
+                            target="_blank" rel="nofollow noreferrer noopener">
+                            <img class="social__icon " src="./assets/svg/linkedin.svg" alt="LinkedIn icon">
+                        </a>
+
+                        <a class="social__link platzi icono__dark" href="https://platzi.com/p/SofiDev/" target="_blank"
+                            rel="nofollow noreferrer noopener">
+                            <img class="social__icon " src="./assets/svg/platzi.svg" alt="Platzi icon">
+                        </a>
+                        <a class="social__link youtube icono__dark"
+                            href="https://www.youtube.com/channel/UC36_js-krsAHAEAWpEDhHtw" target="_blank"
+                            rel="nofollow noreferrer noopener">
+                            <img class="social__icon " src="./assets/svg/youtube-solid.svg" alt="Youtube icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Divider -->
+            <div class="wrapper">
+                <div class="custom-shape-divider-bottom-1685513857">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                            id="divider1" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="skills " id="skills">
+            <h2 class="skills__titulo titulo__dark" data-section="skills" data-value="skillsTitulo">Skills</h2>
+            <div class="skills__cajas ">
+
+                <div class=" skills__caja caja__dark">
+                    <div class="img">
+                        <img class="skills__icono  skills__icono__dark html" src="./assets/svg/file-type-html.svg"
+                            alt="HTML icon">
+                    </div>
+                    <div class="skills__texto">
+                        <p class="text head titulo__dark">HTML <br> ✅</p>
+                    </div>
+                </div>
+
+
+                <div class=" skills__caja caja__dark">
+                    <div class="img">
+                        <img class="skills__icono skills__icono__dark css" src="./assets/svg/css-color.svg"
+                            alt="Css icon">
+                    </div>
+                    <div class="skills__texto">
+                        <p class="text head titulo__dark">CSS <br> ✅</p>
+                    </div>
+                </div>
+
+                <div class=" skills__caja caja__dark">
+                    <div class="img">
+                        <img class="skills__icono skills__icono__dark javascript" src="./assets/svg/javascript-fill.svg"
+                            alt="Javascript icon">
+                    </div>
+                    <div class="skills__texto">
+                        <p class="text head titulo__dark">Javascript <br> ✅</p>
+                    </div>
+                </div>
+
+                <div class=" skills__caja caja__dark">
+                    <div class="img">
+                        <img class="skills__icono skills__icono__dark react" src="./assets/svg/react-dark.svg"
+                            alt="react icon">
+
+                    </div>
+                    <div class="skills__texto">
+                        <p class="text head titulo__dark">React <br>🌱</p>
+                    </div>
+                </div>
+
+                <div class=" skills__caja caja__dark">
+                    <div class="img">
+                        <img class="skills__icono skills__icono__dark react" src="./assets/svg/nodejs-dark.svg"
+                            alt="react icon">
+
+                    </div>
+                    <div class="skills__texto">
+                        <p class="text head titulo__dark">NodeJs <br>🌱</p>
+                    </div>
+                </div>
+
+                <div class=" skills__caja caja__dark">
+                    <div class="img">
+                        <img class="skills__icono  wordpress skills__icono__dark" src="./assets/svg/wordpress-icon.svg"
+                            alt="Wordpress icon">
+                    </div>
+                    <div class="skills__texto">
+                        <p class="text head titulo__dark ">Wordpress ✅</p>
+                    </div>
+                </div>
+                <div class="textos">
+
+                    <div class="skills__textos__contenido caja__dark">
+                        <div class="terminal_toolbar">
+                            <div class="butt">
+                                <button class="btn btn-color"></button>
+                                <button class="btn"></button>
+                                <button class="btn"></button>
+                            </div>
+                            <p class="user">sofidev@admin: ~</p>
+                        </div>
+                        <div class="skills__parrafos">
+                            <span class="textos__parrafo" data-section="skills" data-value="skillsParrafo">
+                                Currently studying at The Project </span><a class="textos__link textos__parrafo" id="link-oracle"
+                                    href="https://www.oracle.com/mx/education/oracle-next-education/" target="_blank"
+                                    rel="nofollow noopener noreferrer">"One Oracle Next Education" </a> <span class="textos__parrafo"data-section="skills" data-value="skillsSpan1">and</span>  <a
+                                    class="textos__link textos__parrafo" id="link-platzi" href="https://platzi.com/p/SofiDev/"
+                                    target="_blank" rel="nofollow noreferrer noopener">Platzi.</a><p class="textos__parrafo" data-section="skills" data-value="skillsParrafo2"> I also have a strong
+                                foundation in HTML5, CSS3, and JavaScript, currently working on improving my skills in
+                                Vanilla JavaScript and React.
+                            </p>
+                            <p class="textos__parrafo"  data-section="skills" data-value="skillsParrafo3">
+                                With over five years of experience in content management platforms (CMS) such as WordPress, Elementor, WooCommerce, and LMS like Learndash. I also excel in SEO writing, graphic design, and the Adobe Suite.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skills__imagen__side"><img src="./assets/img/IAselfie.webp" alt=""></div>
+                </div>
+                <div class="skills__descargar">
+                    <a class="link__boton" href="./assets/documents/Angela_Sofía_Osorio_García_CV_Forntend.pdf" download>
+                        <button class="boton titulo__dark"> <span data-section="skills" data-value="skillsBtn">Download CV</span> <img
+                                class="skills__descargar__icono icono__boton" src="./assets/svg/generate-pdf.svg"
+                                alt="download button"> </button>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tools">
+            <h2 class="tools__titulo titulo__dark" data-section="tools" data-value="toolsTitulo">Tools</h2>
+            <div class="tools__caja__slider">
+                <div class="slider">
+                    <div class="tools__cajas" id="">
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/slack.svg" alt="slack">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">slack</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/airtable.svg" alt="airtable">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">airtable</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/git.svg" alt="git">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">git</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono terminal" src="./assets/svg/terminal-fill.svg" alt="terminal">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">terminal</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono terminal" src="./assets/svg/npm-wordmark.svg" alt="terminal">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">npm</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/notion-icon.svg" alt="notion">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">notion</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark " src="./assets/svg/ubuntu.svg" alt="ubuntu">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">ubuntu</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/visual-studio-code.svg"
+                                    alt="vscode">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">vscode</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/figma.svg" alt="figma">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">figma</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/woocommerce.svg"
+                                    alt="woocommerce">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">woocommerce</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/yoast.svg" alt="yoast SEO">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">yoast SEO</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/xampp.svg" alt="xampp">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">xampp</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/elementor (1).svg"
+                                    alt="elementor">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">elementor</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/google-analytics.svg"
+                                    alt="google analytics">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">analytics</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/google-search-console.svg"
+                                    alt="Google search console">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">search console</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/photoshop.svg" alt="Photoshop">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">photoshop</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/illustrator.svg"
+                                    alt="Illustrator">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">illustrator</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/premiere.svg" alt="Premier">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">premier</span>
+                        </div>
+                        <!-- Se repite -->
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/slack.svg" alt="slack">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">slack</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/airtable.svg" alt="airtable">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">airtable</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/git.svg" alt="git">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">git</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono terminal" src="./assets/svg/terminal-fill.svg" alt="terminal">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">terminal</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono terminal" src="./assets/svg/npm-wordmark.svg" alt="terminal">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">npm</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/notion-icon.svg" alt="notion">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">notion</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark " src="./assets/svg/ubuntu.svg" alt="ubuntu">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">ubuntu</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/visual-studio-code.svg"
+                                    alt="vscode">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">vscode</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/figma.svg" alt="figma">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">figma</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/woocommerce.svg"
+                                    alt="woocommerce">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">woocommerce</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/yoast.svg" alt="yoast SEO">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">yoast SEO</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/xampp.svg" alt="xampp">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">xampp</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/elementor (1).svg"
+                                    alt="elementor">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">elementor</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/google-analytics.svg"
+                                    alt="google analytics">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">analytics</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/google-search-console.svg"
+                                    alt="Google search console">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">search console</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/photoshop.svg" alt="Photoshop">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">photoshop</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/illustrator.svg"
+                                    alt="Illustrator">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">illustrator</span>
+                        </div>
+                        <div class="tools__grupo">
+                            <div class="tools__caja caja__dark">
+                                <img class="tools__icono tool__dark" src="./assets/svg/premiere.svg" alt="Premier">
+                            </div>
+                            <span class="tools__descripcion titulo__dark">premier</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acerca de Mi -->
+        <section class="acerca" id="aboutMe">
+            <div class="acerca__container">
+                <h2 class="acerca__titulo" id="acercaDeTitulo" data-section="acercade" data-value="acercadeTitulo">Who is Sofi <span class="span__dark" 
+                        id="span-titulo2"> Dev</span>? </h2>
+
+                <div class="acerca__caja-cristal caja__dark" id="caja-cristal">
+                    <div class="terminal_toolbar">
+                        <div class="butt">
+                            <button class="btn btn-color"></button>
+                            <button class="btn"></button>
+                            <button class="btn"></button>
+                        </div>
+                        <p class="user">sofidev@admin: ~</p>
+                    </div>
+                    <div class="acerca__textos" id="textos">
+                        <h3 class="acerca__nombre">
+                            Angela Sofía Osorio
+                        </h3>
+                        <p class="acerca__texto contenido" data-section="acercade" data-value="acercadeParrafo">
+                            I'm a dedicated junior front-end developer based in Mexico, passionate about technology and
+                            constantly expanding my skills.
+                        </p>
+
+
+                        <h3 class="acerca__nombre contenido" data-section="acercade" data-value="acercadeH3">
+                            What <span class="acerca__span span__dark">sets me apart?</span>
+                        </h3>
+                        <p class="acerca__texto contenido" data-section="acercade" data-value="acercadeParrafo2">
+                            I genuinely <span class="span__dark">love what I do! 💙</span> I believe that blending creativity and code
+                            can create magical user experiences. Let's collaborate and build something amazing together.
+                            Get in touch and let the frontend adventures begin!
+                        </p>
+                    </div>
+                </div>
+                <div class="acerca__contactar">
+                    <a class="link__boton " href="mailto: contact@itssofi.dev" target="_blank"
+                        rel="nofollow noreferrer noopener">
+                        <button class="boton titulo__dark"> <span data-section="acercade" data-value="acercadeBtn">Get in touch</span>
+                            <img class="contactar__boton__icono icono__boton" src="./assets/svg/mail (1).svg" alt="mail icon">
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <section class="portafolio" id="portafolio">
+            <div class="titulo titulo__dark">
+                <h2 data-section="portafolio" data-value="portafolioTitulo">Portfolio</h2>
+            </div>
+            <div class="portafolio__contenedor">
+                <div class="portafolio__trajeta caja__dark__portafolio">
+                    <div class="portafolio__cara faceA ">
+                        <img class="portafolio__img dark__img" src="./assets/img/Encriptador-mensajes.png"
+                            alt="portada, encriptador de mensajes">
+                        <img class="portafolio__img ligth__img" src="./assets/img/Encriptador-mensajes-dark.png"
+                            alt="portada, encriptador de mensajes">
+                        <h3 class="portafolio__subtitulo titulo__dark"data-section="portafolio" data-value="encriptadorTitulo">Message Encryptor</h3>
+                    </div>
+                    <div class="portafolio__cara faceB caja__dark">
+                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio" data-value="ecriptadorParrafo">Message Encryptor for the first Alura Latam
+                            Challenge: Programming Logic.</p>
+                        <div class="portafolio__botobnes">
+                            <a href="https://sofidevo.github.io/encriptador-mensajes/" target="_blank"
+                                rel="nofollow noreferrer noopener">
+                                <button class="portafolio__btn boton titulo__dark" class="portafolio__btn "> <span data-section="portafolio" data-value="encriptadorDemo">View
+                                    Demo</span></button>
+                            </a>
+                            <a href="https://github.com/SofiDevO/encriptador-mensajes" target="_blank"
+                                rel="nofollow noreferrer noopener">
+                                <button class="portafolio__btn boton titulo__dark"data-section="portafolio" data-value="encriptadorrepo">View Repo </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portafolio__trajeta caja__dark__portafolio">
+                    <div class="portafolio__cara faceA">
+                        <img class="portafolio__img vsc__img" src="./assets/img/Vscode-theme.png"
+                            alt="Portada, Vscode-theme">
+                        <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio2" data-value="vscTitulo">Vs Code Theme</h3>
+                    </div>
+                    <div class="portafolio__cara faceB caja__dark">
+                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio2" data-value="vscParrafo"> I created my own Visual Studio Code Theme.</p>
+                        <div class="portafolio__botobnes">
+                            <a href="https://marketplace.visualstudio.com/items?itemName=SofiDev.sofidev"
+                                target="_blank" rel="nofollow noopener noreferrer">
+                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio2" data-value="vscDwnl"> Download Theme</button>
+                            </a>
+                            <a href="https://github.com/SofiDevO/dark-purple.git" target="_blank"
+                                rel="nofollow noopener noreferrer">
+                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio2" data-value="vscRepo">View Repo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio__trajeta caja__dark__portafolio">
+                    <div class="portafolio__cara faceA">
+                        <img class="portafolio__img vsc__img" src="./assets/img/portada-portafolio.png"
+                            alt="Portada, Vscode-theme">
+                        <h3 class="portafolio__subtitulo titulo__dark"  data-section="portafolio3" data-value="miPortafolioTitulo">Portfolio</h3>
+                    </div>
+                    <div class="portafolio__cara faceB caja__dark">
+                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio3" data-value="portafolioParrafo"> Just my Portfolio repository in GitHub.</p>
+                        <div class="portafolio__botobnes">
+                            <a href="https://github.com/SofiDevO/" target="_blank" rel="nofollow noopener noreferrer">
+                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio3" data-value="portafolioRepo">View Repo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="formulario" id="formulario">
+            <div class="titulo titulo__dark">
+                <h2 data-section="contact" data-value="contactTitulo">Contact</h2>
+            </div>
+            <div class="formulario__caja caja__dark">
+                <img class="formulario__img" src="./assets/img/vice-vehicle.webp" alt="Ia image portrait">
+
+                <form class="formulario__contacto">
+                    <div class="input-container ">
+                        <label class="titulo__dark" for="name"  data-section="contact" data-value="contactName">Name</label>
+                        <input class="input text__boxes" type="text" name="name" placeholder="Your name"
+                            title="Only letters and blank spaces are accepted" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                            required data-type="nombre">
+                            <span class="contact-form-span none" data-span="error">This field is mandatory</span>
+                    </div>
+
+                    <div class="input-container formulario__inputs">
+                        <label class="input-label titulo__dark" for="email"  data-section="contact" data-value="contactEmail">Email</label>
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" title="Invalid email" required data-type="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                        <span class="contact-form-span none" data-span="error"> This field is mandatory</span>
+                    </div>
+                        
+
+                    <div class="input-container formulario__inputs ">
+                        <label class="titulo__dark" for="mensaje"  data-section="contact" data-value="contactMensaje">Message</label>
+                        <textarea  class="text__boxes" name="mensaje" cols="50" rows="7" 
+                            data-pattern="^.{1,255}$"  data-type="mensaje" placeholder="Your message" required title="Message cannot exceed 255 characters"></textarea>
+                            <span class="contact-form-span none" data-span="error">This field is mandatory</span>
+                    </div>
+                    <input class="formulario__submit boton submit  titulo__dark" type="submit" value="Send"> 
+                </form>
+                <!-- Loader -->
+                <div class="contact_form_loader none">
+                    <img src="./assets/svg/three-dots.svg" alt="Cargando">
+                </div> 
+                <div class="contact__div__form__response none">
+                    <p>Los datos han sido enviados</p>
+                </div>
+            </div>
+        </section>
+        <section id="hobbies" class="frase">
+            <div class="titulo titulo__dark">
+                <h2>Hobbies</h2>
+            </div>
+
+            <div class="frase__caja">
+                <div class="card">
+                    <div class="titlebar">
+                        <span class="buttons">
+                            <button class="minimize">
+                                <svg x="0px" y="0px" viewBox="0 0 10.2 1">
+                                    <rect x="0" y="50%" width="10.2" height="1"></rect>
+                                </svg>
+                            </button>
+                            <button class="maximize">
+                                <svg viewBox="0 0 10 10">
+                                    <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path>
+                                </svg>
+                            </button>
+                            <button class="close">
+                                <svg viewBox="0 0 10 10">
+                                    <polygon
+                                        points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1">
+                                    </polygon>
+                                </svg>
+                            </button>
+                        </span>
+                    </div>
+                    <div class="cppcode">
+                        <pre id="pre"><code><span class="s1">if <span class="s2">(youWant())<span class="s3">{</span></span></span>
+                        <span class="you__can">youCan();</span>
+                        <span class="s3">}<span class="s2">else</span><span class="s4">{ </span></span>
+                        <span class="you__cant">youCant();</span> 
+                        <span class="s4">}</span>
+                    </div>
+                </div>  
+                <div class="frase__imagen">
+                    <img src="./assets/img/sofidev_laptop.gif" alt="sofi-pixel art" class="sofi__pixel titulo__dark">
+                    <div class="frase__iconos">
+                        <div class="frase__grupo">
+                            <div class="frase__icono__caja caja__dark" >
+                                <img class="frase__icono icono__dark gym" src="./assets/svg/gym.svg" alt="icono gym" >
+                            </div>
+                            <span class="frase__icono__descripcion ">Gym</span>
+                        </div>
+
+                        <div class="frase__grupo">
+                            <div class="frase__icono__caja caja__dark" >
+                                <img class="frase__icono icono__dark boxing" src="./assets/svg/boxing.svg" alt="icono boxing">
+                            </div>
+                            <span class="frase__icono__descripcion">Boxing</span>
+                        </div>
+                            
+                        <div class="frase__grupo">
+                            <div class="frase__icono__caja caja__dark" >
+                                <img class="frase__icono icono__dark coding" src="./assets/svg/code-16.svg" alt="icono codding">
+                            </div>
+                            <span class="frase__icono__descripcion">Coding</span>
+                        </div>
+
+                        <div class="frase__grupo">
+                            <div class="frase__icono__caja caja__dark" >
+                                <img class="frase__icono icono__dark music" src="./assets/svg/music-note-2-play-20-filled.svg" alt="icono music" >
+                            </div>
+                            <span class="frase__icono__descripcion"> Music</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>            
+        <div class="background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="foooter__cajas">
+                <a class="footer__link " href="/index.html">
+                    <p class="footer__logo logo__dark" id="logo">Sofi<span class="span__dark" id="span"> Dev</span></p>
+                </a>
+            </div>
+            <div class="foooter__cajas">
+                <ul class="footer__caja__links">
+                    <li class="footer__links"><a href="https://blog.itssofi.dev/" class="footer__link" target="_blank">Blog</a></li>
+                    <li class="footer__links"><a href="https://www.youtube.com/channel/UC36_js-krsAHAEAWpEDhHtw" class="footer__link" target="_blank"  rel="nofollow noreferrer noopener" data-section="footer" data-value="cursosYoutube">Youtube channel</a></li>
+                    <li class="footer__links"><a href="https://platzi.com/p/SofiDev/" class="footer__link" target="_blank"  rel="nofollow noreferrer noopener" data-section="footer" data-value="cursosPlatzi">My courses at  Platzi</a></li>
+                    <li class="footer__links"><a href="https://app.aluracursos.com/user/sofidev" class="footer__link" target="_blank"  rel="nofollow noreferrer noopener" data-section="footer" data-value="cursosAlura">My courses at Alura</a></li>
+                </ul>
+            </div>
+            <div class="foooter__cajas">
+                <ul class="footer__caja__iconos">
+                    <li class="footer__iconos__lista ">
+                        <a href="mailto: contact@itssofi.dev" rel="nofollow noreferrer noopener" >
+                            <img class="footer__iconos mail__footer icono__dark" src="./assets/svg/mail (1).svg" alt="mail icon">
+                        </a>
+                    </li>
+                    <li class="footer__iconos__lista ">
+                        <a href="https://www.linkedin.com/in/sofidev/" target="_blank"  rel="nofollow noreferrer noopener">
+                            <img class="footer__iconos linkedin__footer icono__dark" src="./assets/svg/linkedin.svg" alt="Linkedin icon">
+                        </a>
+                    </li>
+                    <li class="footer__iconos__lista ">
+                        <a href="https://github.com/SofiDevO" target="_blank"  rel="nofollow noreferrer noopener">
+                            <img class="footer__iconos  icono__dark"  src="./assets/svg/github-light.svg" alt="github icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+<script src="./js/modules.js" type="module" defer></script>
+</html>

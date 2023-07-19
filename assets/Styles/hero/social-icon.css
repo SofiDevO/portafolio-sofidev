@@ -1,0 +1,257 @@
+.social{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.social__icon {
+    width: 50px;
+    filter: drop-shadow(0 0 12px var(--seccond-color));
+    transition: .2s ease-in-out;
+  }
+  .social__icon:hover{
+    transform: scale(1.5);
+  } 
+  
+  
+  
+  .github{
+    position: relative;
+    bottom: 109px;
+    right: -20px;
+    transform: translateY(-200px);
+    animation: slideIn 1s ease-in-out forwards;
+    z-index: 20;
+  }
+  
+   .github .social__icon{
+    width: 67px;
+  }
+    
+  .linkedin{
+    filter: invert(30%) sepia(100%) saturate(1072%) hue-rotate(180deg) brightness(96%) contrast(97%) drop-shadow(0 0 3px var(--pure-black));
+    position: relative;
+    bottom: 120px;
+    right: -105px;
+    transform: translateY(-300px);
+    animation: expand 0.8s ease forwards;
+    z-index: 20;
+  }
+  .linkedin .social__icon{
+    width:50px;
+  }
+  .platzi{
+    filter: invert(53%) sepia(39%) saturate(3085%) hue-rotate(64deg) brightness(100%) contrast(101%);
+    position: relative;
+    bottom: 201px;
+    right: -19px;
+    transform: translateY(-300px);
+    animation: expand 1.5s ease-in-out forwards;
+    z-index: 20;
+  }
+  
+  .platzi .social__icon{
+    width: 53px;
+  }
+  .youtube{
+    /* filter: invert(28%) sepia(90%) saturate(6257%) hue-rotate(354deg) brightness(96%) contrast(106%); */
+    position: relative;
+    bottom: 30px;
+    right: 139px;
+    transform: translateY(500px);
+    animation: expand 0.8s ease-in-out forwards 0.8s;
+    z-index: 20;
+  }
+  
+  .alura{
+    filter: invert(30%) sepia(100%) saturate(1072%) hue-rotate(180deg) brightness(96%) contrast(97%) drop-shadow(0 0 3px var(--pure-black));
+    position: relative;
+    bottom: 202px;
+    right: 20px;
+    transform: translateY(-600px);
+    animation: expand 0.8s ease forwards;
+    z-index: 19;
+  }
+  .alura .social__icon{
+    width: 30px;
+  }
+
+
+  .social__link:hover{
+    transform: scale(1.2);
+  }
+  
+  /* Animaciones  de entrada */
+  @keyframes slideIn{ 
+    0%{
+      transform: translateY(600px) scale(6.2);
+    }
+    100%{
+      transform:translateY(0px) scale(1);
+    }
+  }
+  
+  @keyframes slideUp{ 
+    0%{
+      transform: translateY(300px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes expand{ 
+    0%{
+      transform: translateY(1400px);
+      
+    }
+    100%{
+      transform: translateY(0px);
+  
+    }
+  }
+  @keyframes myAnim {
+      0% {
+          animation-timing-function: ease-in;
+          opacity: 1;
+          transform: translateY(-45px);
+      }
+  
+      24% {
+          opacity: 1;
+      }
+  
+      40% {
+          animation-timing-function: ease-in;
+          transform: translateY(-24px);
+      }
+  
+      65% {
+          animation-timing-function: ease-in;
+          transform: translateY(-12px);
+      }
+  
+      82% {
+          animation-timing-function: ease-in;
+          transform: translateY(-6px);
+      }
+  
+      93% {
+          animation-timing-function: ease-in;
+          transform: translateY(-4px);
+      }
+  
+      25%,
+      55%,
+      75%,
+      87% {
+          animation-timing-function: ease-out;
+          transform: translateY(0px);
+      }
+  
+      100% {
+          animation-timing-function: ease-out;
+          opacity: 1;
+          transform: translateY(0px);
+      }
+  }
+  
+  /* VISTA DESKTOP */
+  
+  @media (min-width:767px){
+    .social{
+      display: flex;
+      flex-direction: column;
+      width: 50px;
+      gap: 16px;
+    }
+    .github{
+      position: relative;
+      top: 175px;
+      right: 331px;
+    }
+  
+    .github .social__icon{
+      width: 88px;
+    }
+    .linkedin{
+      position: relative;
+      top: 5px;
+      right: 45px;
+    }
+    .linkedin .social__icon{
+      width:65px;
+    }
+
+    .platzi{
+      position: relative;
+      top: -201px;
+      right: 91px
+    }
+    .platzi .social__icon{
+      width: 60px;
+    }
+    .youtube{
+      position: relative;
+      top: -26px;
+      right: 187px;
+    }
+  
+    .youtube .social__icon{
+      width: 50px;
+    }
+    .alura{
+      position: relative;
+      top: -54px;
+      right: 262px;
+    }
+    .alura .social__icon{
+      width: 31px;
+    }
+  }
+
+
+  @media (min-width:1200px){
+    .github{
+      position: relative;
+      top: 197px;
+      right: 380px;
+    }
+  
+    .github .social__icon{
+      width: 100px;
+    }
+    .linkedin{
+      position: relative;
+      top: 5px;
+      right: 45px;
+    }
+
+    .linkedin .social__icon{
+      width: 65px;
+    }
+    .platzi{
+      position: relative;
+      top: -205px;
+      right: 74px;
+    }
+    .platzi .social__icon{
+      width: 60px;
+    }
+    .youtube{
+      position: relative;
+      top: -26px;
+      right: 187px;
+    }
+  
+    .youtube .social__icon{
+      width: 80px;
+    }
+    .alura{
+      position: relative;
+      top: -62px;
+      right: 314px;
+  }
+  .alura .social__icon{
+    width: 41px;
+  }
+}
