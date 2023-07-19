@@ -1,3 +1,2 @@
 # test-repositorio.github.io
-test repositorio publico
-This is only a repository test for my Platzi course activities
+Project of the first Frontend challenge, by Alura LATAM and Oracle
