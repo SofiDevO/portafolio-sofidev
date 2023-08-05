@@ -1,8 +1,5 @@
 const d = document;
-const btnRayo = d.getElementById("toggle-darkmodeHamburger")
-const btnRayovacio = d.getElementById("toggle-ligthmodeHamburger")
-const btnRayovacioDesktop = d.getElementById("toggle-ligthmode")
-const btnRayoDesktop = d.getElementById("toggle-darkmode")
+const btnDarkMode = d.querySelectorAll("[data-toogle]")
 
 function playSound(){
 
@@ -12,22 +9,11 @@ function playSound(){
     audio.play()
 }
 
-
-
-export default btnRayo.addEventListener('click', ()=>{
-    playSound();
-})
-
-
-/*  btnRayovacio.addEventListener('click', ()=>{
-    playSound();
-}) */
-
-/* btnRayovacioDesktop.addEventListener('click', ()=>{
-    playSound();
-}) */
-btnRayoDesktop.addEventListener('click', ()=>{
-    playSound();
-})
+export default btnDarkMode.forEach(boton => {
+    boton.addEventListener('click', ()=>{
+        playSound();
+    })
+});
+    
 
 

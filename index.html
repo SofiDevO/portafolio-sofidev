@@ -2,11 +2,37 @@
 <html lang="en">
 
 <head>
+    <!-- canonical url -->
+    <link rel="canonical" href="https://itssofi.dev/">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SofiDev</title>
     <link rel="shortcut icon" href="./assets/img/profile-pic-pink.webp" type="ima2ge/x-icon">
+
+
+    <!-- HTML Meta Tags -->
+    <title>SofiDev (Angela Sofía Osorio)</title>
+    <meta name="description" content="Frontend Developer form  Mexico">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://itssofi.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SofiDev (Angela Sofía Osorio)">
+    <meta property="og:description" content="Frontend Developer form  Mexico">
+    <meta property="og:image" content="https://blog.itssofi.dev/wp-content/uploads/2023/06/OpenGraphV2.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="itssofi.dev">
+    <meta property="twitter:url" content="https://itssofi.dev">
+    <meta name="twitter:title" content="SofiDev (Angela Sofía Osorio)">
+    <meta name="twitter:description" content="Frontend Developer form  Mexico">
+    <meta name="twitter:image" content="https://blog.itssofi.dev/wp-content/uploads/2023/06/OpenGraphV2.png">
+
+
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +40,22 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
 
-   
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERDGRLBQQL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    <!-- css librerias -->
+        gtag('config', 'G-ERDGRLBQQL');
+    </script>
+
+
+    <!-- css librerias/ cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS ESTYLES -->
     <link rel="stylesheet" href="./assets/Styles/settings.css">
@@ -37,41 +75,51 @@
     <link rel="stylesheet" href="./assets/Styles/dark-mode/darkmode.css">
     <link rel="stylesheet" href="./assets/Styles/dark-mode/darkmode-bg.css">
 </head>
+
 <body>
     <section class="header" id="header">
         <div class="header__container">
-            <a class="header__link " href="index.html">
+            <a class="header__link " href="/index.html">
                 <p class="header__logo logo__dark" id="logo">Sofi<span class="span__dark" id="span">Dev</span></p>
             </a>
-        </div>
-        <!-- Menu Desktop -->
-        <nav class="menu-desktop">
-            <ul class="menu__contenido">
-                <li class="menu__list"><a class="menu__link" href="#skills" data-section="menu" data-value="skills">Skills</a></li>
-                <li class="menu__list"><a class="menu__link" href="#aboutMe" data-section="menu" data-value="aboutMe">About me</a></li>
-                <li class="menu__list"><a class="menu__link" href="#portafolio"data-section="menu" data-value="portfolio">Portfolio</a></li>
-                <li class="menu__list"><a class="menu__link" href="#formulario" data-section="menu" data-value="contact">Contact</a></li>
-                <li class="menu__list"><a class="menu__link" href="#hobbies">Hobbies</a></li>
-                <li class="menu__list"><a class="menu__link" href="https://blog.itssofi.dev/" target="_blank">Blog</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="idoma_icons" class="iconos__cabecera">
-            <div class="idioma-desktop english"  data-language="en">
-                <img class="idioma__icon-desktop" src="./assets/svg/esri.svg" alt="change language" data-type="toogleLanguage">
-                <span class="tooltip__box">Cambiar idioma</span>
+
+            <!-- Menu Desktop -->
+            <nav class="menu-desktop">
+                <ul class="menu__contenido">
+                    <li class="menu__list"><a class="menu__link" href="#skills" data-section="menu"
+                            data-value="skills">Skills</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#aboutMe" data-section="menu"
+                            data-value="aboutMe">About me</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#portafolio" data-section="menu"
+                            data-value="portfolio">Portfolio</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#formulario" data-section="menu"
+                            data-value="contact">Contact</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#hobbies">Hobbies</a></li>
+                    <li class="menu__list"><a class="menu__link" href="https://blog.itssofi.dev/"
+                            target="_blank">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="menu__icons__desktop">
+                <div id="idoma_icons" class="iconos__cabecera">
+                    <div class="idioma-desktop english" data-language="en">
+                        <img class="idioma__icon-desktop" src="./assets/svg/esri.svg" alt="change language"
+                            data-type="toogleLanguage">
+                        <span class="tooltip__box">Cambiar idioma</span>
+                    </div>
+                    <div class="idioma-desktop espanol" data-language="es">
+                        <img class="idioma__icon-desktop" src="./assets/svg/esri.svg" alt="change language"
+                            data-type="toogleLanguage">
+                        <span class="tooltip__box">Change language</span>
+                    </div>
+                </div>
+                <div id="dark-mode_container" class="dark-mode_container">
+                    <i class="fa-solid fa-moon dark-mode__icon" data-toogle></i>
+                </div>
             </div>
-            <div class="idioma-desktop espanol" data-language="es">
-                <img class="idioma__icon-desktop" src="./assets/svg/esri.svg" alt="change language" data-type="toogleLanguage">
-                <span class="tooltip__box">Change language</span>
-            </div>
-            <div class="dark-mode__toogle" id="dark-mode_container">
-                <img class="dark-mode__icon rayo-vacio" src="./assets/svg/lightning-charge.svg" alt="lightning icon"
-                    id="toggle-darkmode">
-                <img class="dark-mode__icon rayo-lleno" src="./assets/svg/lightning-charge-fill.svg"
-                    alt="lightning icon" id="toggle-ligthmode">
-            </div>
-        </div>
+
+
     </section>
 
 
@@ -85,34 +133,40 @@
     <!-- panel que se depliega lateralmente -->
     <aside id="panel" class="panel">
         <nav class="menu-hamburger">
-            <a class="menu-hamburger__link" id="skills-menuA" href="#skills"data-section="menu" data-value="skills">Skills</a>
-            <a class="menu-hamburger__link" id="acercaDe-menuA" href="#aboutMe" data-section="menu" data-value="aboutMe">About me</a>
-            <a class="menu-hamburger__link" id="portafolio-menuA" href="#portafolio" data-section="menu" data-value="portfolio">Portfolio</a>
-            <a class="menu-hamburger__link" id="contacto-menuA" href="#formulario" data-section="menu" data-value="contact">Contact</a>
+            <a class="menu-hamburger__link" id="skills-menuA" href="#skills" data-section="menu"
+                data-value="skills">Skills</a>
+            <a class="menu-hamburger__link" id="acercaDe-menuA" href="#aboutMe" data-section="menu"
+                data-value="aboutMe">About me</a>
+            <a class="menu-hamburger__link" id="portafolio-menuA" href="#portafolio" data-section="menu"
+                data-value="portfolio">Portfolio</a>
+            <a class="menu-hamburger__link" id="contacto-menuA" href="#formulario" data-section="menu"
+                data-value="contact">Contact</a>
             <a class="menu-hamburger__link" id="contacto-menuA" href="#hobbies">Hobbies</a>
             <a class="menu-hamburger__link" id="blog-menuA" href="https://blog.itssofi.dev" target="_blank"> Blog </a>
+
             <div class="menu__icons">
                 <div id="dark-mode_container" class="dark-mode_container">
-                    <img class="dark-mode__icon rayo-vacio" src="./assets/svg/lightning-charge.svg" alt="lightning icon"
-                        id="toggle-darkmodeHamburger">
-                    <img class="dark-mode__icon rayo-lleno" src="./assets/svg/lightning-charge-fill.svg"
-                        alt="lightning icon" id="toggle-ligthmodeHamburger">
+                    <i class="fa-solid fa-moon dark-mode__icon" data-toogle></i>
                 </div>
+
                 <div id="idoma_iconsMobile">
-                    <div class="idioma-caja espanolMobile"  data-language="es">
-                        <img class="idioma__icon" src="./assets/svg/esri.svg" alt="idioma icon" data-type="toogleLanguageMobile">
-                        <span class="idioma__span" >change language</span>
+                    <div class="idioma-caja espanolMobile" data-language="es">
+                        <img class="idioma__icon" src="./assets/svg/esri.svg" alt="idioma icon"
+                            data-type="toogleLanguage">
+                        <span class="idioma__span">change language</span>
                     </div>
                     <div class="idioma-caja englishMobile" data-language="en">
-                        <img class="idioma__icon" src="./assets/svg/esri.svg" alt="idioma icon" data-type="toogleLanguageMobile">
-                        <span class="idioma__span" >cambiar idioma</span>
+                        <img class="idioma__icon" src="./assets/svg/esri.svg" alt="idioma icon"
+                            data-type="toogleLanguage">
+                        <span class="idioma__span">cambiar idioma</span>
                     </div>
-
                 </div>
 
-                
-            </nav>
-                
+            </div>
+
+
+        </nav>
+
     </aside>
 
     <!-- MAIN -->
@@ -121,9 +175,10 @@
         <section class="hero" id="hero">
             <div class="hero__contenedor">
                 <div class="hero__saludo">
-                    <h1 class="hero__titulo" id="titulo-saludo"  data-section="hero" data-value="heroTitulo">Hi! 👋🏻 I'm Sofi<span class="span__dark"
-                            id="span-titulo">Dev</span> </h1>
-                    <h2 class="hero__subtitulo" id="subtitulo"  data-section="hero" data-value="heroSubtitulo">Frontend Developer in Mexico </h2>
+                    <h1 class="hero__titulo" id="titulo-saludo" data-section="hero" data-value="heroTitulo">Hi! 👋🏻 I'm
+                        Sofi<span class="span__dark" id="span-titulo">Dev</span> </h1>
+                    <h2 class="hero__subtitulo" id="subtitulo" data-section="hero" data-value="heroSubtitulo">Frontend
+                        Developer in Mexico </h2>
                 </div>
                 <div class="side__container">
                     <div class="side__profile" id="profile-pic">
@@ -252,26 +307,33 @@
                         </div>
                         <div class="skills__parrafos">
                             <span class="textos__parrafo" data-section="skills" data-value="skillsParrafo">
-                                Currently studying at The Project </span><a class="textos__link textos__parrafo" id="link-oracle"
-                                    href="https://www.oracle.com/mx/education/oracle-next-education/" target="_blank"
-                                    rel="nofollow noopener noreferrer">"One Oracle Next Education" </a> <span class="textos__parrafo"data-section="skills" data-value="skillsSpan1">and</span>  <a
-                                    class="textos__link textos__parrafo" id="link-platzi" href="https://platzi.com/p/SofiDev/"
-                                    target="_blank" rel="nofollow noreferrer noopener">Platzi.</a><p class="textos__parrafo" data-section="skills" data-value="skillsParrafo2"> I also have a strong
+                                Currently studying at The Project </span><a class="textos__link textos__parrafo"
+                                id="link-oracle" href="https://www.oracle.com/mx/education/oracle-next-education/"
+                                target="_blank" rel="nofollow noopener noreferrer">"One Oracle Next Education" </a>
+                            <span class="textos__parrafo" data-section="skills" data-value="skillsSpan1">and</span> <a
+                                class="textos__link textos__parrafo" id="link-platzi"
+                                href="https://platzi.com/p/SofiDev/" target="_blank"
+                                rel="nofollow noreferrer noopener">Platzi.</a>
+                            <p class="textos__parrafo" data-section="skills" data-value="skillsParrafo2"> I also have a
+                                strong
                                 foundation in HTML5, CSS3, and JavaScript, currently working on improving my skills in
                                 Vanilla JavaScript and React.
                             </p>
-                            <p class="textos__parrafo"  data-section="skills" data-value="skillsParrafo3">
-                                With over five years of experience in content management platforms (CMS) such as WordPress, Elementor, WooCommerce, and LMS like Learndash. I also excel in SEO writing, graphic design, and the Adobe Suite.
+                            <p class="textos__parrafo" data-section="skills" data-value="skillsParrafo3">
+                                With over five years of experience in content management platforms (CMS) such as
+                                WordPress, Elementor, WooCommerce, and LMS like Learndash. I also excel in SEO writing,
+                                graphic design, and the Adobe Suite.
                             </p>
                         </div>
                     </div>
                     <div class="skills__imagen__side"><img src="./assets/img/IAselfie.webp" alt=""></div>
                 </div>
                 <div class="skills__descargar">
-                    <a class="link__boton" href="./assets/documents/Angela_Sofía_Osorio_García_CV_Forntend.pdf" download>
-                        <button class="boton titulo__dark"> <span data-section="skills" data-value="skillsBtn">Download CV</span> <img
-                                class="skills__descargar__icono icono__boton" src="./assets/svg/generate-pdf.svg"
-                                alt="download button"> </button>
+                    <a class="link__boton" href="./assets/documents/Angela_Sofía_Osorio_García_CV_Forntend.pdf"
+                        download>
+                        <button class="boton titulo__dark"> <span data-section="skills" data-value="skillsBtn">Download
+                                CV</span> <img class="skills__descargar__icono icono__boton"
+                                src="./assets/svg/generate-pdf.svg" alt="download button"> </button>
                     </a>
                 </div>
 
@@ -520,8 +582,8 @@
         <!-- Acerca de Mi -->
         <section class="acerca" id="aboutMe">
             <div class="acerca__container">
-                <h2 class="acerca__titulo" id="acercaDeTitulo" data-section="acercade" data-value="acercadeTitulo">Who is Sofi <span class="span__dark" 
-                        id="span-titulo2"> Dev</span>? </h2>
+                <h2 class="acerca__titulo" id="acercaDeTitulo" data-section="acercade" data-value="acercadeTitulo">Who
+                    is Sofi <span class="span__dark" id="span-titulo2"> Dev</span>? </h2>
 
                 <div class="acerca__caja-cristal caja__dark" id="caja-cristal">
                     <div class="terminal_toolbar">
@@ -546,7 +608,8 @@
                             What <span class="acerca__span span__dark">sets me apart?</span>
                         </h3>
                         <p class="acerca__texto contenido" data-section="acercade" data-value="acercadeParrafo2">
-                            I genuinely <span class="span__dark">love what I do! 💙</span> I believe that blending creativity and code
+                            I genuinely <span class="span__dark">love what I do! 💙</span> I believe that blending
+                            creativity and code
                             can create magical user experiences. Let's collaborate and build something amazing together.
                             Get in touch and let the frontend adventures begin!
                         </p>
@@ -555,8 +618,10 @@
                 <div class="acerca__contactar">
                     <a class="link__boton " href="mailto: contact@itssofi.dev" target="_blank"
                         rel="nofollow noreferrer noopener">
-                        <button class="boton titulo__dark"> <span data-section="acercade" data-value="acercadeBtn">Get in touch</span>
-                            <img class="contactar__boton__icono icono__boton" src="./assets/svg/mail (1).svg" alt="mail icon">
+                        <button class="boton titulo__dark"> <span data-section="acercade" data-value="acercadeBtn">Get
+                                in touch</span>
+                            <img class="contactar__boton__icono icono__boton" src="./assets/svg/mail (1).svg"
+                                alt="mail icon">
                         </button>
                     </a>
                 </div>
@@ -574,20 +639,24 @@
                             alt="portada, encriptador de mensajes">
                         <img class="portafolio__img ligth__img" src="./assets/img/Encriptador-mensajes-dark.png"
                             alt="portada, encriptador de mensajes">
-                        <h3 class="portafolio__subtitulo titulo__dark"data-section="portafolio" data-value="encriptadorTitulo">Message Encryptor</h3>
+                        <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio"
+                            data-value="encriptadorTitulo">Message Encryptor</h3>
                     </div>
                     <div class="portafolio__cara faceB caja__dark">
-                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio" data-value="ecriptadorParrafo">Message Encryptor for the first Alura Latam
+                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio"
+                            data-value="ecriptadorParrafo">Message Encryptor for the first Alura Latam
                             Challenge: Programming Logic.</p>
                         <div class="portafolio__botobnes">
                             <a href="https://sofidevo.github.io/encriptador-mensajes/" target="_blank"
                                 rel="nofollow noreferrer noopener">
-                                <button class="portafolio__btn boton titulo__dark" class="portafolio__btn "> <span data-section="portafolio" data-value="encriptadorDemo">View
-                                    Demo</span></button>
+                                <button class="portafolio__btn boton titulo__dark" class="portafolio__btn "> <span
+                                        data-section="portafolio" data-value="encriptadorDemo">View
+                                        Demo</span></button>
                             </a>
                             <a href="https://github.com/SofiDevO/encriptador-mensajes" target="_blank"
                                 rel="nofollow noreferrer noopener">
-                                <button class="portafolio__btn boton titulo__dark"data-section="portafolio" data-value="encriptadorrepo">View Repo </button>
+                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio"
+                                    data-value="encriptadorrepo">View Repo </button>
                             </a>
                         </div>
                     </div>
@@ -597,18 +666,22 @@
                     <div class="portafolio__cara faceA">
                         <img class="portafolio__img vsc__img" src="./assets/img/Vscode-theme.png"
                             alt="Portada, Vscode-theme">
-                        <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio2" data-value="vscTitulo">Vs Code Theme</h3>
+                        <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio2"
+                            data-value="vscTitulo">Vs Code Theme</h3>
                     </div>
                     <div class="portafolio__cara faceB caja__dark">
-                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio2" data-value="vscParrafo"> I created my own Visual Studio Code Theme.</p>
+                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio2"
+                            data-value="vscParrafo"> I created my own Visual Studio Code Theme.</p>
                         <div class="portafolio__botobnes">
                             <a href="https://marketplace.visualstudio.com/items?itemName=SofiDev.sofidev"
                                 target="_blank" rel="nofollow noopener noreferrer">
-                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio2" data-value="vscDwnl"> Download Theme</button>
+                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio2"
+                                    data-value="vscDwnl"> Download Theme</button>
                             </a>
                             <a href="https://github.com/SofiDevO/dark-purple.git" target="_blank"
                                 rel="nofollow noopener noreferrer">
-                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio2" data-value="vscRepo">View Repo</button>
+                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio2"
+                                    data-value="vscRepo">View Repo</button>
                             </a>
                         </div>
                     </div>
@@ -617,13 +690,17 @@
                     <div class="portafolio__cara faceA">
                         <img class="portafolio__img vsc__img" src="./assets/img/portada-portafolio.png"
                             alt="Portada, Vscode-theme">
-                        <h3 class="portafolio__subtitulo titulo__dark"  data-section="portafolio3" data-value="miPortafolioTitulo">Portfolio</h3>
+                        <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio3"
+                            data-value="miPortafolioTitulo">Portfolio</h3>
                     </div>
                     <div class="portafolio__cara faceB caja__dark">
-                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio3" data-value="portafolioParrafo"> Just my Portfolio repository in GitHub.</p>
+                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio3"
+                            data-value="portafolioParrafo"> Just my Portfolio repository in GitHub.</p>
                         <div class="portafolio__botobnes">
-                            <a href="https://github.com/SofiDevO/portafolio-sofidev" target="_blank" rel="nofollow noopener noreferrer">
-                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio3" data-value="portafolioRepo">View Repo</button>
+                            <a href="https://github.com/SofiDevO/portafolio-sofidev" target="_blank"
+                                rel="nofollow noopener noreferrer">
+                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio3"
+                                    data-value="portafolioRepo">View Repo</button>
                             </a>
                         </div>
                     </div>
@@ -639,32 +716,38 @@
 
                 <form class="formulario__contacto">
                     <div class="input-container ">
-                        <label class="titulo__dark" for="name"  data-section="contact" data-value="contactName">Name</label>
+                        <label class="titulo__dark" for="name" data-section="contact"
+                            data-value="contactName">Name</label>
                         <input class="input text__boxes" type="text" name="name" placeholder="Your name"
                             title="Only letters and blank spaces are accepted" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
                             required data-type="nombre">
-                            <span class="contact-form-span none" data-span="error">This field is mandatory</span>
+                        <span class="contact-form-span none" data-span="error">This field is mandatory</span>
                     </div>
 
                     <div class="input-container formulario__inputs">
-                        <label class="input-label titulo__dark" for="email"  data-section="contact" data-value="contactEmail">Email</label>
-                        <input name="email" id="email" class="input" type="email" placeholder="Email" title="Invalid email" required data-type="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                        <label class="input-label titulo__dark" for="email" data-section="contact"
+                            data-value="contactEmail">Email</label>
+                        <input name="email" id="email" class="input" type="email" placeholder="Email"
+                            title="Invalid email" required data-type="email"
+                            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
                         <span class="contact-form-span none" data-span="error"> This field is mandatory</span>
                     </div>
-                        
+
 
                     <div class="input-container formulario__inputs ">
-                        <label class="titulo__dark" for="mensaje"  data-section="contact" data-value="contactMensaje">Message</label>
-                        <textarea  class="text__boxes" name="mensaje" cols="50" rows="7" 
-                            data-pattern="^.{1,255}$"  data-type="mensaje" placeholder="Your message" required title="Message cannot exceed 255 characters"></textarea>
-                            <span class="contact-form-span none" data-span="error">This field is mandatory</span>
+                        <label class="titulo__dark" for="mensaje" data-section="contact"
+                            data-value="contactMensaje">Message</label>
+                        <textarea class="text__boxes" name="mensaje" cols="50" rows="7" data-pattern="^.{1,255}$"
+                            data-type="mensaje" placeholder="Your message" required
+                            title="Message cannot exceed 255 characters"></textarea>
+                        <span class="contact-form-span none" data-span="error">This field is mandatory</span>
                     </div>
-                    <input class="formulario__submit boton submit  titulo__dark" type="submit" value="Send"> 
+                    <input class="formulario__submit boton submit  titulo__dark" type="submit" value="Send">
                 </form>
                 <!-- Loader -->
                 <div class="contact_form_loader none">
                     <img src="./assets/svg/three-dots.svg" alt="Cargando">
-                </div> 
+                </div>
                 <div class="contact__div__form__response none">
                     <p>Los datos han sido enviados</p>
                 </div>
@@ -761,7 +844,7 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="foooter__cajas">
-                <a class="footer__link " href="index.html">
+                <a class="footer__link " href="/index.html">
                     <p class="footer__logo logo__dark" id="logo">Sofi<span class="span__dark" id="span"> Dev</span></p>
                 </a>
             </div>
@@ -798,4 +881,5 @@
 </body>
 
 <script src="./js/modules.js" type="module" defer></script>
+<script src="./js/language.js" defer></script>
 </html>

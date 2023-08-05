@@ -18,18 +18,30 @@ const changeLanguage = async (language) =>{
     for (const textToChange of textsToChange){
         const section = textToChange.dataset.section;
         const value = textToChange.dataset.value;
-       
         textToChange.innerHTML=texts[section][value];
     }
 }
 
-
-/* Ocultar iconos */
 iconEn.style.display = 'none'; 
 
-export default  toogleLanguage.addEventListener('click',(e)=>{
+ toogleLanguage.addEventListener('click',(e)=>{
     changeLanguage(e.target.parentElement.dataset.language);
 });
+
+
+/* menu hamburguesa */
+iconMobileEn.style.display = 'none'; 
+
+toogleLanguageMobile.addEventListener('click',(e)=>{
+    changeLanguage(e.target.parentElement.dataset.language);
+});
+
+
+
+
+
+/* Ocultar iconos */
+
 
 iconEn.addEventListener('click',()=>{
     iconEs.style.display = 'flex';
@@ -39,13 +51,6 @@ iconEs.addEventListener('click',()=>{
     iconEn.style.display = 'flex';
     iconEs.style.display = 'none';
 });
-
-/* menu hamburguesa */
-iconMobileEn.style.display = 'none'; 
-toogleLanguageMobile.addEventListener('click',(e)=>{
-    changeLanguage(e.target.parentElement.dataset.language);
-});
-
 iconMobileEn.addEventListener('click',()=>{
     iconMobileEs.style.display = 'flex';
     iconMobileEn.style.display = 'none';
@@ -54,10 +59,6 @@ iconMobileEs.addEventListener('click',()=>{
     iconMobileEn.style.display = 'flex';
     iconMobileEs.style.display = 'none';
 });
-
-
-
-
 
 
 

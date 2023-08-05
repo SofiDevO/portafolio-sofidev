@@ -4,10 +4,8 @@ const d = document;
 
 let darkModeState = false;
 
-const button = d.getElementById("toggle-darkmode");
-const buttonligth = d.getElementById("toggle-ligthmode");
-const buttonHamburger = d.getElementById("toggle-darkmodeHamburger");
-const buttonligthHamburger = d.getElementById("toggle-ligthmodeHamburger");
+const toogleDarkMode = d.querySelectorAll("[data-toogle]");
+
 
 // MediaQueryList object
 const useDark = window.matchMedia("(prefers-color-scheme: dark)");
@@ -15,8 +13,21 @@ const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 // Toggles the "dark-mode" class
 export default function toggleDarkMode(state) {
   document.documentElement.classList.toggle("dark-mode", state);
-  darkModeState = state;  
-}
+  darkModeState = state; 
+  if(document.documentElement.classList.contains("dark-mode")){
+    toogleDarkMode.forEach(darkMode => {
+      darkMode.classList.remove("fa-moon");
+      darkMode.classList.add("fa-sun");
+    });
+  }else{
+    toogleDarkMode.forEach(darkMode => {
+      darkMode.classList.remove("fa-sun");
+      darkMode.classList.add("fa-moon");
+    });
+  } 
+
+} 
+
 
 // Sets localStorage state
 function setDarkModeLocalStorage(state) {
@@ -32,29 +43,16 @@ toggleDarkMode(localStorage.getItem("dark-mode") == "true");
 useDark.addListener((evt) => toggleDarkMode(evt.matches));
 
 // Toggles the "dark-mode" class on click and sets localStorage state
-button.addEventListener("click", () => {
-  darkModeState = !darkModeState;
 
-  toggleDarkMode(darkModeState);
-  setDarkModeLocalStorage(darkModeState);
+
+
+toogleDarkMode.forEach(toogle => {
+  toogle.addEventListener("click", (event) => {
+    darkModeState = !darkModeState;
+  
+    toggleDarkMode(darkModeState);
+    setDarkModeLocalStorage(darkModeState);
+  });
 });
 
-buttonligth.addEventListener("click", () => {
-  darkModeState = !darkModeState;
 
-  toggleDarkMode(darkModeState);
-  setDarkModeLocalStorage(darkModeState);
-});
-buttonHamburger.addEventListener("click", () => {
-  darkModeState = !darkModeState;
-
-  toggleDarkMode(darkModeState);
-  setDarkModeLocalStorage(darkModeState);
-});
-
-buttonligthHamburger.addEventListener("click", () => {
-  darkModeState = !darkModeState;
-
-  toggleDarkMode(darkModeState);
-  setDarkModeLocalStorage(darkModeState);
-});

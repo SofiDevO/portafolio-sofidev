@@ -23,7 +23,7 @@ function contactFormValidation(){
     const $form = d.querySelector(".formulario__contacto"),
     $inputs = d.querySelectorAll(".formulario__contacto [required"); 
     
-    console.log($inputs);
+
     $inputs.forEach((input) =>{
         const $span = d.createElement("span");
         $span.id = input.name;
@@ -37,7 +37,7 @@ function contactFormValidation(){
             let $input = e.target,
             pattern = $input.pattern || $input.dataset.pattern;
             
-           // console.log($input, pattern);
+
             if(pattern){
                 let regex = new RegExp(pattern);
                 return !regex.exec($input.value)

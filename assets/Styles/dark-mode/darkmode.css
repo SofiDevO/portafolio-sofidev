@@ -1,7 +1,7 @@
 .dark-mode body{
     background: rgba(0, 0, 0, 0.783);
     color: rgb(238, 235, 235);
-    transition: all 0.1s ease-out;
+    transition: all 0.4s ease-out;
     z-index: 10;
         
 
@@ -23,12 +23,12 @@
 
     
 .dark-mode .span__dark {
-    transition: .5s ease-in;
+    transition: .3s ease-in;
     color: rgba(0,212,255,1);
     filter: drop-shadow(0 0 11px  rgba(0,212,255,1));
 } 
 .dark-mode .acerca__nombre span {
-    transition: .5s ease-in;
+    transition: .3s ease-in;
     color: rgba(0,212,255,1);
     filter: drop-shadow(0 0 11px  rgba(0,212,255,1));
 } 
@@ -36,22 +36,19 @@
     color: rgba(0,212,255,1);
 }
     
-.dark-mode  .rayo-lleno{
+.dark-mode  .dark-mode__icon{
     align-items: center;
-    padding: 20px 1px;
-    width: 45px;
+    
     cursor: pointer;
     display: block;
-    filter: invert(100%) sepia(22%) saturate(7443%) hue-rotate(110deg) brightness(91%) contrast(101%) drop-shadow(0 0 12px  rgba(0,212,255,1));
+    filter: invert(0%)sepia(80%) saturate(300%) hue-rotate(110deg) brightness(91%) contrast(101%) drop-shadow(0 0 12px  rgba(0,212,255,1));
+    transition: .2s ease-in-out;
 }
 
-.dark-mode .dark-mode__icon:hover{
-    transform: scale(1.3);
+.dark-mode .fa-sun{
+    font-size: 22px;
 }
 
-.dark-mode .rayo-vacio{
-    display: none;
-}
     
 /* ELEMENTOS DEL MENU HAMBURGUESA */
 .dark-mode .hamburger-inner{
@@ -109,7 +106,7 @@
 .dark-mode  .hero__titulo span{
     color: rgba(0,212,255,1);
     filter: drop-shadow(0 0 11px  rgba(0,212,255,1));
-    transition: 3s ease-in-out;
+    transition: 2.5s ease-in-out;
 }
     
 .dark-mode .hero__subtitulo{
@@ -122,7 +119,7 @@
     animation:  slideup 0.8s ease forwards;
     position: relative;
     filter: drop-shadow(2px -5px 16px #D608A9);
-    transition: 2s ease-in-out;
+    transition: 3s ease-in-out;
 }
 
 .dark-mode .img__ligth{
@@ -257,26 +254,6 @@
     .dark-mode .img__dark{
         width: 285px;
     }
-    .dark-mode  .rayo-lleno{
-        display: flex;
-        font-size: 38px;
-        align-items: center;
-        padding: 20px 1px;
-        width: 35px;
-        margin-left: -67px;
-        filter: invert(100%) sepia(50%) saturate(3042%) hue-rotate(148deg) brightness(104%) contrast(113%)drop-shadow(rgb(0, 0, 0) 0px 0px 9px);
-        transition: .3s ease-in-out;
-    }
-
-   
-
-    .dark-mode .dark-mode__icon:hover{
-        transform: scale(1.3);
-        cursor: default;
-    }
-
-
-
     .dark-mode .idioma__icon-desktop{
         filter: invert(100%) sepia(22%) saturate(7443%) hue-rotate(110deg) brightness(91%) contrast(101%) drop-shadow(0 0 12px  rgba(0,212,255,1));
     }
@@ -288,7 +265,6 @@
         filter: invert(0%) sepia(22%) saturate(7443%) hue-rotate(110deg) brightness(91%) contrast(101%) drop-shadow(0 0 12px  rgba(0,212,255,1));
     }
     .dark-mode  .tooltip__box{
-        
         color: var(--seccond-color);
         background: rgba(9, 9, 9, 0.435);
         box-shadow: 0 8px 32px 0 rgba(13, 19, 100, 0.277);
@@ -296,8 +272,8 @@
         -webkit-backdrop-filter: blur( 19px );
         border-radius: 10px;
         border: 1px solid rgba(0, 255, 234, 0.626);
-       
     }
+    
     
     .dark-mode .img__dark{
          width: 285px;
@@ -331,6 +307,10 @@
         justify-content: space-evenly;
         margin: 0;
         margin-top: 77px;
+    }
+    .dark-mode .fa-sun{
+        font-size: 28px;
+
     }
 }
 
