@@ -38,16 +38,22 @@
     
 .dark-mode  .dark-mode__icon{
     align-items: center;
-    
     cursor: pointer;
     display: block;
     filter: invert(0%)sepia(80%) saturate(300%) hue-rotate(110deg) brightness(91%) contrast(101%) drop-shadow(0 0 12px  rgba(0,212,255,1));
     transition: .2s ease-in-out;
 }
-
-.dark-mode .fa-sun{
-    font-size: 22px;
+.dark-mode .bi-lightning-charge-fill{
+    font-size: 2rem;
+    filter: invert(0%)sepia(80%) saturate(300%) hue-rotate(110deg) brightness(91%) contrast(101%) drop-shadow(0 0 12px  rgba(0,212,255,1));
+    cursor: pointer;
 }
+.dark-mode  .desktop-rayo{
+    font-size: 1.5rem;
+    filter: invert(0%)sepia(80%) saturate(300%) hue-rotate(110deg) brightness(91%) contrast(101%) drop-shadow(0 0 12px  rgba(0,212,255,1));
+}
+
+
 
     
 /* ELEMENTOS DEL MENU HAMBURGUESA */
@@ -79,25 +85,23 @@
     
     
     /* ELEMNTOS DEL HERO */
-    
-.dark-mode  .hero{
-    background: transparent /* background: linear-gradient(0deg, rgba(18, 0, 42, 0.752) 20%, rgba(7, 7, 7, 0.786)61%); */;
-    height: 793px;
-}
+
+    .dark-mode .hero {
+        background: transparent /* background: linear-gradient(0deg, rgba(18, 0, 42, 0.752) 20%, rgba(7, 7, 7, 0.786)61%); */;
+        height: 870px;
+        justify-content: flex-end;
+    }    
+
 .dark-mode .hero__contenedor{
     display: grid;
-    height: 614px;
-    margin-top: 48px;
+    height: 814px;
+    margin-top: -22px;
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: space-evenly;
 }
 
 
-
-
-
-    
 .dark-mode  .hero__titulo{
     color: white;
 }
@@ -112,7 +116,9 @@
 .dark-mode .hero__subtitulo{
     color:white;
 }
-    
+.dark-mode .img__ligth{
+    display: none;
+} 
 .dark-mode .img__dark{
     display: block;
     width: 200px;
@@ -121,17 +127,19 @@
     filter: drop-shadow(2px -5px 16px #D608A9);
     transition: 3s ease-in-out;
 }
-
-.dark-mode .img__ligth{
-    display: none;
-}
-    
 .dark-mode .icono__dark{
     filter: invert(100%) saturate(0%) drop-shadow(0 0 10px #5cb5ac);
 }
 .dark-mode .youtube{
     filter:invert(94%) sepia(97%) saturate(0%) hue-rotate(348deg) brightness(102%) contrast(102%) drop-shadow(5px 5px 10px #76FFC3);
 }
+
+
+
+
+/* Carrusel */
+
+/* icono terminal */
 .dark-mode .terminal {
     filter: invert(100%) drop-shadow(-1px 2px 4px #76FFC3);
 }
@@ -146,9 +154,7 @@
 
 }
 
-    
-    
-     /* SECCION ACERCA DE */
+/* SECCION ACERCA DE */
     
 .dark-mode .titulo__dark{
     color: rgba(0,212,255,1);
@@ -273,11 +279,6 @@
         border-radius: 10px;
         border: 1px solid rgba(0, 255, 234, 0.626);
     }
-    
-    
-    .dark-mode .img__dark{
-         width: 285px;
-    }
     .dark-mode .hero__contenedor{
         display: flex;
         height: auto;
@@ -293,6 +294,9 @@
 }
 
 @media (min-width:1200px){
+    .dark-mode  .hero{
+        height: 793px;
+        justify-content: center;    }
     .dark-mode .img__dark{
          width: 340px;
      }
@@ -308,9 +312,10 @@
         margin: 0;
         margin-top: 77px;
     }
-    .dark-mode .fa-sun{
-        font-size: 28px;
 
+    .dark-mode .bi-lightning-charge-fill{
+        font-size: 28px;
     }
+
 }
 

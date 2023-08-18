@@ -16,13 +16,13 @@ export default function toggleDarkMode(state) {
   darkModeState = state; 
   if(document.documentElement.classList.contains("dark-mode")){
     toogleDarkMode.forEach(darkMode => {
-      darkMode.classList.remove("fa-moon");
-      darkMode.classList.add("fa-sun");
+      darkMode.classList.remove("bi-lightning-charge");
+      darkMode.classList.add("bi-lightning-charge-fill");
     });
   }else{
     toogleDarkMode.forEach(darkMode => {
-      darkMode.classList.remove("fa-sun");
-      darkMode.classList.add("fa-moon");
+      darkMode.classList.remove("bi-lightning-charge-fill");
+      darkMode.classList.add("bi-lightning-charge");
     });
   } 
 

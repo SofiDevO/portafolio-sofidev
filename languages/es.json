@@ -11,10 +11,10 @@
     },
     "skills":{
         "skillsTitulo":"Habilidades",
-        "skillsParrafo": "Actualmente estudiando en el Proyecto",
+        "skillsParrafo": "Estudiando en el Proyecto",
         "skillsSpan1": "y",
-        "skillsParrafo2": "También tengo una base sólida en HTML5, CSS3 y JavaScript, actualmente estoy trabajando en mejorar mis habilidades en Vanilla JavaScript y React.",
-        "skillsParrafo3":"Con más de cinco años de experiencia en plataformas de gestión de contenido (CMS) como WordPress, Elementor, WooCommerce y LMS como Learndash. También destaco en escritura SEO, diseño gráfico y la paquetería Adobe.",
+        "skillsParrafo2": "También tengo una base sólida en HTML5, CSS3, JavaScript y React.",
+        "skillsParrafo3":"Experiencia en plataformas de gestión de contenido (CMS) como WordPress usando maquetadores como  Elementor, WooCommerce y LMS como Learndash. También destaco en escritura SEO, diseño gráfico y la paquetería Adobe.",
         "skillsBtn":"Descargar CV"
     },
     "tools":{
