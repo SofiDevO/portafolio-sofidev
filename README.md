@@ -1,5 +1,7 @@
 # Proyecto portafolio 
-Project of the first Frontend challenge, by Alura LATAM and Oracle
+
+
+### Project of the first Frontend challenge, by Alura LATAM and Oracle
 
 
 ![image](https://github.com/SofiDevO/portafolio-sofidev/assets/102200061/d634efdb-dd61-4d38-a5ae-912406407783)
