@@ -28,22 +28,22 @@
         "acercadeBtn": "Contact Me"
     },
     "portafolio": {
-        "portafolioTitulo": "Portfolio",
-        "encriptadorTitulo": "Message Encryptor",
-        "ecriptadorParrafo": "Encryptor for the first Alura Latam Challenge: Programming Logic.",
-        "encriptadorDemo": "View Demo",
-        "encriptadorrepo": "View Repository"
+        "portafolioTitulo": "React ORG",
+        "parrafo": "React application to manage your team members.",
+        "demo": "View Demo",
+        "repo": "View Repository"
     },
     "portafolio2": {
-        "vscTitulo": "Vs Code Theme",
-        "vscParrafo": "Created my own Visual Studio Code theme.",
-        "vscDwnl": "Download Theme",
-        "vscRepo": "View Repository"
+        "portafolioTitulo": "Message Encryptor ",
+        "parrafo": "Message Encryptor for the first Alura Latam Challenge: Programming Logic.",
+        "demo": "View Demo",
+        "repo": "View Repository"
     },
     "portafolio3": {
-        "miPortafolioTitulo": "Portfolio",
-        "portafolioParrafo": "Just the repository of my portfolio on GitHub.",
-        "portafolioRepo": "View Repository"
+        "portafolioTitulo": "Portfolio",
+        "parrafo": "Just the repository of my portfolio on GitHub.",
+        "demo": "View Demo",
+        "repo": "View Repository"
     },
     "contact": {
         "contactTitulo": "Contact",

@@ -1,14 +1,14 @@
 .tools{
     display: flex;
     flex-direction: column;
-    height: 34vh;
+    height: 40vh;
     justify-content: flex-end;
     margin-top: 35px;
 
 }
 .tools__titulo{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -89,7 +89,7 @@
 @media (min-width:678px){
     .tools__titulo{
         font-family: 'Montserrat', sans-serif;
-        font-size: 3.3rem;
+        font-size: 4rem;
     }
     .tools{
         height: unset;
@@ -158,7 +158,7 @@
     }
     .tools__titulo{
         font-family: 'Montserrat', sans-serif;
-        font-size: 3.5rem;
+        font-size: 4rem;
         margin-top: 0;
     }
     .slider{

@@ -29,22 +29,22 @@
         
     },
     "portafolio":{
-        "portafolioTitulo": "Portafolio",
-        "encriptadorTitulo":"Encriptador de mensajes",
-        "ecriptadorParrafo":"Encriptador para el primer Desafío Alura Latam: Lógica de Programación.",
-        "encriptadorDemo":"Ver Demo",
-        "encriptadorrepo": "Ver repositorio"
+        "portafolioTitulo":"React ORG",
+        "parrafo":"Aplicaón de react para administrar a los miembros de tu empresa",
+        "demo":"Ver Demo",
+        "repo": "Ver Repo"
     },
     "portafolio2":{
-        "vscTitulo":"Tema para Vs Code",
-        "vscParrafo":"Cree mi propio tema de Visual Stuido Code.",
-        "vscDwnl":"Descargar Tema",
-        "vscRepo":"Ver repositorio"
+        "portafolioTitulo":"Encriptador de Mensajes",
+        "parrafo":"Encriptador de mensajes del primer desafío de Lógica de programación de Alura Latam",
+        "demo":"Ver Demo",
+        "repo":"Ver Repo"
     },
     "portafolio3":{
-        "miPortafolioTitulo":"Portafolio",
-        "portafolioParrafo":"Solo el repositorio de mi portafolio en GitHub.",
-        "portafolioRepo":"Ver repositorio"
+        "portafolioTitulo":"Portafolio",
+        "parrafo":"Solo el repositorio de mi portafolio en GitHub.",
+        "demo":"Ver Demo",
+        "repo":"Ver Repo"
     },
     "contact":{
         "contactTitulo":"Contacto",

@@ -1,8 +1,12 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
+
+html{
+  font-size: 62.5%;
+}
+  
 
 :root{
     --main-color: #181818;
@@ -43,7 +47,7 @@ ul{
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .titulo{

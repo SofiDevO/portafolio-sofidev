@@ -37,7 +37,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Nanum+Gothic+Coding&display=swap"
         rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
@@ -56,11 +56,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
 
     <!-- CSS ESTYLES -->
     <link rel="stylesheet" href="./assets/Styles/settings.css">
     <link rel="stylesheet" href="./assets/Styles/header.css">
+    <link rel="stylesheet" href="./assets/Styles/menuFlotante/toTop.css">
+    <link rel="stylesheet" href="./assets/Styles/menuFlotante/iconosFlotantes.css">
     <link rel="stylesheet" href="./assets/Styles/hero/hero.css">
     <link rel="stylesheet" href="./assets/Styles/hero/social-icon.css">
     <link rel="stylesheet" href="./assets/Styles/divider.css">
@@ -78,8 +82,8 @@
 </head>
 
 <body>
-    <section class="header" id="header">
-        <div class="header__container">
+    <header class="header" id="header">
+        
             <a class="header__link " href="/index.html">
                 <p class="header__logo logo__dark" id="logo">Sofi<span class="span__dark" id="span">Dev</span></p>
             </a>
@@ -87,7 +91,7 @@
             <!-- Menu Desktop -->
             <nav class="menu-desktop">
                 <ul class="menu__contenido">
-                    <li class="menu__list"><a class="menu__link" href="#skills" data-section="menu"
+                    <li class="menu__list "><a class="menu__link" href="#skills" data-section="menu"
                             data-value="skills">Skills</a></li>
                     <li class="menu__list"><a class="menu__link" href="#aboutMe" data-section="menu"
                             data-value="aboutMe">About me</a></li>
@@ -100,28 +104,12 @@
                             target="_blank">Blog</a>
                     </li>
                 </ul>
-            </nav>
-
-            <div class="menu__icons__desktop">
-                <div id="idoma_icons" class="iconos__cabecera">
-                    <div class="idioma-desktop english" data-language="en">
-                        <img class="idioma__icon-desktop" src="./assets/svg/esri.svg" alt="change language"
-                            data-type="toogleLanguage">
-                        <span class="tooltip__box">Cambiar idioma</span>
-                    </div>
-                    <div class="idioma-desktop espanol" data-language="es">
-                        <img class="idioma__icon-desktop" src="./assets/svg/esri.svg" alt="change language"
-                            data-type="toogleLanguage">
-                        <span class="tooltip__box">Change language</span>
-                    </div>
-                </div>
-                <div id="dark-mode_container" class="dark-mode_container">
-                    <i class="bi bi-lightning-charge desktop-rayo" data-toogle></i>
-                </div>
-            </div>
+            
+        </header>
 
 
-    </section>
+
+
 
 
 
@@ -169,7 +157,31 @@
         </nav>
 
     </aside>
-
+    <div class="menu__flotante">
+        <div class="icon__top-container">
+            <div class="to__top" data-menu="float">
+                <a class="to__top-link" href="#">
+                    <i class="bi bi-arrow-up-circle"></i>
+            </div>
+        </div>
+        <div class="menu__icons__desktop">
+            <div id="idoma_icons" class="iconos__cabecera">
+                <div class="idioma-desktop english" data-language="en">
+                    <img class="idioma__icon-desktop" src="./assets/svg/esri.svg" alt="change language"
+                        data-type="toogleLanguage">
+                    <span class="tooltip__box">Cambiar idioma</span>
+                </div>
+                <div class="idioma-desktop espanol" data-language="es">
+                    <img class="idioma__icon-desktop" src="./assets/svg/esri.svg" alt="change language"
+                        data-type="toogleLanguage">
+                    <span class="tooltip__box">Change language</span>
+                </div>
+            </div>
+            <div id="dark-mode_container" class="dark-mode_container">
+                <i class="bi bi-lightning-charge desktop-rayo" data-toogle></i>
+            </div>
+        </div>
+    </div>
     <!-- MAIN -->
     <main>
         <!-- seccion hero  -->
@@ -193,8 +205,9 @@
                             rel="nofollow noreferrer noopener">
                             <img class="social__icon" src="./assets/svg/github-light.svg" alt="GitHub icon">
                         </a>
-                        <a class="social__link alura icono__dark" href="https://app.aluracursos.com/emprega-one/profile/sofidev"
-                            target="_blank" rel="nofollow noreferrer noopener">
+                        <a class="social__link alura icono__dark"
+                            href="https://app.aluracursos.com/emprega-one/profile/sofidev" target="_blank"
+                            rel="nofollow noreferrer noopener">
                             <img class="social__icon" src="./assets/svg/alura.svg" alt="Aluura icon">
                         </a>
 
@@ -231,114 +244,125 @@
 
         <section class="skills " id="skills">
             <h2 class="skills__titulo titulo__dark" data-section="skills" data-value="skillsTitulo">Skills</h2>
-            <div class="skills__cajas ">
 
-                <div class=" skills__caja caja__dark">
-                    <div class="img">
-                        <img class="skills__icono  skills__icono__dark html" src="./assets/svg/file-type-html.svg"
-                            alt="HTML icon">
+            <div class="skills__container">
+                <div class="skills__textos__contenido caja__dark">
+                    <div class="terminal_toolbar">
+                        <div class="butt">
+                            <button class="btn btn-color"></button>
+                            <button class="btn"></button>
+                            <button class="btn"></button>
+                        </div>
+                        <p class="user">sofidev@admin: ~</p>
                     </div>
-                    <div class="skills__texto">
-                        <p class="text head titulo__dark">HTML <br> ✅</p>
+
+                    <div class="skills__parrafos">
+                        <span class="textos__parrafo" data-section="skills" data-value="skillsParrafo">
+                            Studying at The Project </span><a class="textos__link textos__parrafo" id="link-oracle"
+                            href="https://www.oracle.com/mx/education/oracle-next-education/" target="_blank"
+                            rel="nofollow noopener noreferrer">"One Oracle Next Education" </a>
+                        <span class="textos__parrafo" data-section="skills" data-value="skillsSpan1">and</span> <a
+                            class="textos__link textos__parrafo" id="link-platzi" href="https://platzi.com/p/SofiDev/"
+                            target="_blank" rel="nofollow noreferrer noopener">Platzi.</a>
+                        <p class="textos__parrafo" data-section="skills" data-value="skillsParrafo2"> I also have a
+                            strong
+                            foundation in HTML5, CSS3, and JavaScript and React
+                        </p>
+                        <p class="textos__parrafo" data-section="skills" data-value="skillsParrafo3">
+                            Experience in content management platforms (CMS) such as
+                            WordPress with low code tools like Elementor, WooCommerce, and LMS like Learndash. I
+                            also excel in SEO writing,
+                            graphic design, and the Adobe Suite.
+                        </p>
+                        <div class="skills__descargar">
+                            <a class="link__boton" href="./assets/documents/Angela_Sofía_Osorio_García_CV_Forntend.pdf"
+                                download>
+                                <button class="boton titulo__dark"> <span data-section="skills"
+                                        data-value="skillsBtn">Download
+                                        CV</span> <img class="skills__descargar__icono icono__boton"
+                                        src="./assets/svg/generate-pdf.svg" alt="download button"> </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-
-                <div class=" skills__caja caja__dark">
-                    <div class="img">
-                        <img class="skills__icono skills__icono__dark css" src="./assets/svg/css-color.svg"
-                            alt="Css icon">
-                    </div>
-                    <div class="skills__texto">
-                        <p class="text head titulo__dark">CSS <br> ✅</p>
-                    </div>
-                </div>
-
-                <div class=" skills__caja caja__dark">
-                    <div class="img">
-                        <img class="skills__icono skills__icono__dark javascript" src="./assets/svg/javascript-fill.svg"
-                            alt="Javascript icon">
-                    </div>
-                    <div class="skills__texto">
-                        <p class="text head titulo__dark">Javascript <br> ✅</p>
-                    </div>
-                </div>
-
-                <div class=" skills__caja caja__dark">
-                    <div class="img">
-                        <img class="skills__icono skills__icono__dark react" src="./assets/svg/react-dark.svg"
-                            alt="react icon">
-
-                    </div>
-                    <div class="skills__texto">
-                        <p class="text head titulo__dark">React <br>✅</p>
-                    </div>
-                </div>
-
-                <div class=" skills__caja caja__dark">
-                    <div class="img">
-                        <img class="skills__icono skills__icono__dark react" src="./assets/svg/nodejs-dark.svg"
-                            alt="react icon">
-
-                    </div>
-                    <div class="skills__texto">
-                        <p class="text head titulo__dark">NodeJs <br>🌱</p>
-                    </div>
-                </div>
-
-                <div class=" skills__caja caja__dark">
-                    <div class="img">
-                        <img class="skills__icono  wordpress skills__icono__dark" src="./assets/svg/wordpress-icon.svg"
-                            alt="Wordpress icon">
-                    </div>
-                    <div class="skills__texto">
-                        <p class="text head titulo__dark ">Wordpress ✅</p>
-                    </div>
-                </div>
-                <div class="textos">
-
-                    <div class="skills__textos__contenido caja__dark">
-                        <div class="terminal_toolbar">
-                            <div class="butt">
-                                <button class="btn btn-color"></button>
-                                <button class="btn"></button>
-                                <button class="btn"></button>
+                <div class="skills__cards-container">
+                    <div class="skills__cajas ">
+                        <div class=" skills__caja caja__dark">
+                            <div class="img">
+                                <img class="skills__icono  skills__icono__dark html"
+                                    src="./assets/svg/file-type-html.svg" alt="HTML icon">
                             </div>
-                            <p class="user">sofidev@admin: ~</p>
+                            <div class="skills__texto">
+                                <p class="text head titulo__dark">HTML <br> ✅</p>
+                            </div>
                         </div>
-                        <div class="skills__parrafos">
-                            <span class="textos__parrafo" data-section="skills" data-value="skillsParrafo">
-                                Studying at The Project </span><a class="textos__link textos__parrafo" id="link-oracle"
-                                href="https://www.oracle.com/mx/education/oracle-next-education/" target="_blank"
-                                rel="nofollow noopener noreferrer">"One Oracle Next Education" </a>
-                            <span class="textos__parrafo" data-section="skills" data-value="skillsSpan1">and</span> <a
-                                class="textos__link textos__parrafo" id="link-platzi"
-                                href="https://platzi.com/p/SofiDev/" target="_blank"
-                                rel="nofollow noreferrer noopener">Platzi.</a>
-                            <p class="textos__parrafo" data-section="skills" data-value="skillsParrafo2"> I also have a
-                                strong
-                                foundation in HTML5, CSS3, and JavaScript and React
-                            </p>
-                            <p class="textos__parrafo" data-section="skills" data-value="skillsParrafo3">
-                                Experience in content management platforms (CMS) such as
-                                WordPress with low code tools like Elementor, WooCommerce, and LMS like Learndash. I
-                                also excel in SEO writing,
-                                graphic design, and the Adobe Suite.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skills__imagen__side"><img src="./assets/img/IAselfie.webp" alt=""></div>
-                </div>
-                <div class="skills__descargar">
-                    <a class="link__boton" href="./assets/documents/Angela_Sofía_Osorio_García_CV_Forntend.pdf"
-                        download>
-                        <button class="boton titulo__dark"> <span data-section="skills" data-value="skillsBtn">Download
-                                CV</span> <img class="skills__descargar__icono icono__boton"
-                                src="./assets/svg/generate-pdf.svg" alt="download button"> </button>
-                    </a>
-                </div>
 
+                        <div class=" skills__caja caja__dark">
+                            <div class="img">
+                                <img class="skills__icono skills__icono__dark css" src="./assets/svg/css-color.svg"
+                                    alt="Css icon">
+                            </div>
+                            <div class="skills__texto">
+                                <p class="text head titulo__dark">CSS <br> ✅</p>
+                            </div>
+                        </div>
+
+                        <div class=" skills__caja caja__dark">
+                            <div class="img">
+                                <img class="skills__icono skills__icono__dark javascript"
+                                    src="./assets/svg/javascript-fill.svg" alt="Javascript icon">
+                            </div>
+                            <div class="skills__texto">
+                                <p class="text head titulo__dark">Javascript <br> ✅</p>
+                            </div>
+                        </div>
+
+                        <div class=" skills__caja caja__dark">
+                            <div class="img">
+                                <img class="skills__icono skills__icono__dark react" src="./assets/svg/react-dark.svg"
+                                    alt="react icon">
+                            </div>
+                            <div class="skills__texto">
+                                <p class="text head titulo__dark">React <br>✅</p>
+                            </div>
+                        </div>
+
+
+                        <div class=" skills__caja caja__dark">
+                            <div class="img">
+                                <img class="skills__icono skills__icono__dark react" src="./assets/svg/nodejs-dark.svg"
+                                    alt="react icon">
+                            </div>
+                            <div class="skills__texto">
+                                <p class="text head titulo__dark">NodeJs <br>🌱</p>
+                            </div>
+                        </div>
+
+                        <div class=" skills__caja caja__dark">
+                            <div class="img">
+                                <img class="skills__icono  wordpress skills__icono__dark"
+                                    src="./assets/svg/wordpress-icon.svg" alt="Wordpress icon">
+                            </div>
+                            <div class="skills__texto">
+                                <p class="text head titulo__dark ">Wordpress ✅</p>
+                            </div>
+                        </div>
+                        <div class=" skills__caja caja__dark">
+                            <div class="img">
+                                <img class="tools__icono " src="./assets/svg/npm-wordmark.svg" alt="terminal">
+                            </div>
+                            <div class="skills__texto">
+                                <p class="text head titulo__dark ">npm✅</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
+
+
+
         </section>
 
         <section class="tools">
@@ -370,12 +394,7 @@
                             </div>
                             <span class="tools__descripcion titulo__dark">terminal</span>
                         </div>
-                        <div class="tools__grupo">
-                            <div class="tools__caja caja__dark">
-                                <img class="tools__icono terminal" src="./assets/svg/npm-wordmark.svg" alt="terminal">
-                            </div>
-                            <span class="tools__descripcion titulo__dark">npm</span>
-                        </div>
+
                         <div class="tools__grupo">
                             <div class="tools__caja caja__dark">
                                 <img class="tools__icono tool__dark" src="./assets/svg/notion-icon.svg" alt="notion">
@@ -485,12 +504,7 @@
                             </div>
                             <span class="tools__descripcion titulo__dark">terminal</span>
                         </div>
-                        <div class="tools__grupo">
-                            <div class="tools__caja caja__dark">
-                                <img class="tools__icono terminal" src="./assets/svg/npm-wordmark.svg" alt="terminal">
-                            </div>
-                            <span class="tools__descripcion titulo__dark">npm</span>
-                        </div>
+
                         <div class="tools__grupo">
                             <div class="tools__caja caja__dark">
                                 <img class="tools__icono tool__dark" src="./assets/svg/notion-icon.svg" alt="notion">
@@ -629,136 +643,136 @@
 
             </div>
         </section>
+        <!-- Portafolio -->
         <section class="portafolio" id="portafolio">
             <div class="titulo titulo__dark">
                 <h2 data-section="portafolio" data-value="portafolioTitulo">Portfolio</h2>
             </div>
             <div class="portafolio__contenedor">
-                <div class="portafolio__trajeta caja__dark__portafolio">
-                    <div class="portafolio__cara faceA ">
-                        <img class="portafolio__img dark__img" src="./assets/img/Encriptador-mensajes.png"
+                <!-- Cards -->
+                <div class="portafolio__trajeta ">
+                <!-- Face A -->
+                <div class="portafolio__cara faceA ">
+                    <div class="img__container">
+                        <img class="portafolio__img ligth__img" src="./assets/img/portada-react'org.png"
                             alt="portada, encriptador de mensajes">
-                        <img class="portafolio__img ligth__img" src="./assets/img/Encriptador-mensajes-dark.png"
-                            alt="portada, encriptador de mensajes">
-                        <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio"
-                            data-value="encriptadorTitulo">Message Encryptor</h3>
                     </div>
-                    <div class="portafolio__cara faceB caja__dark">
-                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio"
-                            data-value="ecriptadorParrafo">Message Encryptor for the first Alura Latam
+                    <div class="container__info">
+                        <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio"
+                            data-value="portafolioTitulo">React ORG</h3>
+                        <div class="skills__used">
+                            <div class="tecnology">
+                                <i class="fa-brands fa-react fa-bounce" style="color: #6beeff;"></i>
+                            </div>
+                            <div class="tecnology">
+                                <i class="fa-brands fa-square-js" style="color: #ffdb29; font-size: 2rem;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                    <!-- Face B  -->
+                    <div class="portafolio__cara faceB caja__dark caja__dark__portafolio">
+                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio" data-value="parrafo">
+                            React application to manage your team members.</p>
+                        <div class="portafolio__botobnes">
+                            <a href="https://react-org-delta.vercel.app/" target="_blank"
+                                rel="nofollow noreferrer noopener">
+                                <button class="portafolio__btn boton titulo__dark" class="portafolio__btn "> <span
+                                        data-section="portafolio" data-value="demo">View
+                                        Demo</span></button>
+                            </a>
+                            <a href="https://github.com/SofiDevO/react-org" target="_blank"
+                                rel="nofollow noreferrer noopener">
+                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio"
+                                    data-value="repo">View Repo </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio__trajeta ">
+                    <!-- Face A -->
+                    <div class="portafolio__cara faceA ">
+                        <div class="img__container">
+                            <img class="portafolio__img" src="./assets/img/Encriptador-mensajes-dark.png"
+                                alt="portada, encriptador de mensajes">
+                        </div>
+                        <div class="container__info">
+                            <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio2"
+                                data-value="portafolioTitulo">Message Encryptor</h3>
+                            <div class="skills__used">
+                                
+                                <div class="tecnology">
+                                    <i class="fa-brands fa-square-js" style="color: #ffdb29; font-size: 2rem;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Face B  -->
+                    <div class="portafolio__cara faceB caja__dark caja__dark__portafolio">
+                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio2" data-value="parrafo">
+                            Message Encryptor for the first Alura Latam
                             Challenge: Programming Logic.</p>
                         <div class="portafolio__botobnes">
                             <a href="https://sofidevo.github.io/encriptador-mensajes/" target="_blank"
                                 rel="nofollow noreferrer noopener">
                                 <button class="portafolio__btn boton titulo__dark" class="portafolio__btn "> <span
-                                        data-section="portafolio" data-value="encriptadorDemo">View
+                                        data-section="portafolio2" data-value="demo">View
                                         Demo</span></button>
                             </a>
                             <a href="https://github.com/SofiDevO/encriptador-mensajes" target="_blank"
                                 rel="nofollow noreferrer noopener">
-                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio"
-                                    data-value="encriptadorrepo">View Repo </button>
+                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio2"
+                                    data-value="repo">View Repo </button>
                             </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="portafolio__trajeta caja__dark__portafolio">
-                    <div class="portafolio__cara faceA">
-                        <img class="portafolio__img vsc__img" src="./assets/img/Vscode-theme.png"
-                            alt="Portada, Vscode-theme">
-                        <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio2"
-                            data-value="vscTitulo">Vs Code Theme</h3>
-                    </div>
-                    <div class="portafolio__cara faceB caja__dark">
-                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio2"
-                            data-value="vscParrafo"> I created my own Visual Studio Code Theme.</p>
-                        <div class="portafolio__botobnes">
-                            <a href="https://marketplace.visualstudio.com/items?itemName=SofiDev.sofidev"
-                                target="_blank" rel="nofollow noopener noreferrer">
-                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio2"
-                                    data-value="vscDwnl"> Download Theme</button>
-                            </a>
-                            <a href="https://github.com/SofiDevO/dark-purple.git" target="_blank"
-                                rel="nofollow noopener noreferrer">
-                                <button class="portafolio__btn boton titulo__dark" data-section="portafolio2"
-                                    data-value="vscRepo">View Repo</button>
-                            </a>
+                <div class="portafolio__trajeta ">
+                    <!-- Face A -->
+                    <div class="portafolio__cara faceA ">
+                        <div class="img__container">
+                            <img class="portafolio__img ligth__img" src="./assets/img/portada-portafolio.png"
+                                alt="portada, encriptador de mensajes">
+                        </div>
+                        <div class="container__info">
+                            <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio3"
+                                data-value="portafolioTitulo">My Portfolio</h3>
+                            <div class="skills__used">
+                                <div class="tecnology">
+                                    <i class="fa-brands fa-square-js" style="color: #ffdb29; font-size: 2rem;"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="portafolio__trajeta caja__dark__portafolio">
-                    <div class="portafolio__cara faceA">
-                        <img class="portafolio__img vsc__img" src="./assets/img/portada-portafolio.png"
-                            alt="Portada, Vscode-theme">
-                        <h3 class="portafolio__subtitulo titulo__dark" data-section="portafolio3"
-                            data-value="miPortafolioTitulo">Portfolio</h3>
-                    </div>
-                    <div class="portafolio__cara faceB caja__dark">
-                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio3"
-                            data-value="portafolioParrafo"> Just my Portfolio repository in GitHub.</p>
+                    <!-- Face B  -->
+                    <div class="portafolio__cara faceB caja__dark caja__dark__portafolio">
+                        <p class="portafolio__descripcion titulo__dark" data-section="portafolio3" data-value="parrafo">
+                            Just the repository of my portfolio on GitHub.</p>
                         <div class="portafolio__botobnes">
+                            <a href="./index.html" target="_blank" rel="nofollow noreferrer noopener">
+                                <button class="portafolio__btn boton titulo__dark" class="portafolio__btn "> <span
+                                        data-section="portafolio3" data-value="demo">View
+                                        Demo</span></button>
+                            </a>
                             <a href="https://github.com/SofiDevO/portafolio-sofidev" target="_blank"
-                                rel="nofollow noopener noreferrer">
+                                rel="nofollow noreferrer noopener">
                                 <button class="portafolio__btn boton titulo__dark" data-section="portafolio3"
-                                    data-value="portafolioRepo">View Repo</button>
+                                    data-value="repo">View Repo </button>
                             </a>
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
         </section>
-        <section class="formulario" id="formulario">
-            <div class="titulo titulo__dark">
-                <h2 data-section="contact" data-value="contactTitulo">Contact</h2>
-            </div>
-            <div class="formulario__caja caja__dark">
-                <img class="formulario__img" src="./assets/img/vice-vehicle.webp" alt="Ia image portrait">
 
-                <form class="formulario__contacto">
-                    <div class="input-container ">
-                        <label class="titulo__dark" for="name" data-section="contact"
-                            data-value="contactName">Name</label>
-                        <input class="input text__boxes" type="text" name="name" placeholder="Your name"
-                            title="Only letters and blank spaces are accepted" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-                            required data-type="nombre">
-                        <span class="contact-form-span none" data-span="error">This field is mandatory</span>
-                    </div>
-
-                    <div class="input-container formulario__inputs">
-                        <label class="input-label titulo__dark" for="email" data-section="contact"
-                            data-value="contactEmail">Email</label>
-                        <input name="email" id="email" class="input" type="email" placeholder="Email"
-                            title="Invalid email" required data-type="email"
-                            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
-                        <span class="contact-form-span none" data-span="error"> This field is mandatory</span>
-                    </div>
-
-
-                    <div class="input-container formulario__inputs ">
-                        <label class="titulo__dark" for="mensaje" data-section="contact"
-                            data-value="contactMensaje">Message</label>
-                        <textarea class="text__boxes" name="mensaje" cols="50" rows="7" data-pattern="^.{1,255}$"
-                            data-type="mensaje" placeholder="Your message" required
-                            title="Message cannot exceed 255 characters"></textarea>
-                        <span class="contact-form-span none" data-span="error">This field is mandatory</span>
-                    </div>
-                    <input class="formulario__submit boton submit  titulo__dark" type="submit" value="Send">
-                </form>
-                <!-- Loader -->
-                <div class="contact_form_loader none">
-                    <img src="./assets/svg/three-dots.svg" alt="Cargando">
-                </div>
-                <div class="contact__div__form__response none">
-                    <p>Los datos han sido enviados</p>
-                </div>
-            </div>
-        </section>
         <section id="hobbies" class="frase">
             <div class="titulo titulo__dark">
                 <h2>Hobbies</h2>
             </div>
-
             <div class="frase__caja">
                 <div class="card">
                     <div class="titlebar">
@@ -799,7 +813,7 @@
                             </div>
                             <span class="frase__icono__descripcion ">Gym</span>
                         </div>
-
+    
                         <div class="frase__grupo">
                             <div class="frase__icono__caja caja__dark" >
                                 <img class="frase__icono icono__dark boxing" src="./assets/svg/boxing.svg" alt="icono boxing">
@@ -813,7 +827,7 @@
                             </div>
                             <span class="frase__icono__descripcion">Coding</span>
                         </div>
-
+    
                         <div class="frase__grupo">
                             <div class="frase__icono__caja caja__dark" >
                                 <img class="frase__icono icono__dark music" src="./assets/svg/music-note-2-play-20-filled.svg" alt="icono music" >
@@ -823,7 +837,70 @@
                     </div>
                 </div>
             </div>
-        </section>            
+            <!-- Divider -->
+            <div class="wrapper__black">
+                <div class="custom-shape-divider-bottom-1693539436">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>  
+
+        <section class="formulario" id="formulario">
+            <div class="titulo titulo__dark">
+                <h2 data-section="contact" data-value="contactTitulo">Contact</h2>
+            </div>
+            <div class="formulario__container">
+                <div class="formulario__caja caja__dark">
+                    <img class="formulario__img" src="./assets/img/vice-vehicle.webp" alt="Ia image portrait">
+    
+                    <form class="formulario__contacto">
+                        <div class="input-container ">
+                            <label class="titulo__dark" for="name" data-section="contact"
+                                data-value="contactName">Name</label>
+                            <input class="input text__boxes" type="text" name="name" placeholder="Your name"
+                                title="Only letters and blank spaces are accepted" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                                required data-type="nombre">
+                            <span class="contact-form-span none" data-span="error">This field is mandatory</span>
+                        </div>
+    
+                        <div class="input-container formulario__inputs">
+                            <label class="input-label titulo__dark" for="email" data-section="contact"
+                                data-value="contactEmail">Email</label>
+                            <input name="email" id="email" class="input" type="email" placeholder="Email"
+                                title="Invalid email" required data-type="email"
+                                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                            <span class="contact-form-span none" data-span="error"> This field is mandatory</span>
+                        </div>
+    
+    
+                        <div class="input-container formulario__inputs ">
+                            <label class="titulo__dark" for="mensaje" data-section="contact"
+                                data-value="contactMensaje">Message</label>
+                            <textarea class="text__boxes" name="mensaje" cols="50" rows="7" data-pattern="^.{1,255}$"
+                                data-type="mensaje" placeholder="Your message" required
+                                title="Message cannot exceed 255 characters"></textarea>
+                            <span class="contact-form-span none" data-span="error">This field is mandatory</span>
+                        </div>
+                        <input class="formulario__submit boton submit  titulo__dark" type="submit" value="Send">
+                    </form>
+                    <!-- Loader -->
+                    <div class="contact_form_loader none">
+                        <img src="./assets/svg/three-dots.svg" alt="Cargando">
+                    </div>
+                    <div class="contact__div__form__response none">
+                        <p>Los datos han sido enviados</p>
+                    </div>
+                </div>
+    
+                <div class="side__imgIa">
+                    <img class="Ia__img" src="./assets/img/vice-vehicle.webp" alt="Ia image portrait">
+                </div>
+
+            </div>
+        </section>
+
         <div class="background">
             <span></span>
             <span></span>
@@ -881,6 +958,7 @@
     </footer>
 </body>
 
-<script src="./js/modules.js" type="module" defer></script>
-<script src="./js/language.js" defer></script>
+<script src="./modules.js" type="module" defer></script>
+<script src="./controllers/language.js" defer></script>
+
 </html>

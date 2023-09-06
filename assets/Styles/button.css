@@ -1,6 +1,6 @@
 .boton{
     display: flex;
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 82%;
     margin-top: 20px;
     padding: 22px 11px;
@@ -13,12 +13,10 @@
     border: 3px solid rgba(18, 18, 18, 0.743);
     justify-content: space-evenly;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.boton:hover{
-    transform: scale(1.2);
-    border: 3px solid var(--blue);
-}
+
 .link__boton{
     text-decoration: none;
     display: flex;
@@ -28,7 +26,7 @@
 /* Botones terminal */
 .terminal_toolbar {
     display: flex;
-    height: 30px;
+    height: 50px;
     width: 100%;
     align-items: center;
     padding: 0 8px;
@@ -41,6 +39,8 @@
   .butt {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    width: 23%;
   }
   
   .btn {
@@ -49,9 +49,9 @@
     align-items: center;
     padding: 0;
     margin-right: 5px;
-    font-size: 8px;
-    height: 12px;
-    width: 12px;
+    font-size: 1.6rem;
+    height:1.4rem;
+    width: 1.4rem;
     box-sizing: border-box;
     border: none;
     border-radius: 100%;
@@ -79,38 +79,48 @@
 .user {
     color: #d5d0ce;
     margin-left: 6px;
-    font-size: 14px;
+    font-size: 1.5rem;
     line-height: 15px;
+    font-family: "Montserrat", sans-serif;
 }
+
+.skills__parrafos{
+    padding: 1rem;
+}
+
 
 
 
 @media (min-width:768px){
     .boton{
-        display: flex;
-        font-size: 1rem;
-        width: 56%;
-        padding: 28px 8px;
-        align-items: center;
-        border-radius: 40px;
-        justify-content: space-evenly;
-        font-weight: 800;
+    font-size: 1.3rem;
+    width: 50%;
+    padding: 23px 4px;
     }
     
     .boton:hover{
-        transform: scale(1.1);
+        
+        border: 3px solid var(--blue);
     }
     .link__boton{
         text-decoration: none;
         display: flex;
     }
+    .butt {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width:11%;
+    }
+    .user {
+            font-size: 1.9rem;
+        }
+    }
 
 
-}
 @media (min-width:1200px){
     .boton{
         display: flex;
-        font-size: 1rem;
         width: 143%;
         padding: 28px 8px;
         align-items: center;
@@ -119,13 +129,19 @@
         font-weight: 800;
     }
     
-    .boton:hover{
-        transform: scale(1.1);
-    }
+ 
     .link__boton{
         display: flex;
         width: 12%;
         min-width: 203px;
     }
+    .butt {
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+    }
+
+
+    
 
 }

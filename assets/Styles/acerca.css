@@ -19,7 +19,7 @@
 
 .acerca__titulo{
     display: flex;
-    font-size: 2em;
+    font-size: 3.5rem;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 15px 0;
@@ -56,7 +56,7 @@
 }
 
 .acerca__textos{
-    text-align: justify;
+    text-align: left;
     font-size: 18px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
@@ -79,7 +79,7 @@
 
 @media (min-width:768px){
     .acerca{
-        background: url(../img/IAselfie2.png) left no-repeat;
+        background: url(../img/IAselfie2.webp) left no-repeat;
         height: 88vh;
         background-size: 457px;
         align-items: flex-end;
@@ -97,7 +97,7 @@
     } 
     .acerca__titulo{
         display: flex;
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .acerca__caja-cristal{
@@ -136,7 +136,7 @@
     }
     .acerca__titulo{
         display: flex;
-        font-size: 3em;
+        
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;

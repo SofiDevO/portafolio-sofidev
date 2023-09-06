@@ -26,6 +26,35 @@
     
 }
 
+/* Divider black */
+.wrapper__black{
+    display: block;
+}
+
+
+.custom-shape-divider-bottom-1693539436 {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1693539436 svg {
+    position: relative;
+    display: block;
+    width: calc(-123% + 1644.3000000000002px);
+    height: 163px;
+}
+
+
+.custom-shape-divider-bottom-1693539436 .shape-fill {
+    fill: #000000;
+}
+
+
 
 
 @media (min-width:768px){
@@ -44,14 +73,32 @@
         width: calc(152% + 299.79999999999995px);
         height: 310px;
     }
-    
-    
-    
-    
     .custom-shape-divider-bottom-1685513857 .shape-fill {
         fill:rgb(206, 206, 206);
-        
     }
+
+    /* Divider Black */
+    .custom-shape-divider-bottom-1693539436 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1693539436 svg {
+        position: relative;
+    display: block;
+    width: calc(126% + -39.7px);
+    height: 168px;
+    }
+    
+    .custom-shape-divider-bottom-1693539436 .shape-fill {
+        fill: #000000;
+    }
+        
 }
 @media (min-width:1200px){
     .custom-shape-divider-bottom-1685513857 {
@@ -63,12 +110,11 @@
         line-height: 0;
     }
     
-    .custom-shape-divider-bottom-1685513857 svg {
+    .custom-shape-divider-bottom-1693539436 svg {
         position: relative;
         display: block;
-        width: calc(93% + 969.8px);
-        height: 290px;
-        z-index: -2;
+        width: calc(97% + 96.3px);
+        height: 170px;
     }
     
     
@@ -76,6 +122,10 @@
     
     .custom-shape-divider-bottom-1685513857 .shape-fill {
         fill:rgb(206, 206, 206);
-        
     }
+  
+    /* Divider Black */
+   
+
+        
 }

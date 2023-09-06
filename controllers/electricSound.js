@@ -4,7 +4,7 @@ const btnDarkMode = d.querySelectorAll("[data-toogle]")
 function playSound(){
 
     let audio = new Audio();
-    audio.src = "../assets/sounds/profile-pic-2023-06-14T200602.499.svg";
+    audio.src = "../assets/sounds/franks-electricity.mp3";
     audio.volume -=0.7;
     audio.play()
 }
