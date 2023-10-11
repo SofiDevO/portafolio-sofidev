@@ -220,9 +220,9 @@
 	}
 
 	.menu__contenido {
-		min-width: 226px;
+		min-width: 169px;
 		display: flex;
-		width: 100%;
+		width: 70%;
 		justify-content: space-around;
 	}
 
@@ -240,13 +240,14 @@
 	}
 
 	.menu__list {
-		display: inline-block;
+		display: flex;
 		list-style: none;
 		cursor: pointer;
-		text-shadow: -0.3rem -0.2rem 0.4rem var(--main-color);
+		text-shadow: -0.2rem -0.1rem 0.3rem var(--main-color);
 		transition: 0.3s ease-in-out;
 		padding: 0rem;
 		color: var(--seccond-color);
+		align-items: center;
 	}
 
 	.menu__list:hover {
@@ -268,7 +269,7 @@
 /* DESKTOP VIEW */
 @media (min-width: 1200px) {
 	.header {
-		padding: 0 4rem;
+		padding: 0 7rem;
 		justify-content: space-between;
 		height: 9rem;
 	}	
@@ -277,19 +278,10 @@
 		justify-content: flex-start;
 		font-size: 3.5rem;
 	}
-	.menu__contenido {
-		display: flex;
-		min-width: 84%;
-		justify-content: space-between;
-		width: 100%;
-	}
+	
 	.menu__list {
 		padding: 0.6rem 1rem;
 	}
 
-	.menu-desktop {
-		align-items: center;
-		width: 53%;
-		justify-content: space-evenly;
-	}
+	
 }

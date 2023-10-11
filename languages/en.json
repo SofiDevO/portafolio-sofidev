@@ -27,6 +27,9 @@
         "acercadeParrafo2": "I Genuinely <span>love what I do! 💙</span> I believe that blending creativity and code can create magical user experiences. Let's collaborate and build something amazing together. Get in touch and let the frontend adventures begin!",
         "acercadeBtn": "Contact Me"
     },
+    "titulo-portafolio":{
+        "encabezado": "Portfolio"
+    },
     "portafolio": {
         "portafolioTitulo": "React ORG",
         "parrafo": "React application to manage your team members.",
