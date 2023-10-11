@@ -7,8 +7,8 @@
 	width: 100%;
 	background: linear-gradient(
 		135deg,
-		rgba(255, 255, 255, 0.1),
-		rgba(255, 255, 255, 0)
+		rgba(62, 62, 62, 0.1),
+		rgba(138, 138, 138, 0.415)
 	);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
@@ -243,18 +243,19 @@
 		display: flex;
 		list-style: none;
 		cursor: pointer;
-		text-shadow: -0.2rem -0.1rem 0.3rem var(--main-color);
+		text-shadow: -0.1rem 0rem 0rem var(--main-color);
 		transition: 0.3s ease-in-out;
-		padding: 0rem;
+		padding: 0.6rem 1rem;
 		color: var(--seccond-color);
 		align-items: center;
+		transition: .50s ease-in-out;
 	}
 
 	.menu__list:hover {
 		background-color: black;
-		padding: 0.6rem 1rem;
+		
 		color: var(--blue);
-		border-radius: 15px;
+		border-radius: 8px;
 	}
 
 	.menu__link {
