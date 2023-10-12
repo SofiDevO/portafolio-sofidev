@@ -28,27 +28,21 @@
 }
 .acerca__titulo span{
     color: var(--seccond-color);
-    text-shadow: 0px -1px 5px #000000;
+    text-shadow: 0px 1px 3px #000000;
 }
 .acerca__titulo span:hover {
     color: var(--blue);
     filter: drop-shadow(0 0 12px var(--blue));
-  }
+}
 
 
-.acerca__caja-cristal{
+
+.acerca__caja{
     display: flex;
     flex-direction: column;
     width: 92%;
     min-width: 271px;
     height: auto;
-    background: rgba(255, 255, 255, 0.116);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 15px );
-    -webkit-backdrop-filter: blur( 14.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    animation: myAnim 1s ease 4s 1 normal forwards;
     align-items: center;
     justify-content: center;
     justify-items: center;
@@ -63,10 +57,8 @@
     line-height: 1.6;
     padding: 0 14px;
 }
-.acerca__texto span{
-    color: var( --purple);
-    font-weight: 700;
-}
+
+
 
 .acerca__contactar{
     display: flex;
@@ -100,7 +92,7 @@
         font-size: 4em;
     }
 
-    .acerca__caja-cristal{
+    .acerca__caja{
         display: flex;
         width: 100%;
         height: auto;
@@ -142,7 +134,7 @@
         flex-wrap: wrap;
         margin-left: 459px;
     }
-    .acerca__caja-cristal{
+    .acerca__caja{
         display: flex;
         width: 54%;
         padding: 0 0px;

@@ -2,7 +2,7 @@
     transition: all 0.9s ease;
     display: flex;
     height: 798px;
-    background: linear-gradient(180deg, #000000 -11%, #33017a);
+    background:  linear-gradient(var(--gradient));
     justify-content: space-evenly;
     flex-direction: column;
     position: relative;

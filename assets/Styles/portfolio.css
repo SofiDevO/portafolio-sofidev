@@ -26,7 +26,7 @@
     height: 366px;
     overflow: hidden;
     justify-content: space-evenly;
-    max-width: 406px;
+    max-width: 485px;
     border-radius: 20px;
 }
 .portafolio__trajeta:hover .faceA{
@@ -68,7 +68,7 @@
 
 .portafolio__img{
     object-fit: cover;
-    width: 581px;
+    width: 414px;
 }
 
 
@@ -98,13 +98,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.647);
+    background: rgba(0, 0, 0, 0.913);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 15.5px );
     -webkit-backdrop-filter: blur( 15.5px );
     border-radius: 50%;
-    border: 2px solid rgba( 255, 255, 255, 0.18 );
-    padding: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.339);
+    padding: 1.2rem;
+    width: 4rem;
+    height: 4rem;
 }
 .fa-react{
     font-size: 1.8rem;
@@ -153,7 +155,7 @@
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     border-radius: 40px;
-    border: 3px solid rgb(255 255 255 / 74%);
+    border: 3px solid var(--blue);
     justify-content: space-evenly;
     font-weight: 700;
 }
@@ -197,7 +199,7 @@
         display: flex;
         font-size: 15px;
         width: 107%;
-        padding: 22px 16px;
+        padding: 19px 9px;
         align-items: center;
         border-radius: 40px;
         justify-content: space-evenly;
@@ -254,7 +256,7 @@
         display: flex;
         font-size: 15px;
         width: 116%;
-        padding: 24px 14px;
+        padding: 19px 8px;
         align-items: center;
         border-radius: 40px;
         justify-content: space-evenly;

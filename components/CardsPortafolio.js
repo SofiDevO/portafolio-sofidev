@@ -1,7 +1,16 @@
 export default function CardsPortafolio(){
     const portafolioData = [
         {
-            imgSrc: "./assets/img/portada-react'org.png",
+            imgSrc: "./assets/img/PortfolioImg/sass_portada.png",
+            imgAlt: "portada, ecostore",
+            titulo: "Eco Store",
+            skills: ["Sass", "JavaScript"],
+            descripcion: "Made with sass for the,Sass fundamentals course",
+            demoURL: "https://sofidevo.github.io/eco-store-sass/",
+            repoURL: "https://github.com/SofiDevO/eco-store-sass"
+        },
+        {
+            imgSrc: "./assets/img/PortfolioImg/portada_react_org.png",
             imgAlt: "portada, encriptador de mensajes",
             titulo: "React ORG",
             skills: ["React", "JavaScript"],
@@ -10,7 +19,7 @@ export default function CardsPortafolio(){
             repoURL: "https://github.com/SofiDevO/react-org"
         },
         {
-            imgSrc: "./assets/img/Encriptador-mensajes-dark.png",
+            imgSrc: "./assets/img/PortfolioImg/encriptador_mensajes_dark.png",
             imgAlt: "portada, encriptador de mensajes",
             titulo: "Message Encryptor",
             skills: ["JavaScript"],
@@ -19,7 +28,7 @@ export default function CardsPortafolio(){
             repoURL: "https://github.com/SofiDevO/encriptador-mensajes"
         },
         {
-            imgSrc: "./assets/img/portada-portafolio.png",
+            imgSrc: "./assets/img/PortfolioImg/portada_portafolio.png",
             imgAlt: "portada, encriptador de mensajes",
             titulo: "My Portfolio",
             skills: ["JavaScript"],
@@ -30,8 +39,9 @@ export default function CardsPortafolio(){
     ];
     
     const skillIcons = {
-        React: '<i class="fa-brands fa-react fa-bounce" style="color: #6beeff;"></i>',
-        JavaScript: '<i class="fa-brands fa-square-js" style="color: #ffdb29; font-size: 2rem;"></i>',
+        React: '<i class="fa-brands fa-react fa-beat-fade" style="color: #6beeff;"></i>',
+        JavaScript: '<i class="fa-brands fa-square-js fa-beat-fade" style="color: #ffdb29; font-size: 2rem;"></i>',
+        Sass: '<i class="fa-brands fa-sass fa-beat-fade" style="color: #ff00ea;font-size: 2rem;"></i>'
     };
     
     const portafolioContainer = document.querySelector('[data-card]');
@@ -56,7 +66,7 @@ export default function CardsPortafolio(){
                     </div>
                 </div>
                 
-                <div class="portafolio__cara faceB caja__dark caja__dark__portafolio">
+                <div class="portafolio__cara faceB  caja__dark__portafolio">
                     <p class="portafolio__descripcion titulo__dark">${data.descripcion}</p>
                     <div class="portafolio__botobnes">
                         <a href="${data.demoURL}"target="_blank" rel="nofollow noreferrer noopener">
