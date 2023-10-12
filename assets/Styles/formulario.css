@@ -1,0 +1,228 @@
+
+
+.formulario {
+	display: flex;
+	height: auto;
+	min-height: 815px;
+	flex-direction: column;
+	background-size: 197px;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: black;
+	z-index: 20;
+	position: relative;
+	width: 100%;
+}
+.formulario__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+}
+.side__imgIa .Ia__img {
+	display: none;
+}
+
+.formulario__caja {
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding: 24px;
+	color: var(--purple);
+	width: 91%;
+	font-weight: 600;
+	max-width: 500px;
+    
+}
+.formulario .titulo {
+	font-size: 2rem;
+	color: var(--seccond-color);
+}
+
+.formulario__submit {
+	padding: 16px 84px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	width: 100%;
+}
+
+.input-container {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 15px;
+	justify-content: space-evenly;
+	gap: 10px;
+	flex-direction: column;
+}
+
+.input-container input {
+	padding: 11px;
+	width: 100%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.input-container .text__boxes {
+	padding: 6px;
+	width: 100%;
+}
+
+.input-container label {
+	font-size: 2rem;
+	color: var(--seccond-color);
+}
+
+/* validaciones formulario */
+.contact_form_loader {
+	display: flex;
+	justify-content: center;
+	margin-top: 34px;
+}
+
+.contact__div__form__response {
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.formulario__contacto [required]:valid {
+	border: 2px solid var(--form-ok-color);
+}
+.formulario__contacto [required]:invalid {
+	border: 1.5px solid var(--form-error-color);
+}
+
+.contact-form-error {
+	display: flex;
+	justify-content: center;
+	margin-top: 0rem;
+	font-size: 80%;
+	background-color: var(--form-error-color);
+	transition: all 800ms ease;
+	font-size: 1.2rem;
+}
+
+.contact-form-error.is-active {
+	display: block;
+	animation: show-message 1s 1 normal 0s ease-in-out both;
+}
+.contact-form-span {
+	display: block;
+	display: flex;
+	justify-content: center;
+	margin-top: 0rem;
+	font-size: 80%;
+	background-color: var(--form-error-color);
+	animation: show-message 1s 1 normal 0s ease-in-out both;
+	font-size: 1.1rem;
+}
+.none {
+	display: none;
+}
+
+@keyframes show-message {
+	0% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@media (min-width: 768px) {
+	.formulario {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.formulario__container {
+		align-items: center;
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.side__imgIa {
+		display: flex;
+	}
+	.side__imgIa .Ia__img {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.formulario__caja {
+		display: flex;
+		flex-direction: column;
+		padding: 25px;
+		max-width: 56%;
+		width: 57%;
+		min-width: 57%;
+		align-items: stretch;
+	}
+	.formulario__img {
+		display: none;
+	}
+	.input-container .text__boxes {
+		padding: 10px;
+		width: 100%;
+		font-size: 2.3rem;
+		resize: none;
+	}
+
+	.input {
+		font-size: 2rem;
+	}
+	.formulario__submit {
+		font-size: 2rem;
+		font-weight: 700;
+		width: 13%;
+	}
+	.contact-form-span {
+		font-size: 2rem;
+		padding: 1rem;
+	}
+	.contact-form-error {
+		font-size: 2rem;
+	}
+	.contact__div__form__response {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.formulario__caja {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		padding: 16px;
+		width: 60%;
+		max-width: 40%;
+		height: auto;
+	}
+	.formulario__container {
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		width: 80%;
+	}
+
+	.submit {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+	}
+}

@@ -1,0 +1,160 @@
+.acerca{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-size: 339px;
+    max-height: 692px;
+}  
+
+.acerca__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 2;
+    height: 132vh;
+    align-items: center;
+}
+
+.acerca__titulo{
+    display: flex;
+    font-size: 3.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    text-align: center;
+    justify-content: center;
+}
+.acerca__titulo span{
+    color: var(--seccond-color);
+    text-shadow: 0px -1px 5px #000000;
+}
+.acerca__titulo span:hover {
+    color: var(--blue);
+    filter: drop-shadow(0 0 12px var(--blue));
+  }
+
+
+.acerca__caja-cristal{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    min-width: 271px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.116);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 14.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    animation: myAnim 1s ease 4s 1 normal forwards;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-weight: 500;
+}
+
+.acerca__textos{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    padding: 0 14px;
+}
+.acerca__texto span{
+    color: var( --purple);
+    font-weight: 700;
+}
+
+.acerca__contactar{
+    display: flex;
+    justify-content: center;
+    width:100%
+}
+.contactar__boton__icono{
+    width:25px;
+}
+
+@media (min-width:768px){
+    .acerca{
+        background: url(../img/IAselfie2.webp) left no-repeat;
+        height: 88vh;
+        background-size: 457px;
+        align-items: flex-end;
+        justify-content: center;
+        min-height: 768px;
+    }
+    .acerca__container{
+        display: flex;
+        width: 60%;
+        align-items: center;
+        padding-right: 11px;
+        z-index: 2;
+        justify-content: flex-start;
+        height: unset;
+    } 
+    .acerca__titulo{
+        display: flex;
+        font-size: 4em;
+    }
+
+    .acerca__caja-cristal{
+        display: flex;
+        width: 100%;
+        height: auto;
+        min-width: auto;
+    }
+    .acerca__textos{
+        text-align: justify;
+        font-weight: lighter;
+        font-size: 18px;
+        padding: 0 30px;
+    }
+    .acerca__contactar{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        width:100%
+    }
+}
+
+@media (min-width:1200px){
+    .acerca{
+        display: flex;
+        width: 100%;
+        height: 68vh;
+        min-height: 660px;
+        justify-content: flex-start;
+        background-size: 605px;
+    }
+    .acerca__container{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .acerca__titulo{
+        display: flex;
+        
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 459px;
+    }
+    .acerca__caja-cristal{
+        display: flex;
+        width: 54%;
+        padding: 0 0px;
+        min-width: auto;
+        max-width: 884px;
+        margin-right: -497px;
+        justify-content: flex-start;
+    }
+    .acerca__contactar{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+        width: 69%;
+    }
+}

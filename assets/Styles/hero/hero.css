@@ -1,0 +1,134 @@
+.hero {
+    transition: all 0.9s ease;
+    display: flex;
+    height: 798px;
+    background: linear-gradient(180deg, #000000 -11%, #33017a);
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+.hero__contenedor{
+  display: grid;
+  height: 614px;
+  margin-top: 48px;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+  
+.hero__titulo {
+  transition: all 0.9s;
+  color: var(--seccond-color);
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: bold;
+  filter: drop-shadow(2 -1px 1px var(--pure-black));
+}
+.hero__titulo span {
+  transition: all 0.9s;
+  color: var(--seccond-color);
+}
+  
+
+.hero__titulo span:hover {
+  color: var(--blue);
+  filter: drop-shadow(0 0 12px var(--blue));
+}
+.hero__subtitulo{
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  transform: translateY(-300px);
+  animation: expand 0.8s ease forwards;
+  transition: all 1.5s;
+  justify-content: center;
+  align-content: center;
+  font-weight: 600;
+  color: #ffffff;
+}
+.mexico-bandera{
+  width: 35px;
+}
+.side__container{
+  transition: all 0.9s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+}
+/* Foto de perfil */
+.img__ligth{
+  width: 200px;
+  animation:  slideup 0.8s ease forwards;
+  position: relative;
+}
+.img__dark {
+  display: none;
+}
+
+
+  @media (min-width:768px){
+    .hero{
+      height: 939px;
+    }
+    .hero__contenedor {
+      display: flex;
+      height: auto;
+      align-items: center;
+      justify-content: space-around;
+      align-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 20rem;
+    }
+    .hero__titulo {
+      font-size: 6em;
+      font-weight: 900;
+      font-family: 'Montserrat', sans-serif;
+      padding: 0;
+    }
+    .hero__subtitulo {
+      font-size: 2.6em;
+      transform: translateY(-300px);
+    }
+    .side__container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 1px;
+    }
+    .img__ligth{
+      width: 305px;
+    }
+    
+    
+    
+
+}  
+  @media (min-width:1200px){
+    .hero{
+      height: 946px;
+    }
+    .hero__contenedor {
+      display: flex;
+      height: auto;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-evenly;
+      align-content: center;
+    }
+    .hero__titulo {
+      font-size: 8.5em;
+    }
+    .img__ligth{
+      width: 340px;
+    }
+
+
+}  

@@ -1,0 +1,47 @@
+.menu__icons__desktop {
+	display: none;
+}
+
+.bi-lightning-charge {
+	font-size: 2.8rem;
+}
+/* Solo visible en version desktop */
+
+@media screen and (min-width: 768px) {
+
+	.idioma-desktop {
+		display: flex;
+	}
+
+	.idioma__icon-desktop {
+		display: inline-block;
+	}
+
+	.bi-lightning-charge {
+		font-size: 2.8rem;
+		color: rgb(0, 0, 0);
+		cursor: pointer;
+	}
+
+	.desktop-rayo i {
+		font-size: 2.8rem;
+	}
+
+	.menu__icons__desktop {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		height: 5rem;
+		width: 5rem;
+		backdrop-filter: blur(10px);
+		background-color: rgba(255, 255, 255, 0);
+		border-radius: 50px;
+		box-shadow: -10px 14px 54px -10px rgba(145, 192, 255, 0.5), inset 12px -12px 16px 0px rgba(214, 232, 255, 0.214), inset 0px 11px 28px 0px rgb(255, 255, 255);
+		left: 2rem;
+		justify-content: center;
+	}
+
+	.dark-mode__icon:hover {
+		transform: scale(1.3);
+	}
+}
