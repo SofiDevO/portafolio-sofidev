@@ -66,8 +66,6 @@
 .dark-mode .panel__styles {
 	background: rgba(0, 0, 0, 0.99);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(16px);
-	-webkit-backdrop-filter: blur(4px);
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	color: var(--glow-blue);
 }
@@ -247,7 +245,10 @@
 
 
 	.dark-mode .panel__styles{
-		background-color: transparent;
+		background: transparent;
+			box-shadow: unset;
+			border:none;
+			color: transparent;
 	}
 }
 

@@ -89,8 +89,6 @@
 	transform: translate(0, 0);
 	background: linear-gradient(var(--gradient));
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(4px);
-	-webkit-backdrop-filter: blur(4px);
 	border-radius: 3rem 0 ;
 	border:  1px  solid rgba(255, 255, 255, 0.18);
 }
@@ -148,8 +146,8 @@
 		background: unset;
 		box-shadow: unset;
 		border: unset;
-		backdrop-filter: unset;
-		-webkit-backdrop-filter: unset;
+	
+;
 	}
 
 	/* Menu desktop */
