@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- canonical url -->
     <link rel="canonical" href="https://itssofi.dev/">
@@ -60,7 +61,7 @@
     <!-- CSS ESTYLES -->
     <link rel="stylesheet" href="./assets/Styles/settings.css">
     <link rel="stylesheet" href="./assets/Styles/header/header.css">
-    <link rel="stylesheet" href="./assets/Styles/header/toogleRayo.css">
+    <link rel="stylesheet" href="./assets/Styles/elements/toogleDark.css">
     <link rel="stylesheet" href="./assets/Styles/elements/toTop.css">
     <link rel="stylesheet" href="./assets/Styles/hero/hero.css">
     <link rel="stylesheet" href="./assets/Styles/hero/social-icon.css">
@@ -71,8 +72,8 @@
     <link rel="stylesheet" href="./assets/Styles/button.css">
     <link rel="stylesheet" href="./assets/Styles/skills.css">
     <link rel="stylesheet" href="./assets/Styles/tools.css">
-    <link rel="stylesheet" href="./assets/Styles/acerca.css">
-    <link rel="stylesheet" href="./assets/Styles/portfolio.css">
+    <link rel="stylesheet" href="./assets/Styles/about.css">
+    <link rel="stylesheet" href="./assets/Styles/portfolio/portfolio.css">
     <link rel="stylesheet" href="./assets/Styles/formulario.css">
     <link rel="stylesheet" href="./assets/Styles/frase.css">
     <link rel="stylesheet" href="./assets/Styles/footer.css">
@@ -84,55 +85,39 @@
 <body>
     <header class="header" id="header">
 
-        <a class="header__link " href="./index.html">
+        <a class="header__link " href="/index.html">
             <p class="header__logo logo__dark" id="logo">Sofi<span class="span__dark" id="span">Dev</span></p>
         </a>
 
         <!-- Menu Desktop -->
-        <nav class="menu-desktop">
-            <ul class="menu__contenido">
-                <li class="menu__list "><a class="menu__link" href="#skills">Skills</a></li>
-                <li class="menu__list"><a class="menu__link" href="#aboutMe">About me</a></li>
-                <li class="menu__list"><a class="menu__link" href="#portafolio">Portfolio</a></li>
-                <li class="menu__list"><a class="menu__link" href="#hobbies">Hobbies</a></li>
-                <li class="menu__list"><a class="menu__link" href="#formulario">Contact</a></li>
-                <li class="menu__list"><a class="menu__link" href="https://blog.itssofi.dev/" target="_blank">Blog</a></li>
+        <nav class="menu__nav panel__styles panel" id="panel">
+            <ul class="menu__ul">
+                <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#skills">Skills</a></li>
+                <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#aboutMe">About me</a></li>
+                <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#portafolio">Portfolio</a></li>
+                <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#hobbies">Hobbies</a></li>
+                <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#formulario">Contact</a></li>
+                <li class="menu__list"><a class="menu__link menu__hamburger-link" href="https://blog.itssofi.dev/" target="_blank">Blog</a>
+                </li>
             </ul>
-            <div class="menu__icons__desktop">
-                <div id="dark-mode_container" class="dark-mode_container" >
-                    <i class="bi bi-lightning-charge desktop-rayo" data-toogle></i>
-                </div>
-            </div>
         </header>
+
+            
     <!-- menu movil (hamburguesa) -->
-    <button class="panel-btn hamburger hamburger--emphatic" type="button" aria-label="menu">
+    <button class="panel__btn hamburger hamburger--emphatic" type="button" aria-label="menu">
         <span class="hamburger-box">
             <span class="hamburger-inner" id="hamburguesa"></span>
         </span>
     </button>
-    <!-- panel que se depliega lateralmente -->
-    <aside id="panel" class="panel">
-        <nav class="menu-hamburger">
-            <a class="menu-hamburger__link" id="skills-menuA" href="#skills" 
-                >Skills</a>
-            <a class="menu-hamburger__link" id="acercaDe-menuA" href="#aboutMe" >About me</a>
-            <a class="menu-hamburger__link" id="portafolio-menuA" href="#portafolio">Portfolio</a>
-            <a class="menu-hamburger__link" id="contacto-menuA" href="#formulario" >Contact</a>
-            <a class="menu-hamburger__link" id="contacto-menuA" href="#hobbies">Hobbies</a>
-            <a class="menu-hamburger__link" id="blog-menuA" href="https://blog.itssofi.dev" target="_blank"> Blog </a>
 
-            <div class="menu__icons">
-                <div id="dark-mode_container" class="dark-mode_container">
-                    <i class="bi bi-lightning-charge" data-toogle></i>
-                </div>
-
-            </div>
-
-
-        </nav>
-
-    </aside>
+    
     <div class="menu__flotante">
+        <div class=" menu__icon--desktop menu__icon">
+            <div id="dark-mode_container" class="dark-mode_container">
+                <i class="bi bi-lightning-charge desktop-rayo" data-toogle></i>
+            </div>
+        </div>
+                
         <div class="icon__top-container">
             <div class="to__top" data-menu="float">
                 <a class="to__top-link" href="#">
@@ -146,16 +131,16 @@
         <section class="hero" id="hero">
             <div class="hero__contenedor">
                 <div class="hero__saludo">
-                    <h1 class="hero__titulo" id="titulo-saludo" data-section="hero" data-value="heroTitulo">Hi! 👋🏻 I'm
-                        Sofi<span class="span__dark" id="span-titulo">Dev</span> </h1>
+                    <h1 class="hero__titulo" id="titulo-saludo" data-section="hero" data-value="heroTitulo">Hi!  I'm
+                        Sofi<span class="flicker-in-1 span__dark" >Dev</span> </h1>
                     <h2 class="hero__subtitulo" id="subtitulo" data-section="hero" data-value="heroSubtitulo">Frontend
                         Developer in Mexico </h2>
                 </div>
                 <div class="side__container">
                     <div class="side__profile" id="profile-pic">
-                        <img class="side__img img__ligth" src="./assets/img/progile-pic-gray.webp"
+                        <img class="side__img img__ligth" src="./assets/img/avatar-black.png"
                             alt="Sofidev profile photo">
-                        <img class="side__img img__dark" src="./assets/img/profile-pic-pink.webp"
+                        <img class="side__img img__dark" src="./assets/img/avatar_pink.png"
                             alt="Sofidev profile photo">
                     </div>
                     <div class="social">
@@ -219,9 +204,9 @@
                             Studying at The Project </span><a class=" terminal__content" id="link-oracle"
                             href="https://www.oracle.com/mx/education/oracle-next-education/" target="_blank"
                             rel="nofollow noopener noreferrer">"One Oracle Next Education" </a>
-                        <span class="terminal__content">and</span> <a
-                            class=" terminal_content" id="link-platzi" href="https://platzi.com/p/SofiDev/"
-                            target="_blank" rel="nofollow noreferrer noopener">Platzi.</a>
+                        <span class="terminal__content">and</span> <a class=" terminal_content" id="link-platzi"
+                            href="https://platzi.com/p/SofiDev/" target="_blank"
+                            rel="nofollow noreferrer noopener">Platzi.</a>
                         <p class="terminal__content"> I also have a
                             strong
                             foundation in HTML5, CSS3, and JavaScript and React
@@ -252,14 +237,17 @@
 
         <section class="tools">
             <div class="custom-shape-divider-top-1697134839">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
                 </svg>
-            </div> 
+            </div>
             <h2 class="tools__titulo titulo__dark">Tools</h2>
             <div class="tools__caja__slider">
                 <div class="slider">
-                    <div class="tools__cajas" id="">
+                    <div class="tools__cajas">
                         <div class="tools__grupo">
                             <div class="tools__caja caja__dark">
                                 <img class="tools__icono tool__dark" src="./assets/svg/slack.svg" alt="slack">
@@ -485,62 +473,67 @@
         </section>
 
         <!-- Acerca de Mi -->
-        <section class="acerca" id="aboutMe">
-            <div class="acerca__container">
-                <h2 class="acerca__titulo" id="acercaDeTitulo">Who
+        <section class="about" id="aboutMe">
+            <div class="about__container">
+                <h2 class="about__titulo" id="aboutDeTitulo">Who
                     is Sofi <span class="span__dark" id="span-titulo2"> Dev</span>? </h2>
 
-                <div class="acerca__caja caja__cristal caja__dark" ">
-                    <div class="terminal_toolbar">
-                        <div class="butt">
-                            <button class="btn btn__red btn-color"></button>
-                            <button class="btn btn__yellow"></button>
-                            <button class="btn btn__green"></button>
-                        </div>
-                        <p class="user">sofidev@admin: ~</p>
+                <div class="about__caja caja__cristal caja__dark" ">
+                    <div class=" terminal_toolbar">
+                    <div class="butt">
+                        <button class="btn btn__red btn-color"></button>
+                        <button class="btn btn__yellow"></button>
+                        <button class="btn btn__green"></button>
                     </div>
-                    <div class="terminal__content" id="textos">
-                        <h3 class="terminal__content">
-                            Angela Sofía Osorio
-                        </h3>
-                        <p class="terminal__content contenido">
-                            I'm a dedicated junior front-end developer based in Mexico, passionate about technology and
-                            constantly expanding my skills.
-                        </p>
-
-
-                        <h3 class="terminal__content contenido">
-                            What <span class="acerca__span span__dark">sets me apart?</span>
-                        </h3>
-                        <p class="terminal__content contenido">
-                            I genuinely <span class="span__dark">love what I do! 💙</span> I believe that blending
-                            creativity and code
-                            can create magical user experiences. Let's collaborate and build something amazing together.
-                            Get in touch and let the frontend adventures begin!
-                        </p>
-                    </div>
+                    <p class="user">sofidev@admin: ~</p>
                 </div>
-                <div class="acerca__contactar">
-                    <a class="link__boton " href="mailto: contact@itssofi.dev" target="_blank"
-                        rel="nofollow noreferrer noopener">
-                        <button class="boton titulo__dark"> <span>Get
-                                in touch</span>
-                            <img class="contactar__boton__icono icono__boton" src="./assets/svg/mail (1).svg"
-                                alt="mail icon">
-                        </button>
-                    </a>
+                <div class="terminal__content" id="textos">
+                    <h3 class="terminal__content">
+                        Angela Sofía Osorio
+                    </h3>
+                    <p class="terminal__content contenido">
+                        I'm a dedicated junior front-end developer based in Mexico, passionate about technology and
+                        constantly expanding my skills.
+                    </p>
+                    <h3 class="terminal__content contenido">
+                        What <span class="about__span span__dark">sets me apart?</span>
+                    </h3>
+                    <p class="terminal__content contenido">
+                        I genuinely <span class="span__dark">love what I do! 💙</span> I believe that blending
+                        creativity and code
+                        can create magical user experiences. Let's collaborate and build something amazing together.
+                        Get in touch and let the frontend adventures begin!
+                    </p>
                 </div>
+            </div>
+            <div class="about__contactar">
+                <a class="link__boton " href="mailto: contact@itssofi.dev" target="_blank"
+                    rel="nofollow noreferrer noopener">
+                    <button class="boton titulo__dark"> <span>Get
+                            in touch</span>
+                        <img class="contactar__boton__icono icono__boton" src="./assets/svg/mail (1).svg"
+                            alt="mail icon">
+                    </button>
+                </a>
+            </div>
 
             </div>
         </section>
         <!-- Portafolio -->
-        <section class="portafolio" id="portafolio">
+        <section class="portafolio swiper" id="portafolio">
             <div class="titulo titulo__dark">
                 <h2>Portfolio</h2>
             </div>
-            <div class="portafolio__contenedor" data-card>
+            <div class="portafolio__contenedor swiper-wrapper" data-card>
                 <!-- Aquí se insertarán las tarjetas generadas dinámicamente -->
             </div>
+            <div class="swiper-pagination"></div>
+             <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
         </section>
 
         <!-- Seccion Hobbies -->

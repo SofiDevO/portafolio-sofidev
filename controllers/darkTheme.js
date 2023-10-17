@@ -12,9 +12,9 @@ const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 // Toggles the "dark-mode" class
 export default function toggleDarkMode(state) {
-  document.documentElement.classList.toggle("dark-mode", state);
+  d.documentElement.classList.toggle("dark-mode", state);
   darkModeState = state; 
-  if(document.documentElement.classList.contains("dark-mode")){
+  if(d.documentElement.classList.contains("dark-mode")){
     toogleDarkMode.forEach(darkMode => {
       darkMode.classList.remove("bi-lightning-charge");
       darkMode.classList.add("bi-lightning-charge-fill");
@@ -40,7 +40,7 @@ toggleDarkMode(localStorage.getItem("dark-mode") == "true");
 // Listen for changes in the OS settings.
 // Note: the arrow function shorthand works only in modern browsers,
 // for older browsers define the function using the function keyword.
-useDark.addListener((evt) => toggleDarkMode(evt.matches));
+useDark.addEventListener('state',(evt) => toggleDarkMode(evt.matches));
 
 // Toggles the "dark-mode" class on click and sets localStorage state
 

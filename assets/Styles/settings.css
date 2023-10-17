@@ -12,16 +12,17 @@ html{
     --main-color: #181818;
     --seccond-color: rgb(228, 228, 228);
     --purple: #2e016c;
+    --dark-purple: #150050;
+    --purple-bg: rgb(25, 0, 60);
+    --ligth-purple: #610094;
     --blue: #58ecff;
-    --gradient: 181deg, #000000 20%, #2e006e 100%;
+    --gradient: 181deg, #000000 35%, #2e006e 100%;
+    --gradient-transparent: 181deg, #000000c5 30%, #2e006ebb 100%;
     --glow-blue: drop-shadow(0 0 11px rgba(0, 212, 255, 1));
 
     /* Darktheme */
 
     --pure-black: #000000;
-    --dark-purple: #150050;
-    --purple: #3F0071;
-    --ligth-purple: #610094;
     --form-ok-color: #4caf50;
     --form-error-color: #f44336;
 }

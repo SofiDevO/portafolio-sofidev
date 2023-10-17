@@ -63,15 +63,15 @@
 	filter: invert(74%) sepia(58%) saturate(4419%) hue-rotate(149deg)
 		brightness(102%) contrast(107%);
 }
-.dark-mode .panel {
-	background: rgba(0, 0, 0, 0.35);
+.dark-mode .panel__styles {
+	background: rgba(0, 0, 0, 0.99);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(12.5px);
-	-webkit-backdrop-filter: blur(12.5px);
-	border-radius: 10px;
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(4px);
 	border: 1px solid rgba(255, 255, 255, 0.18);
-	color: rgba(0, 212, 255, 1);
+	color: var(--glow-blue);
 }
+	
 
 .dark-mode .menu-hamburger__link {
 	color: var(--blue);
@@ -118,7 +118,6 @@
 }
 .dark-mode .img__dark {
 	display: block;
-	width: 200px;
 	animation: slideup 0.8s ease forwards;
 	position: relative;
 	filter: drop-shadow(1px 0 15px #ff2386);
@@ -226,9 +225,7 @@
 	border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.dark-mode .dark__img {
-	display: block;
-}
+
 
 .dark-mode .footer {
 	background-color: #040404;
@@ -239,35 +236,19 @@
 }
 
 @media (min-width: 768px) {
-	.dark-mode .img__dark {
-		width: 285px;
-	}
-	.dark-mode .idioma__icon-desktop {
-		filter: invert(100%) sepia(22%) saturate(7443%) hue-rotate(110deg)
-			brightness(91%) contrast(101%) drop-shadow(0 0 12px rgba(0, 212, 255, 1));
-	}
-	.dark-mode .idioma__icon-desktop {
-		filter: invert(100%) sepia(22%) saturate(7443%) hue-rotate(110deg)
-			brightness(91%) contrast(101%) drop-shadow(0 0 12px rgba(0, 212, 255, 1));
+
+	.dark-mode .header {
+		background: rgba(0, 0, 0, 0.802);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(12.5px);
+		-webkit-backdrop-filter: blur(12.5px);
+		border: 1px solid rgba(255, 255, 255, 0.18);
 	}
 
-	.dark-mode .idioma__icon {
-		filter: invert(0%) sepia(22%) saturate(7443%) hue-rotate(110deg)
-			brightness(91%) contrast(101%) drop-shadow(0 0 12px rgba(0, 212, 255, 1));
-	}
-	.dark-mode .tooltip__box {
-		color: var(--seccond-color);
-		background: rgba(9, 9, 9, 0.435);
-		box-shadow: 0 8px 32px 0 rgba(13, 19, 100, 0.277);
-		backdrop-filter: blur(17px);
-		-webkit-backdrop-filter: blur(19px);
-		border-radius: 10px;
-		border: 1px solid rgba(0, 255, 234, 0.626);
+
+	.dark-mode .panel__styles{
+		background-color: transparent;
 	}
 }
 
-@media (min-width: 1200px) {
-	.dark-mode .img__dark {
-		width: 340px;
-	}
-}
+

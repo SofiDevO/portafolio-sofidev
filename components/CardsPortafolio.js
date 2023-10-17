@@ -48,8 +48,8 @@ export default function CardsPortafolio(){
     
     for (const data of portafolioData) {
         const cardHTML = `
-            <div class="portafolio__trajeta">
-                <div class="portafolio__cara faceA">
+            <div class="portafolio__trajeta swiper-slide ">
+                <div class="portafolio__cara faceA card__content ">
                     <div class="img__container">
                         <img class="portafolio__img ${data.skills.includes("JavaScript") ? 'ligth__img' : ''}" 
                             src="${data.imgSrc}" alt="${data.imgAlt}">
@@ -82,6 +82,7 @@ export default function CardsPortafolio(){
                     </div>
                 </div>
             </div>
+            
         `;
     
         portafolioContainer.insertAdjacentHTML('beforeend', cardHTML);

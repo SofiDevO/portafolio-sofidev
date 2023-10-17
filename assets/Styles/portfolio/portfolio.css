@@ -164,6 +164,9 @@
 } 
 
 
+
+
+
 @media (min-width:768px){
     .portafolio{
         background-size: 717px;
@@ -174,7 +177,6 @@
         position: relative;
         justify-content: center;
         flex-direction: row;
-        flex-wrap: wrap;
     }
     .portafolio__trajeta{
         display: flex;
