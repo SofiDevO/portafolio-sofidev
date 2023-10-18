@@ -1,8 +1,31 @@
 export default function CardsPortafolio(){
     const portafolioData = [
         {
+            imgSrc: "https://github.com/SofiDevO/alura-flix/raw/sofidev/image-1.png",
+            titulo: "Alura Flix",
+            skills: ["React", "styledComponents"],
+            descripcion: "Final project for the One Oracle Next Education Program. Educational programming video website demonstrating CRUD requests.",
+            demoURL: "https://alura-flix-self.vercel.app/",
+            repoURL: "https://github.com/SofiDevO/alura-flix"
+        },
+        {
+            imgSrc: "https://user-images.githubusercontent.com/102200061/276017828-4983348b-bdc7-40ff-af28-0765d45a387a.png",
+            titulo: "React ORG",
+            skills: ["React"],
+            descripcion: "React application to manage your team members.",
+            demoURL: "https://react-org-delta.vercel.app/",
+            repoURL: "https://github.com/SofiDevO/react-org"
+        },
+        {
+            imgSrc: "https://github.com/SofiDevO/alura-geek/raw/sofidev/image-1.png",
+            titulo: "Alura Geek",
+            skills: ["JavaScript"],
+            descripcion: " CRUD operations using HTTP requests.",
+            demoURL: "https://alura-geek-ruddy.vercel.app/",
+            repoURL: "https://github.com/SofiDevO/react-org"
+        },
+        {
             imgSrc: "./assets/img/PortfolioImg/sass_portada.png",
-            imgAlt: "portada, ecostore",
             titulo: "Eco Store",
             skills: ["Sass", "JavaScript"],
             descripcion: "Made with sass for the,Sass fundamentals course",
@@ -10,49 +33,42 @@ export default function CardsPortafolio(){
             repoURL: "https://github.com/SofiDevO/eco-store-sass"
         },
         {
-            imgSrc: "./assets/img/PortfolioImg/portada_react_org.png",
-            imgAlt: "portada, encriptador de mensajes",
-            titulo: "React ORG",
-            skills: ["React", "JavaScript"],
-            descripcion: "React application to manage your team members.",
-            demoURL: "https://react-org-delta.vercel.app/",
-            repoURL: "https://github.com/SofiDevO/react-org"
+            imgSrc: "./assets/img/PortfolioImg/portada_portafolio.png",
+            titulo: "My Portfolio",
+            skills: ["JavaScript"],
+            descripcion: "Just the repository of my portfolio on GitHub.",
+            demoURL: "./index.html",
+            repoURL: "https://github.com/SofiDevO/portafolio-sofidev"
         },
         {
             imgSrc: "./assets/img/PortfolioImg/encriptador_mensajes_dark.png",
-            imgAlt: "portada, encriptador de mensajes",
             titulo: "Message Encryptor",
             skills: ["JavaScript"],
             descripcion: "Message Encryptor for the first Alura Latam Challenge: Programming Logic.",
             demoURL: "https://sofidevo.github.io/encriptador-mensajes/",
             repoURL: "https://github.com/SofiDevO/encriptador-mensajes"
         },
-        {
-            imgSrc: "./assets/img/PortfolioImg/portada_portafolio.png",
-            imgAlt: "portada, encriptador de mensajes",
-            titulo: "My Portfolio",
-            skills: ["JavaScript"],
-            descripcion: "Just the repository of my portfolio on GitHub.",
-            demoURL: "./index.html",
-            repoURL: "https://github.com/SofiDevO/portafolio-sofidev"
-        }
     ];
     
     const skillIcons = {
         React: '<i class="fa-brands fa-react fa-beat-fade" style="color: #6beeff;"></i>',
         JavaScript: '<i class="fa-brands fa-square-js fa-beat-fade" style="color: #ffdb29; font-size: 2rem;"></i>',
-        Sass: '<i class="fa-brands fa-sass fa-beat-fade" style="color: #ff00ea;font-size: 2rem;"></i>'
+        Sass: '<i class="fa-brands fa-sass fa-beat-fade" style="color: #ff00ea;font-size: 2rem;"></i>',
+        styledComponents: '<iconify-icon icon="skill-icons:styledcomponents" width="26"></iconify-icon>'
     };
     
     const portafolioContainer = document.querySelector('[data-card]');
     
     for (const data of portafolioData) {
         const cardHTML = `
-            <div class="portafolio__trajeta swiper-slide ">
+        
+            <div class="portafolio__trajeta">
+            
                 <div class="portafolio__cara faceA card__content ">
+                
                     <div class="img__container">
                         <img class="portafolio__img ${data.skills.includes("JavaScript") ? 'ligth__img' : ''}" 
-                            src="${data.imgSrc}" alt="${data.imgAlt}">
+                            src="${data.imgSrc}" alt="${data.title}">
                     </div>
                     <div class="container__info">
                         <h3 class="portafolio__subtitulo titulo__dark">${data.titulo}</h3>

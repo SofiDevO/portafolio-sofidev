@@ -14,19 +14,6 @@ const cardsData = [
         title: "CSS<br>✅",
         class: "css"
     },
-
-    {
-        imgSrc: "./assets/svg/javascript-fill.svg",
-        imgAlt: "Javascript icon",
-        title: "Javascript<br>✅",
-        class: "javascript"
-    },
-    {
-        imgSrc: "./assets/svg/react-dark.svg",
-        imgAlt: "React icon",
-        title: "React<br>✅",
-        class: "React"
-    },
     {
         imgSrc: "./assets/svg/sass.svg",
         imgAlt: "Sass icon",
@@ -40,9 +27,21 @@ const cardsData = [
         class: ""
     },
     {
-        imgSrc: "./assets/svg/nodejs-dark.svg",
-        imgAlt: "Node.js icon",
-        title: "Node.js<br>🌱",
+        imgSrc: "./assets/svg/javascript-fill.svg",
+        imgAlt: "Javascript icon",
+        title: "Javascript<br>✅",
+        class: "javascript"
+    },
+    {
+        imgSrc: "./assets/svg/react-dark.svg",
+        imgAlt: "React icon",
+        title: "React<br>✅",
+        class: "React"
+    },
+    {
+        imgSrc: "./assets/svg/astro.svg",
+        imgAlt: "Astro icon",
+        title: "Astro<br>✅",
         class: ""
     },
     {
@@ -52,10 +51,22 @@ const cardsData = [
         class: "wordpress"
     },
     {
+        imgSrc: "./assets/svg/nodejs-dark.svg",
+        imgAlt: "Node.js icon",
+        title: "Node.js<br>🌱",
+        class: ""
+    },
+    {
         imgSrc: "./assets/svg/npm-wordmark.svg",
         imgAlt: "Wordpress icon",
         title: "npm<br>✅",
         class: "npm"
+    },
+    {
+        imgSrc: "./assets/svg/mysql.svg",
+        imgAlt: "MySql icon",
+        title: "MySql<br> Server<br>🌱",
+        class: ""
     },
     
 ];

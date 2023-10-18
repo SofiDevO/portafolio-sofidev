@@ -190,10 +190,9 @@
 		align-items: center;
 	}
 	.skills__texto > .head {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 		font-weight: 700;
 		text-align: center;
-		font-size: 2rem;
 	}
 	.skills__icono {
 		width: 78px;	}
