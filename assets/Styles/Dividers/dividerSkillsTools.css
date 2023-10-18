@@ -21,6 +21,10 @@
     fill: #2e016c ;
 }
 
+.dark-mode .custom-shape-divider-top-1697134839 {
+	background-color: black
+}
+
 @media (min-width:678px) {
     .custom-shape-divider-top-1697134839 {
         position: absolute;
@@ -33,10 +37,11 @@
     
     .custom-shape-divider-top-1697134839 svg {
         position: relative;
-        display: block;
-        width: calc(107% + 78.3px);
-        height: 162px;
-    }
+    display: block;
+    width: calc(107% + 141.3px);
+    height: 241px;
+}
+
 }
 
 @media  (min-width:1200px) {
@@ -52,7 +57,7 @@
     .custom-shape-divider-top-1697134839 svg {
         position: relative;
         display: block;
-        width: calc(107% + 78.3px);
+        width: calc(107% + 704.3px);
         height: 287px;
     }
 }

@@ -18,16 +18,16 @@
 	gap: 25px;
 }
 .portafolio__trajeta {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    height: 448px;
-    overflow: hidden;
-    justify-content: space-evenly;
-    width: 100%;
-    border-radius: 20px;
-    min-width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	height: 448px;
+	overflow: hidden;
+	justify-content: space-evenly;
+	width: 100%;
+	border-radius: 20px;
+	min-width: 100%;
 }
 .portafolio__trajeta:hover .faceA {
 	transform: perspective(600px) rotateY(180deg);
@@ -35,25 +35,38 @@
 .portafolio__trajeta:hover .faceB {
 	transform: perspective(600px) rotateY(360deg);
 }
-.portafolio__trajeta .portafolio__cara {
+.portafolio__cara {
 	display: flex;
-    position: absolute;
-    backface-visibility: hidden;
-    transition: 0.5s;
-    flex-direction: column;
-    height: 369px;
-    width: 95%;
-    align-items: center;
-    flex-wrap: nowrap;
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 0.5s;
+	height: 286px;
+	width: 98%;
+	max-width: 49rem;
+	align-items: center;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
 }
+
 .portafolio__trajeta .faceA {
-    transform: perspective(600px) ratateY(0deg);
-    box-shadow: 0 5px 10px var(--pure-black);
-    background: var(--purple);
-    box-shadow: 0 0px 2px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-radius: 10px;
+	transform: perspective(600px) ratateY(0deg);
+	box-shadow: 0 5px 10px var(--pure-black);
+	background: var(--dark-purple);
+	box-shadow: 0 0px 2px 0 rgba(31, 38, 135, 0.37);
+	border-radius: 47px;
+}
+.portafolio__trajeta .faceB {
+	transform: perspective(600px) rotateY(180deg);
+	background: var(--dark-purple);
+	border-radius: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	align-items: center;
+	justify-content: center;
+	border-radius: 47px;
 }
 
 .img__container {
@@ -68,7 +81,8 @@
 
 .portafolio__img {
 	object-fit: cover;
-    width: 100%;
+	overflow: hidden;
+	width: 100%;
 }
 
 .container__info {
@@ -81,15 +95,15 @@
 	font-size: 1.6rem;
 	text-align: center;
 	overflow: hidden;
-    color: var(--green-terminal);
+	color: var(--green-terminal);
 }
 .skills__used {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-bottom: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-bottom: 4rem;
 }
 
 .tecnology {
@@ -109,30 +123,15 @@
 .fa-react {
 	font-size: 1.8rem;
 }
-.portafolio__trajeta .faceB {
-    transform: perspective(600px) rotateY(180deg);
-    background: var(--purple);
-    box-shadow: 0 0 2px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    flex-direction: column;
-    transition: 0.5s;
-    flex-direction: column;
-    align-items: center;
-    height: 369px;
-    width: 90%;
-    justify-content: center;
-    padding: 15px;
-}
+
 .portafolio__descripcion {
 	text-align: left;
-	font-family: 'Source Code Pro', monospace;
-	line-height: 1.5;
-	color: var(--pink-terminal);
-	font-weight: 600;
-	font-size: 1.6rem;
+    font-family: "Source Code Pro", monospace;
+    line-height: normal;
+    color: var(--pink-terminal);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0 1rem;
 }
 .portafolio__botobnes {
 	display: flex;
@@ -142,11 +141,11 @@
 	flex-wrap: wrap;
 }
 .portafolio__btn {
-    display: flex;
+	display: flex;
     font-size: 12px;
-    width: 19rem;
-    margin-top: 20px;
-    padding: 20px 54px;
+    width: 12rem;
+    margin-top: 10px;
+    padding: 18px 13px;
     align-items: center;
     background: var(--pure-black);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -175,43 +174,49 @@
 		flex-wrap: wrap;
 	}
 	.portafolio__trajeta {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 26%;
-        min-width: 30%;
-        min-width: 48%;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 26%;
+		min-width: 30%;
+		min-width: 48%;
+	}
+	.portafolio__cara {
+		width: 75%;
+	}
+	.portafolio__img {
+		width: 459px;
+	}
+	.portafolio__botobnes {
+		width: 100%;
+		flex-wrap: nowrap;
+		justify-content: space-around;
 	}
 
-	.vsc__img {
-		height: 289.23px;
-	}
 	.portafolio__subtitulo {
 		font-size: 1.8rem;
 	}
 
 	.portafolio__btn {
 		display: flex;
-		font-size: 15px;
-		width: 107%;
-		padding: 19px 9px;
+		font-size: 14px;
+		width: 11rem;
+		padding: 17px 5px;
 		align-items: center;
 		border-radius: 40px;
 		justify-content: space-evenly;
-		font-weight: 800;
+		font-weight: 500;
 	}
 
 	.portafolio__btn:hover {
 		transform: scale(1.1);
 	}
 	.img__container {
-        display: flex;
-        height: 42vh;
-        flex-direction: column;
-        overflow: hidden;
-        width: 100%;
+		display: flex;
+		height: 42vh;
+		flex-direction: column;
 	}
 }
 
@@ -219,7 +224,7 @@
 	.portafolio {
 		position: relative;
 		justify-content: center;
-		height: 93vh;
+		height: 146vh;
 		width: 100%;
 	}
 	.portafolio__contenedor {
@@ -231,34 +236,32 @@
 	}
 
 	.portafolio__trajeta {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 26%;
-        min-width: 31%;
-
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 26%;
+		min-width: 31%;
+	}
+	.portafolio__cara {
+		width: 90%;
+		height: 354px;
 	}
 	.portafolio__img {
-        width: 424px;	}
-
-	.vsc__img {
-		height: 266.92px;
+		width: 509px;
 	}
-    .portafolio__botobnes {
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+	.portafolio__descripcion {
+		font-size: 1.6rem;
+		padding: 0 2rem;
+	}
 	.portafolio__btn {
-        display: flex;
-        font-size: 15px;
-        width: 14rem;
-
-        align-items: center;
-        border-radius: 40px;
-        font-weight: 600;
+		display: flex;
+		font-size: 14px;
+		width: 11rem;
+		align-items: center;
+		border-radius: 40px;
+		font-weight: 600;
 	}
 
 	.portafolio__btn:hover {

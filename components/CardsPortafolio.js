@@ -64,7 +64,7 @@ export default function CardsPortafolio(){
         
             <div class="portafolio__trajeta">
             
-                <div class="portafolio__cara faceA card__content ">
+                <div class="portafolio__cara faceA card__content caja__dark__portafolio ">
                 
                     <div class="img__container">
                         <img class="portafolio__img ${data.skills.includes("JavaScript") ? 'ligth__img' : ''}" 

@@ -66,13 +66,14 @@
 
 .caja__cristal{
     animation: myAnim 1s ease 4s 1 normal forwards;
-    background: rgba(37, 1, 88, 0.927);
+	background: rgb(22 0 54);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 15px );
     -webkit-backdrop-filter: blur( 14.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 80%;
+	width: 95%;
+
 }
 
 .terminal__content{
@@ -101,8 +102,8 @@
     font-size: 18px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    padding: 0 14px;
+    line-height: 1.5;
+    padding: 0 13px;
 	font-family: 'Source Code Pro', monospace;
 }
 .terminal__content h3{

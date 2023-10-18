@@ -5,7 +5,6 @@
 	z-index: 10;
 }
 
-
 /* elemntos del header */
 .dark-mode .header {
 	background: rgba(0, 0, 0, 0.802);
@@ -69,7 +68,6 @@
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	color: var(--glow-blue);
 }
-	
 
 .dark-mode .menu-hamburger__link {
 	color: var(--blue);
@@ -95,7 +93,10 @@
 /* ELEMNTOS DEL HERO */
 
 .dark-mode .hero {
-	background: transparent;
+	background-color: var(--pure-black);
+	background: rgba(0, 0, 0, 0.464);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
 }
 
 .dark-mode .hero__titulo {
@@ -131,19 +132,19 @@
 
 /* SKILLS */
 .dark-mode .skills {
-    justify-content: flex-start;
-    background:  linear-gradient(var(--gradient));
+	justify-content: flex-start;
+	background: linear-gradient(var(--gradient));
 }
 /* DIVIDERS */
 .dark-mode .custom-shape-divider-bottom-1685513857 .shape-fill {
-    fill: var(--pure-black);
+	fill: var(--pure-black);
 }
-.dark-mode .wrapper__black {
-	display: none;
-}
-
 
 /* Carrusel */
+
+.dark-mode .tools__caja__slider {
+	background-color: var(--pure-black);
+}
 /* icono terminal */
 .dark-mode .terminal {
 	filter: invert(100%) drop-shadow(-1px 2px 4px #76ffc3);
@@ -152,9 +153,11 @@
 	filter: drop-shadow(-1px 2px 4px #76ffc3);
 }
 
-
-
 /* SECCION ACERCA DE */
+
+.dark-mode .about {
+	background: black;
+}
 .dark-mode .titulo__dark {
 	color: var(--blue);
 	filter: var(--glow-blue);
@@ -164,14 +167,17 @@
 	filter: var(--glow-blue);
 	transition: 3s ease-in-out;
 }
+.dark-mode .card__about{
+	background-color: var(--blue);
+}
 .dark-mode .terminal__content span {
 	color: var(--blue);
 	filter: var(--glow-blue);
 	transition: 3s ease-in-out;
 }
 
-.dark-mode .terminal__content p{
-	color:white;
+.dark-mode .terminal__content p {
+	color: white;
 }
 .dark-mode .terminal__content a:hover {
 	color: var(--blue);
@@ -214,27 +220,34 @@
 }
 
 /* Portafolio */
+.dark-mode .portafolio {
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+}
 .dark-mode .caja__dark__portafolio {
-	background: rgba(0, 0, 0, 0.881);
+	background: rgba(0, 0, 0, 0.16);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(19px);
-	-webkit-backdrop-filter: blur(21px);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-
+/* Seccion Hobbies */
+.dark-mode .frase{
+	background: linear-gradient(var(--gradient));
+}
 
 .dark-mode .footer {
 	background-color: #040404;
 }
 
 .dark-mode .formulario {
-	background-color: transparent;
+	background-color: black;
 }
 
 @media (min-width: 768px) {
-
 	.dark-mode .header {
 		background: rgba(0, 0, 0, 0.802);
 		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -243,13 +256,10 @@
 		border: 1px solid rgba(255, 255, 255, 0.18);
 	}
 
-
-	.dark-mode .panel__styles{
+	.dark-mode .panel__styles {
 		background: transparent;
-			box-shadow: unset;
-			border:none;
-			color: transparent;
+		box-shadow: unset;
+		border: none;
+		color: transparent;
 	}
 }
-
-
