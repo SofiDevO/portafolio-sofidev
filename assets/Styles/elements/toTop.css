@@ -3,8 +3,9 @@
 .menu__flotante {
     position: fixed;
     z-index: 999;
-    bottom: 11vh;
-    right: 5.7vw;
+    bottom: 15vh;
+    right: 5.9vw;
+
 }
 .to__top {
 	display: flex;
