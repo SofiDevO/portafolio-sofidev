@@ -62,7 +62,7 @@ export default function CardsPortafolio(){
     for (const data of portafolioData) {
         const cardHTML = `
         
-            <div class="portafolio__trajeta">
+            <div class="portafolio__tarjeta">
             
                 <div class="portafolio__cara faceA card__content caja__dark__portafolio ">
                 

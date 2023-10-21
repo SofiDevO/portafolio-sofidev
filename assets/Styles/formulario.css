@@ -148,11 +148,12 @@
 	}
 
 	.formulario__container {
-		align-items: center;
-		flex-direction: column-reverse;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		width: 100%;
+	    align-items: center;
+    flex-direction: row-reverse;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    width: 100%;
+
 	}
 
 	.side__imgIa {
@@ -164,13 +165,13 @@
 	}
 
 	.formulario__caja {
-		display: flex;
-		flex-direction: column;
-		padding: 25px;
-		max-width: 56%;
-		width: 57%;
-		min-width: 57%;
-		align-items: stretch;
+	    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    max-width: 60%;
+    width: 66%;
+    min-width: 49%;
+    align-items: stretch;
 	}
 	.formulario__img {
 		display: none;

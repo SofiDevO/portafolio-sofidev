@@ -13,13 +13,13 @@
 }
 
 .skills__container {
-    display: flex;
+	flex-direction: column;
+	display: flex;
     width: 100%;
     height: auto;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     gap: 2rem;
+    justify-content: center;
 }
 .skills__titulo {
 	font-size: 3.5rem;
@@ -128,6 +128,7 @@
     justify-content: center;
 	}
     .skills__container {
+		flex-direction: row;
         width: 100%;
         flex-wrap: wrap;
     }

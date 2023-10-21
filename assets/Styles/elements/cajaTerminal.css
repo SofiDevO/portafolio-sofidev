@@ -127,4 +127,10 @@
 	cursor: pointer;
 }
 
+@media (min-width:768px){
+
+	.caja__cristal{
+		max-width: 70rem;
+	}
+}
 

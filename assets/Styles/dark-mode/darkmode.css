@@ -95,8 +95,8 @@
 .dark-mode .hero {
 	background-color: var(--pure-black);
 	background: rgba(0, 0, 0, 0.464);
-	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(2.5px);
+	-webkit-backdrop-filter: blur(2.5px);
 }
 
 .dark-mode .hero__titulo {
@@ -261,5 +261,11 @@
 		box-shadow: unset;
 		border: none;
 		color: transparent;
+	}
+	.dark-mode .hero {
+		background-color: var(--pure-black);
+		background: rgba(0, 0, 0, 0.464);
+		backdrop-filter: blur(3px);
+		-webkit-backdrop-filter: blur(3px);
 	}
 }

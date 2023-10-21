@@ -6,18 +6,18 @@
 
 .custom-shape-divider-bottom-1685513857 {
 	position: absolute;
-	bottom: -46px;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
+    bottom: -85px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
 .custom-shape-divider-bottom-1685513857 svg {
 	position: relative;
-	display: block;
-	width: calc(152% + 21.80000000000001px);
-	height: 131px;
+    display: block;
+    width: calc(152% + 21.80000000000001px);
+    height: 102px;
 }
 
 .custom-shape-divider-bottom-1685513857 .shape-fill {
@@ -38,14 +38,14 @@
 		position: relative;
 		display: block;
 		width: calc(124% + 453.8px);
-		height: 405px;
+		height: 253px;
 	}
 	
 }
 @media (min-width: 1200px) {
 	.custom-shape-divider-bottom-1685513857 {
 		position: absolute;
-		bottom: -139px;
+		bottom: -364px;
 		left: 0;
 		width: 100%;
 		overflow: hidden;

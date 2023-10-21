@@ -167,6 +167,7 @@
 		height: auto;
 		gap: 0;
 		padding: 0;
+		justify-content: flex-end;
 	}
 
 	/* Animacion de entrada para los links del menu */

@@ -18,7 +18,7 @@
 }
 
 .github .social__icon {
-	width: 67px;
+    width: 55px;
 }
 .alura {
 	filter: invert(30%) sepia(100%) saturate(1072%) hue-rotate(180deg) brightness(96%) contrast(97%) drop-shadow(0 0 3px var(--pure-black));
@@ -52,7 +52,7 @@
 	width: 53px;
 }
 .youtube {
-	bottom: -194px;
+	bottom: -189px;
     right: -33px;
     transform: translateY(500px);
     animation: expand 0.6s ease-in-out forwards 0.8s;
@@ -168,10 +168,11 @@
 	}
 	.linkedin {
     top: -20px;
-    right: -159px;
+    right: -147px;
 	}
 	.linkedin .social__icon {
-		width: 6.5rem;
+		width: 5.7rem;
+
 	}
 	.platzi {
     top: -161px;
