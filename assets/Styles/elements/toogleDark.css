@@ -3,9 +3,36 @@
 
 	position: fixed;
 	z-index: 999;
-	bottom: 4vh;
+	bottom: 5vh;
 	right: 81.7vw;
 }
+
+.dark-mode__container {
+	-webkit-animation: scale-up-center 0.3s ease-in 2s backwards;
+	        animation: scale-up-center 0.3s ease-in 2s backwards;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
 .dark-mode__container {
     width: 4rem;
     height: 4rem;
@@ -18,7 +45,7 @@
     box-shadow: -15px 35px 68px 0px rgba(145, 192, 255, 0.5), inset 12px -12px 16px 0px rgba(214, 232, 255, 0.214), inset 0px 11px 28px 0px rgb(255, 255, 255);
     padding: 7px;
     display: flex;
-    bottom: 35vh;
+    bottom: 34vh;
     right: 1.7rem;
     position: fixed;
 }
