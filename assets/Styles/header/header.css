@@ -46,24 +46,24 @@
 /* Menu hamburguesa */
 .panel__btn {
 	position: fixed;
-	z-index: 9999;
-	bottom: 3vh;
-	right: 3vw;
-	width: 6rem;
-	height: 6rem;
-	border-radius: 50%;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: rgba(255, 255, 255, 0.25);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(4px);
-	-webkit-backdrop-filter: blur(4px);
-	border-radius: 50%;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	border: solid;
-	border-color: var(--dark-purple);
+    z-index: 9999;
+    bottom: 2%;
+    right: 1.5%;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: solid;
+    border-color: var(--dark-purple);
 }
 .panel {
 	position: fixed;

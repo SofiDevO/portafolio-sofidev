@@ -3,8 +3,8 @@
 .menu__flotante {
     position: fixed;
     z-index: 999;
-    bottom: 15vh;
-    right: 5.9vw;
+    bottom: 13%;
+    right: 3%;
 
 }
 .to__top {
