@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 999;
     bottom: 13%;
-    right: 3%;
+    right: 5%;
 
 }
 .to__top {
@@ -28,11 +28,6 @@
     color: black;
 }
 
-.icon__top-container{
-    top: 4.5rem;
-    left: 0;
-}
-
 .to__top.active {
 	opacity: 1;
 	pointer-events: auto;
@@ -40,20 +35,24 @@
 
 
 
+@media (min-width: 768px) {
+    .menu__flotante{
+        bottom: 13%;
+        right: 3.3%;
+    }   
+    
+
+} 
 @media (min-width: 1200px) {
     .menu__flotante{
-        position: fixed;
-    z-index: 999;
-    bottom: 23vh;
-    right: 5.7vw;
-    
-    }
+        bottom: 22%;
+        right: 4.4%;
+    } 
     .icon__top-container {
         display: flex;
         position: absolute;
         z-index: 1;
-        top: -1rem;
-        left: 1.5rem;
+
 	}
     .to__top{
         width: 4.8rem;
