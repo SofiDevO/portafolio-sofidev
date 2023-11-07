@@ -185,7 +185,7 @@
 	filter: var(--glow-blue);
 	transition: 3s ease-in-out;
 }
-.dark-mode .icon__size{
+.dark-mode .about__icons{
 	filter: var(--icons-glow-dark);
 }
 

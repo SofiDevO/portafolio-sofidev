@@ -23,12 +23,13 @@ html{
     --yellow-terminal:rgb(182, 182, 3);
     --pink-terminal:rgb(255, 0, 144);
 
+    --form-ok-color: #4caf50;
+    --form-error-color: #f44336;
 
     /* Darktheme */
     --pure-black: #000000;
-    --form-ok-color: #4caf50;
-    --form-error-color: #f44336;
     --terminal-bg-dark: rgba(18, 0, 33, 0.734);
+    --icons-glow-dark: invert(100%) var(--glow-blue);
 }
 
 a{
