@@ -168,12 +168,25 @@
 	transition: 3s ease-in-out;
 }
 .dark-mode .card__about{
-	background-color: var(--blue);
+	background-color: var(--terminal-bg-dark);
 }
+
+.dark-mode .card-title p{
+	color: var(--blue);
+	filter: var(--glow-blue);
+  }
+
+
+  .card-title span {
+    color: var(--pink-terminal);
+  }
 .dark-mode .terminal__content span {
 	color: var(--blue);
 	filter: var(--glow-blue);
 	transition: 3s ease-in-out;
+}
+.dark-mode .icon__size{
+	filter: var(--icons-glow-dark);
 }
 
 .dark-mode .terminal__content p {
@@ -186,7 +199,7 @@
 	filter: invert(100%) saturate(0%) drop-shadow(-1px 2px 4px #76ffc3);
 }
 .dark-mode .boton {
-	background: rgba(0, 0, 0, 0.8);
+	background:var(--pure-black);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(19px);
 	-webkit-backdrop-filter: blur(19px);
@@ -235,7 +248,7 @@
 }
 
 /* Seccion Hobbies */
-.dark-mode .frase{
+.dark-mode .hobbies{
 	background: linear-gradient(var(--gradient));
 }
 

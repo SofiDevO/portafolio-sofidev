@@ -111,7 +111,7 @@
 }
 .terminal__content span{
     color: var(--green-terminal);
-    font-weight: bold;
+    font-weight: 500;
 	font-family: 'Source Code Pro', monospace;
 }
 .terminal__content a{

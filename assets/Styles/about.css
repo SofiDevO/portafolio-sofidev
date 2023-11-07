@@ -18,7 +18,7 @@
 
 
 .card__about {
-    overflow: hidden;
+	overflow: hidden;
     width: 31rem;
     height: 54rem;
     padding: 0 0 239px;
@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 56, 152, 0.284);
+    background: rgb(20 0 51);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -34,19 +34,19 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.card-title {
+.card-title p{
 	text-align: center;
-    color: var(--main-color);
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: -6rem;
+	color: var(--green-terminal);
   }
 
 
   .card-title span {
     font-size: 2rem;
     font-weight: 500;
-    color: var(--purple);
+    color: var(--pink-terminal);
   }
 .card-photo {
     transform: scale(0.3) translate(226px, 747px);
@@ -75,10 +75,11 @@
 	border: none;
 	cursor: pointer;
 }
-.icon__size{
+.about__icons{
     width: 3rem;
+	filter: invert(100%);
 }
-.icon__size:hover{
+.about__icons:hover{
 	transform: scale(1.2);
 }
 
@@ -154,6 +155,7 @@
 }
 .contactar__boton__icono {
 	width: 25px;
+	filter: invert(100%) saturate(5);
 }
 
 @media (min-width: 768px) {
