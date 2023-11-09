@@ -21,7 +21,7 @@
 	font-weight: bold;
 	font-size: 3rem;
 	color: var(--seccond-color);
-
+	font-family: 'Montserrat', sans-serif;
 	transition: all 0.7s;
 }
 .header__logo,
@@ -47,7 +47,7 @@
 .panel__btn {
 	position: fixed;
     z-index: 9999;
-    bottom: 2%;
+    bottom: 10%;
     right: 1.5%;
     width: 6rem;
     height: 6rem;
@@ -93,19 +93,17 @@
 	border:  1px  solid rgba(255, 255, 255, 0.18);
 }
 
+
+
 .menu__hamburger-link {
-	padding: 0.7rem;
-    width: inherit;
     display: block;
-    font-size: 4rem;
-    font-weight: 500;
-    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 400;
     transition: all 0.5s ease;
     text-align: left;
     height: auto;
-	text-align: left;
-	color: var(--seccond-color);
-	
+    text-align: left;
+    color: var(--seccond-color);
 }
 .menu__ul {
 	display: flex;
@@ -114,9 +112,12 @@
     align-items: flex-start;
     height: 100vh;
     justify-content: flex-start;
-	
+	margin-top: 7rem;
 }
-
+.menu__avatar{
+	width: 5rem;
+	margin-bottom: 5rem;
+}
 /* TABLET VIEW */
 @media screen and (min-width: 768px) {
 	.header {
@@ -130,7 +131,7 @@
 		font-size: 2.2rem;
 	}
 	/* menu hamburguesa */
-	.panel__btn {
+	.panel__btn, .menu__avatar {
 		display: none;
 	}
 	.panel {
@@ -146,8 +147,7 @@
 		background: unset;
 		box-shadow: unset;
 		border: unset;
-	
-;
+		flex-direction: column;
 	}
 
 	/* Menu desktop */
@@ -168,6 +168,7 @@
 		gap: 0;
 		padding: 0;
 		justify-content: flex-end;
+		margin-top: 0;
 	}
 
 	/* Animacion de entrada para los links del menu */

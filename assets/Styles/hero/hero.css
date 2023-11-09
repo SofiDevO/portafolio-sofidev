@@ -17,6 +17,7 @@
 }
 
 .hero__titulo {
+	font-family: "Montserrat", sans-serif;
 	transition: all 0.9s;
 	color: var(--seccond-color);
 	font-size: 4.3rem;
@@ -206,7 +207,7 @@
 	.hero__titulo {
 		font-size: 6em;
 		font-weight: 900;
-		font-family: "Montserrat", sans-serif;
+		
 		padding: 0;
 	}
 	.hero__subtitulo {

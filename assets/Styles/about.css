@@ -2,7 +2,7 @@
 	display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 0px 3rem;
+    /* padding: 0px 3rem; */
 }
 .about__container {
     display: flex;
@@ -116,6 +116,7 @@
 	margin: 15px 0;
 	text-align: center;
 	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
 }
 .about__titulo span {
 	color: var(--seccond-color);

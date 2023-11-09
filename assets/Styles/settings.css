@@ -38,7 +38,7 @@ a{
 body {
   overflow-x: hidden;
   z-index: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fira Code', monospace;
   margin: 0;
   width: 100%;
   background:var(--seccond-color);
@@ -54,11 +54,9 @@ ul{
   list-style: none;
 }
 
-h2{
-  font-size: 4rem;
-}
+
 
 .titulo{
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: 'Montserrat', sans-serif;
   }

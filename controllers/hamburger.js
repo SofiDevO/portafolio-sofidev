@@ -3,7 +3,7 @@ const d = document;
 
 
 
-export default function hamburgerMenu(panelBtn, panel, menuLink) {
+export default function hamburgerMenu(panelBtn, panel, menuLink, menuAvatar) {
 
     d.addEventListener("click", (e) => {
         if (e.target.matches(panelBtn) || e.target.matches(`${panelBtn} *`)) {
@@ -18,5 +18,5 @@ export default function hamburgerMenu(panelBtn, panel, menuLink) {
     })
 }
 d.addEventListener("DOMContentLoaded", (e)=> {
-    hamburgerMenu(".panel__btn", ".panel", ".menu__link");
+    hamburgerMenu(".panel__btn", ".panel", ".menu__link", ".menu__avatar");
 })

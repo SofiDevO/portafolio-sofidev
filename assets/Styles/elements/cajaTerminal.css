@@ -61,8 +61,7 @@
 	margin-left: 6px;
 	font-size: 1.5rem;
 	line-height: 15px;
-	font-family: "Montserrat", sans-serif;
-}
+	font-family: 'Fira Code', monospace;}
 
 .caja__cristal{
     animation: myAnim 1s ease 4s 1 normal forwards;
@@ -81,9 +80,11 @@
     text-align: left;
     padding: 1rem;
 	width: 100%;
+	font-family: 'Fira Code', monospace;
 }
 /* Botondescargar */
 .skills__descargar {
+	font-family: 'Fira Code', monospace;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -101,25 +102,21 @@
     text-align: left;
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
-    padding: 0 13px;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Fira Code', monospace;    line-height: 1.5;
 }
 .terminal__content h3{
     color: var(--pink-terminal);
+	font-family: 'Fira Code', monospace;
 }
 .terminal__content span{
     color: var(--green-terminal);
     font-weight: 500;
-	font-family: 'Source Code Pro', monospace;
-}
+	font-family: 'Fira Code', monospace;}
 .terminal__content a{
     color: var(--pink-terminal);
     text-decoration: none;
-    font-style: italic;
-	font-family: 'Source Code Pro', monospace;
-}
+    
+	font-family: 'Fira Code', monospace;}
 .terminal__content a:hover{
     color: var(--green-terminal);
 	text-decoration: none;
@@ -128,7 +125,6 @@
 }
 
 @media (min-width:768px){
-
 	.caja__cristal{
 		max-width: 70rem;
 	}

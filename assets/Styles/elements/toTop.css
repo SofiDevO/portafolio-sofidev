@@ -3,7 +3,7 @@
 .menu__flotante {
     position: fixed;
     z-index: 999;
-    bottom: 13%;
+    bottom: 20%;
     right: 5%;
 
 }

@@ -25,7 +25,7 @@
     }
   }
   
-.dark-mode__container {
+.toogle-dark__container {
   z-index: 999;
   position: fixed;
   width: 4rem;
@@ -39,7 +39,7 @@
   box-shadow: -15px 35px 68px 0px rgba(145, 192, 255, 0.5), inset 12px -12px 16px 0px rgba(214, 232, 255, 0.214), inset 0px 11px 28px 0px rgb(255, 255, 255);
   padding: 7px;
   display: flex;
-  bottom: 4.1%;
+  bottom: 10.1%;
   right: 83%;
 }
 
