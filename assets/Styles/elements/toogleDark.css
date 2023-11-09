@@ -1,5 +1,5 @@
 
-.dark-mode__container {
+.toogle-dark__container {
 	-webkit-animation: scale-up-center 0.3s ease-in 2s backwards;
 	        animation: scale-up-center 0.3s ease-in 2s backwards;
 }
