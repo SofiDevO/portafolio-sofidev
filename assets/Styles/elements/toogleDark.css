@@ -57,7 +57,7 @@
 }
 
 @media (min-width: 768px) {
-	.dark-mode__container {
+	.toogle-dark__container {
     bottom: 4%;
     right: 3%;
     }
@@ -65,7 +65,7 @@
         
 }
 @media (min-width: 1200px) {
-	.dark-mode__container {
+	.toogle-dark__container {
     bottom: 5%;
     right: 1.7%;
     }
