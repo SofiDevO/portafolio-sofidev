@@ -261,6 +261,7 @@
 	}
 	.ytchannel__title-red:hover{
 		color: red;
+		
 		text-shadow: none;
 		filter: none;
 	}

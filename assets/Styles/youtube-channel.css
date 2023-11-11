@@ -14,16 +14,16 @@
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
-    .ytchannel__title-red{
-        color: red;
-        padding: 0 1.4rem;
+}
+.ytchannel__title-red{
+    color: red;
+    padding: 0 1.4rem;
 
-    }
-    .ytchannel__title-red:hover{
-        color: white;
-        text-shadow: 0px 1px 2px #000000;
-        filter: var(--glow-blue);
-    }
+}
+.ytchannel__title-red:hover{
+    color: white;
+    text-shadow: 0px 1px 2px #000000;
+    filter: var(--glow-blue);
 }
 .logo__yt{
     width: 5rem;
