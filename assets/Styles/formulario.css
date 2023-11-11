@@ -10,6 +10,7 @@
     width: 100%;
 	padding: 3rem 0;
 }
+
 .form__caja{
 	display: flex;
 	flex-direction: column-reverse;
@@ -18,6 +19,7 @@
     justify-content: center;
     gap: 5rem;
 }
+
 .form__container {
 	display: flex;
 	flex-direction: column;
@@ -25,6 +27,7 @@
 	align-items: center;
     width: 100%;
 }
+
 .form__img{
 	width: 31%;
     border-radius: 50%;
