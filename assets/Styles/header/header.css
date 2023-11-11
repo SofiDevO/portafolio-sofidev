@@ -113,6 +113,7 @@
     height: 100vh;
     justify-content: flex-start;
 	margin-top: 7rem;
+	gap: 2.4rem;
 }
 .menu__avatar{
 	width: 5rem;
