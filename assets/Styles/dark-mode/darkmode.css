@@ -125,7 +125,7 @@
 .dark-mode .icono__dark {
 	filter: invert(100%) saturate(0%) drop-shadow(0 0 10px #5cb5ac);
 }
-.dark-mode .youtube {
+.dark-mode .youtube, .dark-mode .logo__yt {
 	filter: invert(94%) sepia(97%) saturate(0%) hue-rotate(348deg)
 		brightness(102%) contrast(102%) drop-shadow(5px 5px 10px #76ffc3);
 }

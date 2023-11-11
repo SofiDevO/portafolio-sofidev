@@ -7,9 +7,12 @@
 }
 
 .ytchannel__titulo{
+    display: flex;
+    justify-content: center;
     margin-bottom: 2rem;
     font-size: 3rem;
     text-align: center;
+    align-items: center;
     .ytchannel__title-red{
         color: red;
     }
@@ -19,6 +22,9 @@
         filter: var(--glow-blue);
     }
 }
+.logo__yt{
+    width: 5rem;
+ }
 .ytchannel__caja{
     display: flex;
     flex-direction: column;
@@ -34,6 +40,7 @@
         margin: 0 0 2rem;
     }
 }
+
 .latestVideoEmbed{
     width: 84vw;
     height: 37vh;
@@ -47,8 +54,6 @@
     .ytchannel{
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
-
     }
     
     
@@ -56,7 +61,8 @@
         text-align: center;
         margin: 0;
         font-size: 4rem;
-        margin-bottom: 10rem;
+        margin-bottom: 7rem;
+        margin-top: 9rem;
     }
     .ytchannel__caja{
         display: flex;
