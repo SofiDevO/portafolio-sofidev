@@ -15,6 +15,7 @@
 	align-items: center;
 	justify-content: space-around;
 	width: 23%;
+	max-width: 9rem;
 }
 
 .btn {
