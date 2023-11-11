@@ -13,8 +13,11 @@
     font-size: 3rem;
     text-align: center;
     align-items: center;
+    flex-wrap: wrap;
     .ytchannel__title-red{
         color: red;
+        padding: 0 1.4rem;
+
     }
     .ytchannel__title-red:hover{
         color: white;
