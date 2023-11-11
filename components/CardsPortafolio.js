@@ -85,15 +85,11 @@ export default function CardsPortafolio(){
                 <div class="portafolio__cara faceB  caja__dark__portafolio">
                     <p class="portafolio__descripcion titulo__dark">${data.descripcion}</p>
                     <div class="portafolio__botobnes">
-                        <a href="${data.demoURL}"target="_blank" rel="nofollow noreferrer noopener">
-                            <button class="portafolio__btn boton titulo__dark">
+                        <a class="portafolio__btn boton titulo__dark" href="${data.demoURL}"target="_blank" rel="nofollow noreferrer noopener">
                                 <span data-section="portafolio" data-value="demo">View Demo</span>
-                            </button>
                         </a>
-                        <a href="${data.repoURL}"target="_blank" rel="nofollow noreferrer noopener">
-                            <button class="portafolio__btn boton titulo__dark">
+                        <a class="portafolio__btn boton titulo__dark" href="${data.repoURL}"target="_blank" rel="nofollow noreferrer noopener">
                                 <span data-section="portafolio" data-value="repo">View Repo</span>
-                            </button>
                         </a>
                     </div>
                 </div>

@@ -58,16 +58,16 @@
 
 @media (min-width: 768px) {
 	.toogle-dark__container {
-    bottom: 4%;
-    right: 3%;
+    bottom: 23%;
+    right: 2%;
     }
     
         
 }
 @media (min-width: 1200px) {
 	.toogle-dark__container {
-    bottom: 5%;
-    right: 1.7%;
+    bottom: 17%;
+    right: 2%;
     }
         
 }

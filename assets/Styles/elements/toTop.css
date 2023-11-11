@@ -37,15 +37,16 @@
 
 @media (min-width: 768px) {
     .menu__flotante{
-        bottom: 13%;
-        right: 3.3%;
+        bottom: 16%;
+        right: 1.6%;
+    
     }   
     
 
 } 
 @media (min-width: 1200px) {
     .menu__flotante{
-        bottom: 22%;
+        bottom: 30%;
         right: 4.4%;
     } 
     .icon__top-container {

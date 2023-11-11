@@ -1,9 +1,10 @@
 .boton {
 	display: flex;
 	font-size: 1.5rem;
-	width: 82%;
+	width: 100%;
+	max-width: 25rem;
 	margin-top: 20px;
-	padding: 22px 11px;
+    padding: 10px 4px;
 	align-items: center;
 	background: rgba(255, 255, 255, 0.3);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -33,8 +34,9 @@
 @media (min-width: 768px) {
 	.boton {
 		font-size: 1.3rem;
-		width: 50%;
-		padding: 23px 4px;
+		width: 65%;
+		padding: 11px 1px;
+		max-width: 29rem;
 	}
 
 	.boton:hover {
@@ -57,9 +59,9 @@
 
 @media (min-width: 1200px) {
 	.boton {
-		display: flex;
-		width: 143%;
-		padding: 23px 3px;
+	    display: flex;
+		width: 100%;
+		padding: 7px 7px;
 		align-items: center;
 		border-radius: 40px;
 		justify-content: space-evenly;

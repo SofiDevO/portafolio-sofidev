@@ -5,10 +5,12 @@
 	justify-content: center;
 	width: 100%;
 }
+
 .portafolio__titulo {
 	font-size: 2rem;
 	font-family: "Montserrat", sans-serif;
 }
+
 .portafolio__contenedor {
 	display: flex;
 	flex-direction: column;
@@ -17,48 +19,52 @@
 	align-items: center;
 	gap: 25px;
 }
+
 .portafolio__tarjeta {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    height: 318px;
-    overflow: hidden;
-    justify-content: space-evenly;
-    width: 100%;
-    border-radius: 20px;
-    min-width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	height: 318px;
+	overflow: hidden;
+	justify-content: space-evenly;
+	width: 100%;
+	border-radius: 20px;
+	min-width: 100%;
 	border-radius: 15px;
 }
+
 .portafolio__tarjeta:hover .faceA {
 	transform: perspective(600px) rotateY(180deg);
 }
+
 .portafolio__tarjeta:hover .faceB {
 	transform: perspective(600px) rotateY(360deg);
 }
+
 .portafolio__cara {
 	display: flex;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    position: absolute;
-    backface-visibility: hidden;
-    transition: 0.5s;
-    height: 286px;
-    width: 100%;
-    max-width: 45rem;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    flex-direction: column;
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 0.5s;
+	height: 286px;
+	width: 100%;
+	max-width: 45rem;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	flex-direction: column;
 	border-radius: 15px;
 }
 
 .portafolio__tarjeta .faceA {
-	transform: perspective(600px) ratateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
 	box-shadow: 0 5px 10px var(--pure-black);
 	background: var(--dark-purple);
-	box-shadow: 0 0px 2px 0 rgba(31, 38, 135, 0.37);
 	border-radius: 15px;
 }
+
 .portafolio__tarjeta .faceB {
 	transform: perspective(600px) rotateY(180deg);
 	background: var(--dark-purple);
@@ -90,20 +96,22 @@
 	align-items: center;
 	flex-direction: column;
 }
+
 .portafolio__subtitulo {
 	font-size: 1.6rem;
 	text-align: center;
 	overflow: hidden;
 	color: var(--green-terminal);
 }
+
 .skills__used {
 	display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-bottom: 4rem;
-    gap: 0.8rem;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-bottom: 4rem;
+	gap: 0.8rem;
 }
 
 .tecnology {
@@ -120,19 +128,21 @@
 	width: 4rem;
 	height: 4rem;
 }
+
 .fa-react {
 	font-size: 1.8rem;
 }
 
 .portafolio__descripcion {
 	text-align: left;
-    font-family: "Source Code Pro", monospace;
-    line-height: normal;
-    color: var(--pink-terminal);
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 0 1rem;
+	font-family: "Source Code Pro", monospace;
+	line-height: normal;
+	color: var(--pink-terminal);
+	font-weight: 400;
+	font-size: 1.5rem;
+	padding: 0 1rem;
 }
+
 .portafolio__botobnes {
 	display: flex;
 	width: 100%;
@@ -140,43 +150,41 @@
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
+
 .portafolio__btn {
 	display: flex;
-    font-size: 12px;
+	font-size: 13px;
     width: 12rem;
     margin-top: 10px;
-    padding: 18px 13px;
-    align-items: center;
-    background: var(--pure-black);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 40px;
-    border: 3px solid var(--green-terminal);
-    justify-content: space-evenly;
-    font-weight: 700;
-    color: var(--seccond-color);
+    padding: 8px 5px;
+	align-items: center;
+	background: var(--pure-black);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 40px;
+	border: 3px solid var(--green-terminal);
+	justify-content: space-evenly;
+	font-weight: 700;
+	color: var(--seccond-color);
 }
+
 .portafolio__btn:hover {
 	border: 3px solid var(--blue);
 }
 
 @media (min-width: 768px) {
 	.portafolio {
-		background-size: 717px;
-		position: relative;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
 	}
 	.portafolio__contenedor {
-		display: flex;
-		position: relative;
 		justify-content: center;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
 	.portafolio__tarjeta {
-		display: flex;
-		position: relative;
-		align-items: center;
 		justify-content: center;
 		width: 48%;
 		min-width: 34rem;
@@ -186,49 +194,40 @@
 		width: 75%;
 		border-radius: 15px;
 	}
+	.img__container {
+		height: 42vh;
+	}
 	.portafolio__img {
 		width: 459px;
 	}
-	.portafolio__botobnes {
-		width: 100%;
-		flex-wrap: nowrap;
-		justify-content: space-around;
-	}
-
 	.portafolio__subtitulo {
 		font-size: 1.8rem;
 	}
-
+	.portafolio__descripcion {
+		font-size: 1.6rem;
+		padding: 0 2rem 0 3rem;
+	}
+	.portafolio__botobnes {
+		flex-wrap: nowrap;
+		justify-content: center;
+		gap: 2rem;
+		padding: 0 .5rem;
+	}
 	.portafolio__btn {
-		display: flex;
-		font-size: 14px;
-		width: 11rem;
-		padding: 17px 5px;
+		font-size: 1.2rem;
+		width: 100%;
+		max-width: 10rem;
+		padding: 8px 3px;
 		align-items: center;
 		border-radius: 40px;
-		justify-content: space-evenly;
-		font-weight: 500;
 	}
-
 	.portafolio__btn:hover {
 		transform: scale(1.1);
-	}
-	.img__container {
-		display: flex;
-		height: 42vh;
-		flex-direction: column;
 	}
 }
 
 @media (min-width: 1200px) {
-	.portafolio {
-		position: relative;
-		justify-content: center;
-		height: 103vh;
-		width: 100%;
-	}
 	.portafolio__contenedor {
-		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 3rem;
@@ -237,32 +236,18 @@
 
 	.portafolio__tarjeta {
 		display: flex;
-		position: relative;
-		flex-direction: column;
-		align-items: center;
 		justify-content: center;
-		width: 26%;
-		min-width: 31%;
-		
+		width: 31%;
+		min-width: 36rem;
+		align-items: center;
 	}
 	.portafolio__cara {
-		width: 100%;
 		height: 308px;
+	}
 	.portafolio__img {
 		width: 509px;
 	}
-	.portafolio__descripcion {
-		font-size: 1.6rem;
-		padding: 0 2rem;
-	}
-	.portafolio__btn {
-		display: flex;
-		font-size: 14px;
-		width: 11rem;
-		align-items: center;
-		border-radius: 40px;
-		font-weight: 600;
-	}
+
 
 	.portafolio__btn:hover {
 		transform: scale(1.1);

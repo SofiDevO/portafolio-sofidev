@@ -1,10 +1,13 @@
 /* Divider black */
 .wrapper__black{
     display: block;
+    position: relative;
+    height: 28vh;
+
 }
 .custom-shape-divider-bottom-1693539436 {
     position: absolute;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -26,10 +29,14 @@
 
 
 @media (min-width:768px){
-    /* Divider Black */
+    .wrapper__black {
+        display: block;
+        position: relative;
+        height: 19vh;
+    }
     .custom-shape-divider-bottom-1693539436 {
         position: absolute;
-        bottom: -2;
+        bottom: -1px;
         left: 0;
         width: 100%;
         overflow: hidden;

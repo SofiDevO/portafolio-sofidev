@@ -39,7 +39,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Fira+Code:wght@400;600&display=swap"
         rel="stylesheet">
-   
+
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERDGRLBQQL"></script>
@@ -77,7 +77,7 @@
     <link rel="stylesheet" href="./assets/Styles/about.css">
     <link rel="stylesheet" href="./assets/Styles/portfolio/portfolio.css">
     <link rel="stylesheet" href="./assets/Styles/formulario.css">
-    <link rel="stylesheet" href="./assets/Styles/hobbies.css">
+    <link rel="stylesheet" href="./assets/Styles/youtube-channel.css">
     <link rel="stylesheet" href="./assets/Styles/footer.css">
     <!-- dark mode -->
     <link rel="stylesheet" href="./assets/Styles/dark-mode/darkmode.css">
@@ -98,7 +98,8 @@
                 <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#skills">Skills</a></li>
                 <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#aboutMe">About me</a></li>
                 <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#portafolio">Portfolio</a></li>
-                <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#hobbies">Hobbies</a></li>
+                <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#ytchannel">Youtube</a>
+                </li>
                 <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#formulario">Contact</a></li>
                 <li class="menu__list"><a class="menu__link menu__hamburger-link" href="https://blog.itssofi.dev/"
                         target="_blank">Blog</a></li>
@@ -212,11 +213,11 @@
                             In addition to my technical skills, I have experince in SEO, graphic design, and UI design.
                         </p>
                         <div class="skills__descargar">
-                            <a class="link__boton" href="./assets/documents/Angela_Sofia_Osorio_Cv_2023.pdf"
-                                target="_blank">
-                                <button class="boton titulo__dark"> <span>Download
-                                        CV</span> <img class="skills__descargar__icono icono__boton"
-                                        src="./assets/svg/generate-pdf.svg" alt="download button"> </button>
+                            <a class="link__boton boton titulo__dark terminal__content span"
+                                href="./assets/documents/Angela_Sofia_Osorio_Cv_2023.pdf" target="_blank">
+                                <span>Download
+                                    CV</span> <img class="skills__descargar__icono icono__boton"
+                                    src="./assets/svg/generate-pdf.svg" alt="download button">
                             </a>
                         </div>
                     </div>
@@ -481,27 +482,21 @@
                         <span>frontend Developer</span>
                     </div>
                     <div class="card-socials">
-                        <button class="card-socials-btn facebook">
-                            <a class="icon" href="./assets/documents/Angela_Sofia_Osorio_Cv_2023.pdf" target="_blank">
+                            <a class="card-socials-btn facebook" href="./assets/documents/Angela_Sofia_Osorio_Cv_2023.pdf" target="_blank">
                                 <img class="about__icons" src="./assets/svg/pdf-solid.svg" alt="">
                             </a>
-                        </button>
-                        <button class="card-socials-btn ">
-                            <a class="icon" href="https://github.com/SofiDevO" target="_blank"
+                            <a class="card-socials-btn " href="https://github.com/SofiDevO" target="_blank"
                                 rel="nofollow noreferrer noopener">
                                 <img class="about__icons" src="./assets/svg/github-light.svg" alt="icono GitHub"
                                     data-name="Layer 21" id="Layer_21">
                             </a>
-
-                        </button>
-                        <button class="card-socials-btn ">
-                            <a class="icon" href="https://www.linkedin.com/in/sofidev/" target="_blank"
+                            <a class=" card-socials-btn icon" href="https://www.linkedin.com/in/sofidev/" target="_blank"
                                 rel="nofollow noreferrer noopener">
                                 <img class="about__icons" src="./assets/svg/linkedin.svg" alt="icono linkedin"
                                     data-name="Layer 21" id="Layer_21">
                             </a>
 
-                        </button>
+                      
                     </div>
                 </div>
 
@@ -521,7 +516,7 @@
                     </h3>
                     <p class="terminal__content contenido">
                         I'm a dedicated junior front-end developer based in Mexico, passionate about technology and
-                        constantly expanding my skills. I also have a deep love for coffee and enjoy writing articles
+                        constantly expanding my skills.
                     </p>
                     <h3 class="terminal__content contenido">
                         What <span class="about__span span__dark">sets me apart?</span>
@@ -533,13 +528,13 @@
                     </p>
                 </div>
                 <div class="about__contactar">
-                    <a class="link__boton " href="mailto: contact@itssofi.dev" target="_blank"
-                        rel="nofollow noreferrer noopener">
-                        <button class="boton  titulo__dark terminal__content span"> <span>Get
-                                in touch</span>
-                            <img class="contactar__boton__icono icono__boton " src="./assets/svg/mail (1).svg"
-                                alt="mail icon">
-                        </button>
+                    <a class="link__boton boton titulo__dark terminal__content span" href="mailto: contact@itssofi.dev"
+                        target="_blank" rel="nofollow noreferrer noopener">
+                        <span>Get
+                            in touch</span>
+                        <img class="contactar__boton__icono icono__boton " src="./assets/svg/mail (1).svg"
+                            alt="mail icon">
+
                     </a>
                 </div>
             </div>
@@ -548,116 +543,96 @@
         </section>
         <!-- Portafolio -->
         <section class="portafolio " id="portafolio">
-                <h2 class="titulo titulo__dark">Portfolio</h2>
+            <h2 class="titulo titulo__dark">Portfolio</h2>
             <div class="portafolio__contenedor" data-card>
                 <!-- Aquí se insertarán las tarjetas generadas dinámicamente -->
             </div>
         </section>
 
-        <!-- Seccion Hobbies -->
-        <section id="hobbies" class="hobbies">
-                <h2 class="titulo titulo__dark">Hobbies</h2>
-            <div class="hobbies__caja">
-                <div class="card">
-                    <div class="titlebar">
-                        <span class="buttons">
-                            <button class="minimize">
-                                <svg x="0px" y="0px" viewBox="0 0 10.2 1">
-                                    <rect x="0" y="50%" width="10.2" height="1"></rect>
-                                </svg>
-                            </button>
-                            <button class="maximize">
-                                <svg viewBox="0 0 10 10">
-                                    <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path>
-                                </svg>
-                            </button>
-                            <button class="close">
-                                <svg viewBox="0 0 10 10">
-                                    <polygon
-                                        points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1">
-                                    </polygon>
-                                </svg>
-                            </button>
-                        </span>
+        <!-- Seccion Youtube -->
+        <section id="ytchannel" class="ytchannel">
+            <h2 class="titulo titulo__dark ytchannel__titulo">Suscribe to my <span
+                    class="ytchannel__title-red">Youtube</span> Channel
+            </h2>
+            <div class="ytchannel__caja">
+                <div class="caja__cristal caja__dark" ">
+                        <div class=" terminal_toolbar">
+                    <div class="butt">
+                        <button class="btn btn__red btn-color"></button>
+                        <button class="btn btn__yellow"></button>
+                        <button class="btn btn__green"></button>
                     </div>
-                    <div class="cppcode">
-                        <pre id="pre"><code><span class="s1">if <span class="s2">(youWant())<span class="s3">{</span></span></span>
-                        <span class="you__can">youCan();</span>
-                        <span class="s3">}<span class="s2">else</span><span class="s4">{ </span></span>
-                        <span class="you__cant">youCant();</span> 
-                        <span class="s4">}</span>
-                    </div>
-                </div>  
-                <div class="hobbies__imagen">
-                    <img src="./assets/img/sofidev_laptop.gif" alt="sofi-pixel art" class="sofi__pixel titulo__dark">
-                    <div class="hobbies__iconos">
-                        <div class="hobbies__grupo">
-                            <div class="hobbies__icono__caja caja__dark" >
-                                <img class="hobbies__icono icono__dark gym" src="./assets/svg/gym.svg" alt="icono gym" >
-                            </div>
-                            <span class="hobbies__icono__descripcion ">Gym</span>
-                        </div>
-    
-                        <div class="hobbies__grupo">
-                            <div class="hobbies__icono__caja caja__dark" >
-                                <img class="hobbies__icono icono__dark boxing" src="./assets/svg/boxing.svg" alt="icono boxing">
-                            </div>
-                            <span class="hobbies__icono__descripcion">Boxing</span>
-                        </div>
-                            
-                        <div class="hobbies__grupo">
-                            <div class="hobbies__icono__caja caja__dark" >
-                                <img class="hobbies__icono icono__dark coding" src="./assets/svg/code-16.svg" alt="icono codding">
-                            </div>
-                            <span class="hobbies__icono__descripcion">Coding</span>
-                        </div>
-    
-                        <div class="hobbies__grupo">
-                            <div class="hobbies__icono__caja caja__dark" >
-                                <img class="hobbies__icono icono__dark music" src="./assets/svg/music-note-2-play-20-filled.svg" alt="icono music" >
-                            </div>
-                            <span class="hobbies__icono__descripcion"> Music</span>
-                        </div>
-                    </div>
+                    <p class="user">sofidev@admin: ~</p>
                 </div>
-            </div>
-            <!-- Divider -->
-            <div class="wrapper__black">
-                <div class="custom-shape-divider-bottom-1693539436">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                    </svg>
-                </div>
-            </div>
-        </section>  
+                <div class="terminal__content" id="textos">
 
+                    <p class="terminal__content contenido">
+                        <span class="span__dark"> > I think tha the best way to learn and master something, is to teach
+                            others.</span>
+                    </p>
+
+                    <p class="terminal__content contenido">
+                        > "That is the main reason why I decided to start this channel. However, another reason is the
+                        ability to help others with problems I had at some point and couldn't find a solution to ❤️.
+                    </p>
+                    <span class="span__dark">
+                        > In this way, I feel that I am contributing something to my community: The Developers
+                        community.
+                    </span>
+                </div>
+                <div class="about__contactar">
+                    <a class="link__boton " href="mailto: contact@itssofi.dev" target="_blank"
+                        rel="nofollow noreferrer noopener">
+                    </a>
+                </div>
+            </div>
+            <div class="vid__container">
+                <h2 class="vid__titulo"> My latest Vid ❤️</h2>
+                <iframe class="latestVideoEmbed" vnum='0' width="600" height="340" frameborder="0" allowfullscreen
+                    controls="1"></iframe>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="wrapper__black">
+            <div class="custom-shape-divider-bottom-1693539436">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
         <section class="formulario" id="formulario">
-                <h2 class="titulo titulo__dark">Contact</h2>
+            <h2 class="titulo titulo__dark">Contact</h2>
             <div class="formulario__container">
                 <div class="formulario__caja caja__dark">
                     <img class="formulario__img" src="./assets/img/vice-vehicle.webp" alt="Ia image portrait">
-    
+
                     <form action="https://formsubmit.co/contact@itssofi.dev" method="POST" class="formulario__contacto">
                         <div class="input-container ">
                             <label class="titulo__dark" for="name">Name</label>
-                            <input class="input text__boxes" type="text" name="name"  placeholder="Your name"
+                            <input class="input text__boxes" type="text" name="name" placeholder="Your name"
                                 title="Only letters and blank spaces are accepted" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
                                 required data-type="nombre">
                             <span class="contact-form-span none" data-span="error">This field is mandatory</span>
                         </div>
-    
+
                         <div class="input-container formulario__inputs">
                             <label class="input-label titulo__dark" for="email">Email</label>
-                            <input type="email" name="email" id="email" class="input"  placeholder="Email"
+                            <input type="email" name="email" id="email" class="input" placeholder="Email"
                                 title="Invalid email" required data-type="email"
                                 pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
                             <span class="contact-form-span none" data-span="error"> This field is mandatory</span>
                         </div>
-    
-    
+
+
                         <div class="input-container formulario__inputs ">
                             <label class="titulo__dark" for="mensaje">Message</label>
-                            <textarea class="text__boxes" name="message"  cols="50" rows="7" data-pattern="^.{1,255}$"
+                            <textarea class="text__boxes" name="message" cols="50" rows="7" data-pattern="^.{1,255}$"
                                 data-type="mensaje" placeholder="Your message" required
                                 title="Message cannot exceed 255 characters"></textarea>
                             <span class="contact-form-span none" data-span="error">This field is mandatory</span>
@@ -674,7 +649,7 @@
                         <p>Los datos han sido enviados</p>
                     </div>
                 </div>
-    
+
                 <div class="side__imgIa">
                     <img class="Ia__img" src="./assets/img/vice-vehicle.webp" alt="Ia image portrait">
                 </div>
@@ -715,27 +690,38 @@
             </div>
             <div class="foooter__cajas">
                 <ul class="footer__caja__links">
-                    <li class="footer__links"><a href="https://blog.itssofi.dev/" class="footer__link" target="_blank">Blog</a></li>
-                    <li class="footer__links"><a href="https://www.youtube.com/channel/UC36_js-krsAHAEAWpEDhHtw" class="footer__link" target="_blank"  rel="nofollow noreferrer noopener" data-section="footer" data-value="cursosYoutube">Youtube channel</a></li>
-                    <li class="footer__links"><a href="https://platzi.com/p/SofiDev/" class="footer__link" target="_blank"  rel="nofollow noreferrer noopener" data-section="footer" data-value="cursosPlatzi">My courses at  Platzi</a></li>
-                    <li class="footer__links"><a href="https://app.aluracursos.com/emprega-one/profile/sofidev" class="footer__link" target="_blank"  rel="nofollow noreferrer noopener" data-section="footer" data-value="cursosAlura">My courses at Alura</a></li>
+                    <li class="footer__links"><a href="https://blog.itssofi.dev/" class="footer__link"
+                            target="_blank">Blog</a></li>
+                    <li class="footer__links"><a href="https://www.youtube.com/channel/UC36_js-krsAHAEAWpEDhHtw"
+                            class="footer__link" target="_blank" rel="nofollow noreferrer noopener"
+                            data-section="footer" data-value="cursosYoutube">Youtube channel</a></li>
+                    <li class="footer__links"><a href="https://platzi.com/p/SofiDev/" class="footer__link"
+                            target="_blank" rel="nofollow noreferrer noopener" data-section="footer"
+                            data-value="cursosPlatzi">My courses at Platzi</a></li>
+                    <li class="footer__links"><a href="https://app.aluracursos.com/emprega-one/profile/sofidev"
+                            class="footer__link" target="_blank" rel="nofollow noreferrer noopener"
+                            data-section="footer" data-value="cursosAlura">My courses at Alura</a></li>
                 </ul>
             </div>
             <div class="foooter__cajas">
                 <ul class="footer__caja__iconos">
                     <li class="footer__iconos__lista ">
-                        <a href="mailto: contact@itssofi.dev" rel="nofollow noreferrer noopener" >
-                            <img class="footer__iconos mail__footer icono__dark" src="./assets/svg/mail (1).svg" alt="mail icon">
+                        <a href="mailto: contact@itssofi.dev" rel="nofollow noreferrer noopener">
+                            <img class="footer__iconos mail__footer icono__dark" src="./assets/svg/mail (1).svg"
+                                alt="mail icon">
                         </a>
                     </li>
                     <li class="footer__iconos__lista ">
-                        <a href="https://www.linkedin.com/in/sofidev/" target="_blank"  rel="nofollow noreferrer noopener">
-                            <img class="footer__iconos linkedin__footer icono__dark" src="./assets/svg/linkedin.svg" alt="Linkedin icon">
+                        <a href="https://www.linkedin.com/in/sofidev/" target="_blank"
+                            rel="nofollow noreferrer noopener">
+                            <img class="footer__iconos linkedin__footer icono__dark" src="./assets/svg/linkedin.svg"
+                                alt="Linkedin icon">
                         </a>
                     </li>
                     <li class="footer__iconos__lista ">
-                        <a href="https://github.com/SofiDevO" target="_blank"  rel="nofollow noreferrer noopener">
-                            <img class="footer__iconos  icono__dark"  src="./assets/svg/github-light.svg" alt="github icon">
+                        <a href="https://github.com/SofiDevO" target="_blank" rel="nofollow noreferrer noopener">
+                            <img class="footer__iconos  icono__dark" src="./assets/svg/github-light.svg"
+                                alt="github icon">
                         </a>
                     </li>
                 </ul>
@@ -746,4 +732,5 @@
 </body>
 
 <script src="./modules.js" type="module"></script>
+
 </html>

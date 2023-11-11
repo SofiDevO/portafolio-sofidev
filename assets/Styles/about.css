@@ -9,7 +9,6 @@
     flex-direction: column;
     width: 100%;
     z-index: 2;
-    height: 195vh;
     align-items: center;
     justify-content: center;
     gap: 3rem;
@@ -74,6 +73,8 @@
 	height: 40px;
 	border: none;
 	cursor: pointer;
+	background: transparent;
+
 }
 .about__icons{
     width: 3rem;
@@ -160,11 +161,7 @@
 }
 
 @media (min-width: 768px) {
-	.about {
-		height: 101vh;
-		/* background-size: 457px; */
-		min-height: 880px;
-	}
+	
 	.about__container {
 		flex-direction: row;
 		align-items: center;
@@ -173,7 +170,6 @@
 		/* height: unset; */
 		flex-wrap: wrap;
 		gap: 7rem;
-		height: 190vh;
 		flex-wrap: nowrap;
 	}
 	.card-title {
@@ -226,7 +222,6 @@
 @media (min-width: 1200px) {
 	.about {
 		display: flex;
-		height: 68vh;
 		min-height: 660px;
 		justify-content: center;
 		align-items: center;
