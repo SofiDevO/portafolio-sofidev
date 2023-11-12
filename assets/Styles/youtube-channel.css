@@ -45,8 +45,8 @@
 }
 
 .latestVideoEmbed{
-    width: 84vw;
-    height: 37vh;
+    width: 100%;
+    height: 31vh;
     min-width: 31rem;
 }
 

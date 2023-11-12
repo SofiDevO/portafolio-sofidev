@@ -7,7 +7,6 @@ export const loadVideo = (iframe) => {
     fetch(reqURL)
         .then(response => response.json())
         .then(result => {
-          console.log(result)
             const videoNumber = iframe.getAttribute('vnum')
             const link = result.items[videoNumber].link;
             const id = link.substr(link.indexOf("=") + 1);

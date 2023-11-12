@@ -61,7 +61,7 @@
 
 
     <!-- CSS ESTYLES -->
-    <link rel="stylesheet" href="./assets/Styles/settings.css">
+    <link rel="stylesheet" href="./assets/Styles/global.css">
     <link rel="stylesheet" href="./assets/Styles/header/header.css">
     <link rel="stylesheet" href="./assets/Styles/elements/toogleDark.css">
     <link rel="stylesheet" href="./assets/Styles/elements/toTop.css">
@@ -106,7 +106,7 @@
             </ul>
     </header>
     <div class="toogle-dark__container">
-        <i class="bi bi-lightning-charge desktop-rayo" data-toogle></i>
+        <i class="bi bi-lightning-charge toogle__rayo" data-toogle></i>
     </div>
 
     <!-- menu movil (hamburguesa) -->
@@ -120,7 +120,7 @@
     <div class="menu__flotante">
         <div class="icon__top-container">
             <div class="to__top" data-menu="float">
-                <a class="to__top-link" href="#">
+                <a class="to__top-link" href="#"> </a>
                     <i class="bi bi-arrow-up-circle"></i>
             </div>
         </div>
@@ -171,19 +171,18 @@
                     </div>
                 </div>
             </div>
-            <!-- Divider -->
-            <div class="wrapper">
-                <div class="custom-shape-divider-bottom-1685513857">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                        preserveAspectRatio="none">
-                        <path
-                            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                            id="divider1" class="shape-fill"></path>
-                    </svg>
-                </div>
-            </div>
         </section>
-
+        <!-- Divider -->
+        <div class="wrapper">
+            <div class="custom-shape-divider-bottom-1685513857">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        id="divider1" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
 
         <section class="skills" id="skills">
             <h2 class="titulo titulo__dark">Skills</h2>
@@ -200,11 +199,10 @@
                     </div>
 
                     <div class="terminal__content ">
-                        <span class="terminal__content">
-                            ≥ Happily graduated from the
-                            <a class=" terminal__content" id="link-oracle"
+                        <span class="terminal__content">≥ Happily graduated from the</span>
+                            <a class="terminal__link" id="link-oracle"
                                 href="https://www.oracle.com/mx/education/oracle-next-education/" target="_blank"
-                                rel="nofollow noopener noreferrer">"One Oracle Next Education" </a>program.</span>
+                                rel="nofollow noopener noreferrer">"One Oracle Next Education" </a> <span>program.</span>
                         <p class="terminal__content">
                             ≥ Strong foundation in <span class="terminal__content"> semantic HTML, CSS, SCSS,
                                 Javascript,
@@ -216,10 +214,9 @@
                             design.
                         </p>
                         <div class="skills__descargar">
-                            <a class="link__boton boton titulo__dark terminal__content span"
+                            <a class="link__boton boton titulo__dark  span"
                                 href="./assets/documents/Angela_Sofia_Osorio_Cv_2023.pdf" target="_blank">
-                                <span>Download
-                                    CV</span> <img class="skills__descargar__icono icono__boton"
+                                Download CV <img class="skills__descargar__icono icono__boton"
                                     src="./assets/svg/generate-pdf.svg" alt="download button">
                             </a>
                         </div>
@@ -530,14 +527,12 @@
                     </p>
                 </div>
                 <div class="about__contactar">
-                    <a class="link__boton boton titulo__dark terminal__content span" href="mailto: contact@itssofi.dev"
-                        target="_blank" rel="nofollow noreferrer noopener">
-                        <span>Get
-                            in touch</span>
+                    <a class="link__boton boton titulo__dark  span" href="mailto: contact@itssofi.dev"
+                        target="_blank" rel="nofollow noreferrer noopener">Get in touch
                         <img class="contactar__boton__icono icono__boton " src="./assets/svg/mail (1).svg"
                             alt="mail icon">
+                        </a>
 
-                    </a>
                 </div>
             </div>
 
@@ -582,11 +577,6 @@
                         ≥ In this way, I feel that I am contributing something to my community: The Developers
                         community.
                     </span>
-                </div>
-                <div class="about__contactar">
-                    <a class="link__boton " href="mailto: contact@itssofi.dev" target="_blank"
-                        rel="nofollow noreferrer noopener">
-                    </a>
                 </div>
             </div>
             <div class="vid__container">

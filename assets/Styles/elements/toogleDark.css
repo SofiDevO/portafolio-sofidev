@@ -1,5 +1,6 @@
 
 .toogle-dark__container {
+  transition: 1s ease-in-out;
 	-webkit-animation: scale-up-center 0.3s ease-in 2s backwards;
 	        animation: scale-up-center 0.3s ease-in 2s backwards;
 }
@@ -30,7 +31,7 @@
   position: fixed;
   width: 4rem;
   height: 4rem;
-  transition: all 0.4s;
+  transition: all 1s;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(10px);
@@ -41,6 +42,7 @@
   display: flex;
   bottom: 10.1%;
   right: 83%;
+  cursor: pointer;
 }
 
 
@@ -48,12 +50,13 @@
 .dark-mode__icon {
 	padding: 20px 1px;
 	width: 45px;
-	transition: 0.3s ease-in-out;
+	transition: 1s ease-in-out;
 	justify-content: center;
 }
-.desktop-rayo {
-	font-size: 24px;
-	filter: invert(100%);
+.toogle__rayo {
+  font-size: 29px;
+  filter: invert(100%);
+  transition: 1s ease-in-out;
 }
 
 @media (min-width: 768px) {

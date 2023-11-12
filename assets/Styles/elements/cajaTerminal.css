@@ -84,13 +84,6 @@
 	font-family: 'Fira Code', monospace;
 }
 /* Botondescargar */
-.skills__descargar {
-	font-family: 'Fira Code', monospace;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-}
 .skills__descargar__icono {
 	width: 25px;
 	filter: invert(100%) saturate(5);
@@ -112,13 +105,12 @@
 .terminal__content span{
     color: var(--green-terminal);
     font-weight: 500;
-	font-family: 'Fira Code', monospace;}
-.terminal__content a{
-    color: var(--pink-terminal);
-    text-decoration: none;
-    
-	font-family: 'Fira Code', monospace;}
-.terminal__content a:hover{
+	font-family: 'Fira Code', monospace;
+}
+.terminal__link{
+	color: var(--pink-terminal);
+}
+.terminal__link:hover{
     color: var(--green-terminal);
 	text-decoration: none;
 	font-weight: bold;

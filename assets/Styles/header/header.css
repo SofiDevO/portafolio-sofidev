@@ -117,7 +117,7 @@
 }
 .menu__avatar{
 	width: 5rem;
-	margin-bottom: 5rem;
+	margin-bottom: 0;
 }
 /* TABLET VIEW */
 @media screen and (min-width: 768px) {
@@ -201,7 +201,8 @@
 
 	.menu__link {
 		text-decoration: none;
-		font-size: 1.6rem;
+		font-size: 1.8rem;
+		margin-left:2rem;
 		font-weight: 500;
 		color: var(--seccond-color);
 	}

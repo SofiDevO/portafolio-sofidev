@@ -25,6 +25,7 @@
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	color: var(--pink-terminal);
+	transition: all 2s ease-in-out;
 }
 .dark-mode .background span:nth-child(0) {
 	background-image: url("../../svg/javascript-color.svg");

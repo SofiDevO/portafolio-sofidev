@@ -6,7 +6,7 @@
 
 .custom-shape-divider-bottom-1685513857 {
 	position: absolute;
-    bottom: -85px;
+    bottom: 0px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -27,7 +27,25 @@
 @media (min-width: 768px) {
 	.custom-shape-divider-bottom-1685513857 {
 		position: absolute;
-		bottom: -169px;
+		bottom: 0px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+
+	.custom-shape-divider-bottom-1685513857 svg {
+		position: relative;
+    display: block;
+    width: calc(138% + 230.8px);
+    height: 175px;
+	}
+	
+}
+@media (min-width: 1200px) {
+	.custom-shape-divider-bottom-1685513857 {
+		position: absolute;
+		bottom: 0;
 		left: 0;
 		width: 100%;
 		overflow: hidden;
@@ -37,25 +55,7 @@
 	.custom-shape-divider-bottom-1685513857 svg {
 		position: relative;
 		display: block;
-		width: calc(124% + 453.8px);
-		height: 253px;
-	}
-	
-}
-@media (min-width: 1200px) {
-	.custom-shape-divider-bottom-1685513857 {
-		position: absolute;
-		bottom: -417px;
-		left: 0;
-		width: 100%;
-		overflow: hidden;
-		line-height: 0;
-	}
-
-	.custom-shape-divider-bottom-1693539436 svg {
-		position: relative;
-		display: block;
-		width: calc(124% + 453.8px);
-		height: 367px;
+		width: calc(90% + 1123.8px);
+		height: 224px;
 	}
 }
