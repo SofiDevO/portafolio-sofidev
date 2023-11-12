@@ -47,7 +47,7 @@
 .panel__btn {
 	position: fixed;
     z-index: 9999;
-    bottom: 10%;
+    bottom: 7%;
     right: 1.5%;
     width: 6rem;
     height: 6rem;

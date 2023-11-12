@@ -3,24 +3,19 @@
     position: relative;
     flex-direction: column;
     background-color: black;
-    justify-content: flex-end;
-    margin-top: 35px;
-
 }
 .tools__titulo{
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    margin: 0;
     color: var(--green-terminal);
+    text-align: center;
 
 }
 .tools__caja__slider{
     display: flex;
     flex-direction: column;
-    width: 100%;
     overflow: hidden;
+    justify-content: center;
 }
 
 .tools__caja__slider:hover .slider{
@@ -95,9 +90,6 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 4rem;
     }
-    .tools{
-        margin-top: 163px;
-    }
     .slider{
         height: 36vh;
         min-height: 331px;
@@ -159,7 +151,6 @@
     .tools__titulo{
         font-family: 'Montserrat', sans-serif;
         font-size: 4rem;
-        margin-top: 0;
     }
     .slider{
         animation: 40s slide infinite linear;

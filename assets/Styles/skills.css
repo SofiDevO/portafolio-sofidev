@@ -20,6 +20,8 @@
     align-items: center;
     gap: 2rem;
     justify-content: center;
+	padding: 3rem 0;
+
 }
 .skills__titulo {
 	font-size: 3.5rem;
