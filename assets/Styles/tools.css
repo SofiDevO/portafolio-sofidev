@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    height: 40vh;
+    background-color: black;
     justify-content: flex-end;
     margin-top: 35px;
 
@@ -13,6 +13,8 @@
     display: flex;
     justify-content: center;
     margin: 0;
+    color: var(--green-terminal);
+
 }
 .tools__caja__slider{
     display: flex;
@@ -84,6 +86,7 @@
     display: flex;
     text-align: center;
     align-items:13px;
+    color: var(--green-terminal);
 }
 
 /*TABLET VIEW */
@@ -93,7 +96,6 @@
         font-size: 4rem;
     }
     .tools{
-        height: unset;
         margin-top: 163px;
     }
     .slider{

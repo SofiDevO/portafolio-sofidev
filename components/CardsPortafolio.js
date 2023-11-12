@@ -1,7 +1,7 @@
 export default function CardsPortafolio(){
     const portafolioData = [
         {
-            imgSrc: "https://github.com/SofiDevO/alura-flix/raw/sofidev/image-1.png",
+            imgSrc: "../assets/img/PortfolioImg/alura_flix.webp",
             titulo: "Alura Flix",
             skills: ["React", "styledComponents"],
             descripcion: "Final project for the One Oracle Next Education Program. Educational programming video website demonstrating CRUD requests.",
@@ -9,7 +9,7 @@ export default function CardsPortafolio(){
             repoURL: "https://github.com/SofiDevO/alura-flix"
         },
         {
-            imgSrc: "https://user-images.githubusercontent.com/102200061/276017828-4983348b-bdc7-40ff-af28-0765d45a387a.png",
+            imgSrc: "../assets/img/PortfolioImg/react_org.webp",
             titulo: "React ORG",
             skills: ["React"],
             descripcion: "React application to manage your team members.",
@@ -17,7 +17,7 @@ export default function CardsPortafolio(){
             repoURL: "https://github.com/SofiDevO/react-org"
         },
         {
-            imgSrc: "https://github.com/SofiDevO/alura-geek/raw/sofidev/image-1.png",
+            imgSrc: "../assets/img/PortfolioImg/alura_geek.webp",
             titulo: "Alura Geek",
             skills: ["JavaScript"],
             descripcion: " CRUD operations using HTTP requests.",
@@ -25,7 +25,7 @@ export default function CardsPortafolio(){
             repoURL: "https://github.com/SofiDevO/react-org"
         },
         {
-            imgSrc: "./assets/img/PortfolioImg/sass_portada.png",
+            imgSrc: "../assets/img/PortfolioImg/SASS.webp",
             titulo: "Eco Store",
             skills: ["Sass", "JavaScript"],
             descripcion: "Made with sass for the,Sass fundamentals course",
@@ -33,7 +33,7 @@ export default function CardsPortafolio(){
             repoURL: "https://github.com/SofiDevO/eco-store-sass"
         },
         {
-            imgSrc: "./assets/img/PortfolioImg/portada_portafolio.png",
+            imgSrc: "../assets/img/PortfolioImg/portfolio.webp",
             titulo: "My Portfolio",
             skills: ["JavaScript"],
             descripcion: "Just the repository of my portfolio on GitHub.",
@@ -41,7 +41,7 @@ export default function CardsPortafolio(){
             repoURL: "https://github.com/SofiDevO/portafolio-sofidev"
         },
         {
-            imgSrc: "./assets/img/PortfolioImg/encriptador_mensajes_dark.png",
+            imgSrc: "../assets/img/PortfolioImg/encriptador_mensajes_dark.webp",
             titulo: "Message Encryptor",
             skills: ["JavaScript"],
             descripcion: "Message Encryptor for the first Alura Latam Challenge: Programming Logic.",

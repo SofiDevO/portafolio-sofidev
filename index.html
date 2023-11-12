@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <!-- canonical url -->
@@ -9,8 +9,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SofiDev Frontend developer Portfolio">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#160036" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2e006e" />
+
     <title>SofiDev</title>
-    <link rel="shortcut icon" href="./assets/img/avatar_pink.png" type="ima2ge/x-icon">
+    <link rel="shortcut icon" href="./assets/img/avatar_pink.webp" type="ima2ge/x-icon">
 
     <!-- HTML Meta Tags -->
     <title>SofiDev (Angela Sofía Osorio)</title>
@@ -41,13 +44,15 @@
         rel="stylesheet">
 
 
+
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERDGRLBQQL"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PH4LW2W9B"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'G-ERDGRLBQQL');
+
+        gtag('config', 'G-0PH4LW2W9B');
     </script>
 
     <!-- css librerias/ cdn -->
@@ -70,6 +75,7 @@
     <link rel="stylesheet" href="./assets/Styles/Dividers/divider.css">
     <link rel="stylesheet" href="./assets/Styles/Dividers/divierBlack.css">
     <link rel="stylesheet" href="./assets/Styles/Dividers/dividerSkillsTools.css">
+    <link rel="stylesheet" href="./assets/Styles/Dividers/divider-tools.css">
     <link rel="stylesheet" href="./assets/Styles/elements/cajaTerminal.css">
     <link rel="stylesheet" href="./assets/Styles/button.css">
     <link rel="stylesheet" href="./assets/Styles/skills.css">
@@ -82,6 +88,7 @@
     <!-- dark mode -->
     <link rel="stylesheet" href="./assets/Styles/dark-mode/darkmode.css">
     <link rel="stylesheet" href="./assets/Styles/dark-mode/darkmode-bg.css">
+    <link rel="stylesheet" href="./assets/Styles/dark-mode/short-circuit.css">
 </head>
 
 <body>
@@ -94,7 +101,7 @@
         <!-- Menu  -->
         <nav class="menu__nav panel__styles panel" id="panel">
             <ul class="menu__ul">
-                <img class="menu__avatar" src="./assets/img/avatar_pink.png" alt="">
+                <img class="menu__avatar" src="./assets/img/avatar_pink.webp" alt="">
                 <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#skills">Skills</a></li>
                 <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#aboutMe">About me</a></li>
                 <li class="menu__list"><a class="menu__link menu__hamburger-link" href="#portafolio">Portfolio</a></li>
@@ -121,7 +128,7 @@
         <div class="icon__top-container">
             <div class="to__top" data-menu="float">
                 <a class="to__top-link" href="#"> </a>
-                    <i class="bi bi-arrow-up-circle"></i>
+                <i class="bi bi-arrow-up-circle"></i>
             </div>
         </div>
     </div>
@@ -139,9 +146,12 @@
                 </div>
                 <div class="side__container">
                     <div class="side__profile" id="profile-pic">
-                        <img class="side__img img__ligth" src="./assets/img/avatar-black.png"
+                        <img class="side__img img__ligth" src="./assets/img/avatar-black.webp"
                             alt="Sofidev profile photo">
-                        <img class="side__img img__dark" src="./assets/img/avatar_pink.png" alt="Sofidev profile photo">
+                        <img class="side__img img__dark" src="./assets/img/avatar_pink.webp"
+                            alt="Sofidev profile photo">
+                        <img class="side__img img__damage" src="./assets/img/IA_damage.webp"
+                            alt="Sofidev profile photo">
                     </div>
                     <div class="social">
                         <a class="social__link github icono__dark" href="https://github.com/SofiDevO" target="_blank"
@@ -200,9 +210,9 @@
 
                     <div class="terminal__content ">
                         <span class="terminal__content">≥ Happily graduated from the</span>
-                            <a class="terminal__link" id="link-oracle"
-                                href="https://www.oracle.com/mx/education/oracle-next-education/" target="_blank"
-                                rel="nofollow noopener noreferrer">"One Oracle Next Education" </a> <span>program.</span>
+                        <a class="terminal__link" id="link-oracle"
+                            href="https://www.oracle.com/mx/education/oracle-next-education/" target="_blank"
+                            rel="nofollow noopener noreferrer">"One Oracle Next Education" </a> <span>program.</span>
                         <p class="terminal__content">
                             ≥ Strong foundation in <span class="terminal__content"> semantic HTML, CSS, SCSS,
                                 Javascript,
@@ -230,8 +240,7 @@
                 </div>
             </div>
         </section>
-
-        <section class="tools">
+        <div class="wraper__skills">
             <div class="custom-shape-divider-top-1697134839">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
@@ -240,6 +249,9 @@
                         class="shape-fill"></path>
                 </svg>
             </div>
+        </div>
+
+        <section class="tools">
             <h2 class="tools__titulo titulo__dark">Tools</h2>
             <div class="tools__caja__slider">
                 <div class="slider">
@@ -467,7 +479,13 @@
                 </div>
             </div>
         </section>
-
+        <div class="wraper__tools">
+            <div class="custom-shape-divider-top-1699780157">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
         <!-- Acerca de Mi -->
         <section class="about" id="aboutMe">
             <h2 class="about__titulo" id="aboutDeTitulo">Who
@@ -475,7 +493,7 @@
             <div class="about__container">
                 <div class="card__about ">
                     <div class="card-photo">
-                        <img class="about__img--src" src="./assets/img/sofi4.png" alt="">
+                        <img class="about__img--src" src="./assets/img/sofi4.webp" alt="">
                     </div>
                     <div class="card-title">
                         <p> SofiDev</p>
@@ -527,11 +545,11 @@
                     </p>
                 </div>
                 <div class="about__contactar">
-                    <a class="link__boton boton titulo__dark  span" href="mailto: contact@itssofi.dev"
-                        target="_blank" rel="nofollow noreferrer noopener">Get in touch
+                    <a class="link__boton boton titulo__dark  span" href="mailto: contact@itssofi.dev" target="_blank"
+                        rel="nofollow noreferrer noopener">Get in touch
                         <img class="contactar__boton__icono icono__boton " src="./assets/svg/mail (1).svg"
                             alt="mail icon">
-                        </a>
+                    </a>
 
                 </div>
             </div>
@@ -600,48 +618,46 @@
             </div>
         </div>
         <section class="formulario" id="formulario">
-                <h2 class="titulo titulo__dark">Contact</h2>
+            <h2 class="titulo titulo__dark">Contact</h2>
             <div class="form__caja">
                 <div class="caja__cristal caja__dark" ">
                     <div class=" terminal_toolbar">
-                        <div class="butt">
-                            <button class="btn btn__red btn-color"></button>
-                            <button class="btn btn__yellow"></button>
-                            <button class="btn btn__green"></button>
-                        </div>
-                        <p class="user">sofidev@admin: ~</p>
+                    <div class="butt">
+                        <button class="btn btn__red btn-color"></button>
+                        <button class="btn btn__yellow"></button>
+                        <button class="btn btn__green"></button>
                     </div>
-                    <div class="form__content">
-                        <form action="https://formsubmit.co/contact@itssofi.dev" method="POST" class="formulario__contacto">
-                            <div class="input-container ">
-                                <label class="titulo__dark" for="name">Name</label>
-                                <input class="input text__boxes" type="text" name="name" placeholder="Your name"
-                                    title="Only letters and blank spaces are accepted" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-                                    required data-type="nombre">
-                                <span class="contact-form-span none" data-span="error">This field is mandatory</span>
-                            </div>
-    
-                            <div class="input-container formulario__inputs">
-                                <label class="input-label titulo__dark" for="email">Email</label>
-                                <input type="email" name="email" id="email" class="input" placeholder="Email"
-                                    title="Invalid email" required data-type="email"
-                                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
-                                <span class="contact-form-span none" data-span="error"> This field is mandatory</span>
-                            </div>
-                            <div class="input-container formulario__inputs ">
-                                <label class="titulo__dark" for="mensaje">Message</label>
-                                <textarea class="text__boxes" name="message" cols="50" rows="7" data-pattern="^.{1,255}$"
-                                    data-type="mensaje" placeholder="Your message" required
-                                    title="Message cannot exceed 255 characters"></textarea>
-                                <span class="contact-form-span none" data-span="error">This field is mandatory</span>
-                            </div>
-                            <button type="submit" class="formulario__submit boton submit  titulo__dark">
-                                Send
-                            </button>
-                        </form>
-                    </div>
+                    <p class="user">sofidev@admin: ~</p>
                 </div>
-                <img class="form__img" src="./assets/img/IA_coca.jpg" alt="IA image of a girl with a soda">
+                <div class="form__content">
+                    <form action="https://formsubmit.co/contact@itssofi.dev" method="POST" class="formulario__contacto">
+                        <div class="input-container ">\
+                            <label class="titulo__dark" for="name">Name</label>
+                            <input class="input text__boxes" id="name" type="text" name="name" placeholder="Your name"
+                                title="Only letters and blank spaces are accepted" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                                required data-type="nombre">
+                            <span class="contact-form-span none" data-span="error">This field is mandatory</span>
+                        </div>
+
+                        <div class="input-container formulario__inputs">
+                            <label class="titulo__dark" for="email">Email</label>
+                            <input type="email" name="email" id="email" class="input" placeholder="Email"
+                                title="Invalid email" required data-type="email"
+                                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                            <span class="contact-form-span none" data-span="error"> This field is mandatory</span>
+                        </div>
+                        <div class="input-container formulario__inputs ">
+                            <label class="text titulo__dark" for="mensaje">Message</label>
+                            <textarea class="text__boxes" id="mensaje" name="message" cols="50" rows="7"
+                                data-pattern="^.{1,255}$" data-type="mensaje" placeholder="Your message" required
+                                title="Message cannot exceed 255 characters"></textarea>
+                            <span class="contact-form-span none" data-span="error">This field is mandatory</span>
+                        </div>
+                        <input type="submit" class="boton  link__boton titulo__dark">
+                    </form>
+                </div>
+            </div>
+            <img class="form__img" src="./assets/img/IA_coca.webp" alt="IA image of a girl with a soda">
             </div>
         </section>
         <div class="background">
@@ -716,6 +732,6 @@
         </div>
     </footer>
 </body>
-<script src="./modules.js" type="module"></script>
+<script src="./modules.js" defer type="module"></script>
 
 </html>

@@ -38,14 +38,6 @@
 	color: var(--seccond-color);
 }
 
-.formulario__submit {
-	padding: 7px 10px;
-    font-size: 1.7rem;
-    font-weight: 600;
-    width: 100%;
-    max-width: 18rem;
-}
-
 .form__content {
 	display: flex;
     align-items: stretch;

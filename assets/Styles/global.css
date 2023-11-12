@@ -6,14 +6,17 @@
 html{
   font-size: 62.5%;
 }
-  
+img {
+  height: auto;
+  width: 100%;
+}
 
 :root{
     --main-color: #181818;
     --seccond-color: rgb(228, 228, 228);
     --purple: #2e016c;
     --dark-purple: rgb(22 0 54);
-    --purple-bg: rgb(25, 0, 60);
+    --purple-bg: #19003c;
     --ligth-purple: #610094;
     --blue: #58ecff;
     --gradient: 181deg, #000000 35%, #2e006e 100%;

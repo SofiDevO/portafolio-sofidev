@@ -36,8 +36,8 @@
 .flicker-in-1 {
 	animation: flicker-in-1 2s linear 0.5s both;
 	color: var(--seccond-color);
-	
 }
+	
 
 @keyframes flicker-in-1 {
 	0% {
@@ -184,7 +184,7 @@
     position: relative;
     max-width: 29rem;
 }
-.img__dark {
+.img__dark, .img__damage {
 	display: none;
 }
 

@@ -1,6 +1,5 @@
 .wrapper {
 	box-sizing: border-box;
-	scroll-behavior: smooth;
 	position: relative;
 }
 
@@ -22,6 +21,9 @@
 
 .custom-shape-divider-bottom-1685513857 .shape-fill {
 	fill: rgb(228, 228, 228);
+}
+.dark-mode .custom-shape-divider-bottom-1685513857 .shape-fill {
+	fill: var(--pure-black);
 }
 
 @media (min-width: 768px) {

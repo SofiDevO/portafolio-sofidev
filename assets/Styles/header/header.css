@@ -202,7 +202,6 @@
 	.menu__link {
 		text-decoration: none;
 		font-size: 1.8rem;
-		margin-left:2rem;
 		font-weight: 500;
 		color: var(--seccond-color);
 	}
@@ -231,5 +230,8 @@
 	}
 	.menu__list {
 		padding: 0.6rem 1rem;
+	}
+	.menu__link{
+		margin-left:2rem;
 	}
 }

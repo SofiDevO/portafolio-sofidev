@@ -125,15 +125,6 @@
 	justify-content: flex-start;
 	background: linear-gradient(var(--gradient));
 }
-/* DIVIDERS */
-.dark-mode .custom-shape-divider-bottom-1685513857 .shape-fill {
-	fill: var(--pure-black);
-}
-
- .dark-mode .wrapper__black {
-    background-color: #2e006e;
-}
-
 /* Carrusel */
 
 .dark-mode .tools__caja__slider {

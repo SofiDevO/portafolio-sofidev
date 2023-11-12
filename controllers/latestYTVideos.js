@@ -15,7 +15,9 @@ export const loadVideo = (iframe) => {
         .catch(error => console.log('error', error));
 }
 
+document.addEventListener("DOMContentLoaded", (e)=> {
 const iframes = document.getElementsByClassName('latestVideoEmbed');
 for (let i = 0, len = iframes.length; i < len; i++) {
     loadVideo(iframes[i]);
 }
+})
