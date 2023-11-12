@@ -6,7 +6,7 @@ const btnDarkMode = d.querySelectorAll("[data-toogle]")
 function playIntro(time_in_milisec_volume, time_in_milisec){
     let audio = new Audio();
     audio.src = "../assets/sounds/LOKI Opening Theme.mp3";
-    audio.volume -= 0.5;
+    audio.volume -= 0.6;
     audio.play()
     setTimeout(() => {audio.volume -= 0.2;}, time_in_milisec_volume);
     setTimeout(() => { audio.pause() ;}, time_in_milisec);
